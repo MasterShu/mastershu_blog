@@ -7,14 +7,14 @@ title: MasterShu
 subtitle: JUST DO BEST
 description:
 author: MasterShu
-language: zh-CN
+language: zh-Hans
 timezone: PRC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://mastershu.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: blog/:abbrlink.html/
 permalink_defaults:
 
 # Directory
@@ -33,8 +33,8 @@ default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
-render_drafts: false
-post_asset_folder: false
+render_drafts: true
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -72,7 +72,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,3 +81,22 @@ deploy:
   type: git
   repo: https://github.com/MasterShu/mastershu.github.io.git
   branch: master
+
+abbrlink:
+  alg: crc32
+  rep: hex
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+# Local search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000

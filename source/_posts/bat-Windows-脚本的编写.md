@@ -1,5 +1,6 @@
 ---
 title: bat Windows 脚本的编写
+abbrlink: 59564
 date: 2017-12-02 09:36:57
 tags:
 ---
