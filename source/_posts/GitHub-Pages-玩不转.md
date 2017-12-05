@@ -18,7 +18,7 @@ tags:
 * 登录后, 创建一个新的仓库,并且以 `username.github.io` 为仓库名, 这儿的username是你自己的`GihtHub` 账号名 
 
 ### Node
-
+<!-- more -->
 * Windows 下直接去官网 [下载](https://nodejs.org/en/)
 
 * 安装完成后使用命令 `node -v` 检测是否安装成功

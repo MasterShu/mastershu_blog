@@ -16,6 +16,8 @@ category: "UnableToManage"
 
     这儿是配置必要的环境, 已经配置好的请跳过
 
+<!-- more -->
+
 ### Node
 
 * Windows 下直接去官网 [下载](https://nodejs.org/en/)
