@@ -4,7 +4,9 @@ abbrlink: 4fce4897
 date: 2017-12-02 14:14:06
 tags: 
   - 玩不转
-category: "UnableToManage"
+category: 
+  - 建站系统
+  - 博客
 ---
 ## 玩转玩不转的`Hexo`
 
@@ -325,4 +327,27 @@ gitmentbutton: 显示 Gitment 评论
   <a href="/"> Home </a>
   <a href="/tags/"> Tags </a>
   <a href="/archives/"> Archives </a>
+  ```
+
+## 草稿与推送
+
+`Hexo` 的一种特殊布局 `Draft` 草稿, 是保存在 `source/_drafts` 目录下, 草稿默认不会显示在页面中, 这就方便了我们编写, 不会把半成品推上去 ^_^
+
+### 操作指令
+
+新建草稿文本
+  ```base
+  hexo new draft <title>
+  ```
+
+发布草稿文本
+  ```base
+  hexo publish [layout] <title>
+  ```
+
+### 预览设置
+
+为了方便调试, 你可以修改该配置来预览草稿
+  ```yml
+  render_drafts: true
   ```
