@@ -1,5 +1,6 @@
 ---
 title: 初探 React
+abbrlink: 94177a20
 tags:
 ---
 
