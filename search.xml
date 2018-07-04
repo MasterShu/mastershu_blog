@@ -1,63 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[ARTS_27]]></title>
-    <url>%2Fblog%2F185059fb.html%2F</url>
-    <content type="text"><![CDATA[2018 27th weekAlgorithmReviewTipShare]]></content>
-      <categories>
-        <category>分享</category>
-        <category>arts</category>
-      </categories>
-      <tags>
-        <tag>ARTS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[学习前端自动化构建]]></title>
-    <url>%2Fblog%2Fe4c4f4af.html%2F</url>
-    <content type="text"><![CDATA[理论与需求java 的构建工具说明 ant 第一代,用配置来自动构建编译 maven 第二代, 用来自动加载依赖和配置 gradle 使用 groovy 语言构建脚本, 现代构建工具, 自动优选 而前端在很长一部分时间是简单粗暴的使用, 并没有所谓的构建工具, 而构建工具的流行, 也是最近几年, 而且在一些公司, 依然是简单粗暴的配置, 和编写 HTML 代码, 而构建工具的方便想分享给所有人使用. JavaScript 的构建BrowserifyBrowserify个人人为比较小巧一点儿, 相比 webpack 要自己定义打包配置, 但是却更灵巧和源码研读 更多关于 browserify 请点击 传送门 安装 browserify首先需要安装 node 1npm install -g browserify 使用 browserify1browserify main.js &gt; bundle.js 在 HTML 代码中 1&lt;script src="bundle.js"&gt;&lt;/script&gt; gulp自动化构建工具 安装 gulp 1npm install gulp-cli -g 正常情况下, 你更需要作为项目的开发依赖安装 1npm install --save-dev gulp 使用 gulp在项目根目录下创建一个名为 gulpfile.js 的文件： 12345var gulp = require('gulp');gulp.task('default', function() &#123; // 将你的默认的任务代码放在这&#125;); 运行 gulp 1gulp 此时默认的名为 default 的任务（task）将会被运行 想要单独执行特定的任务（task），请输入 gulp &lt;task&gt; &lt;othertask&gt; 。 自动化构建RollupCSS 构建]]></content>
-      <categories>
-        <category>工具库</category>
-        <category>构建工具</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>慕课</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[初探 React]]></title>
-    <url>%2Fblog%2F94177a20.html%2F</url>
-    <content type="text"><![CDATA[React 的初探React 一个由 FaceBook 出品的 JavaScript 框架. 作为目前前端框架三巨头之一, 由于前段时间的开源协议问题, 现在已经更新了协议, 那就让我们来了解一下 React Quick Start准备工作 Node 环境 安装脚手架工具 npm i -g create-react-app 另一个选择, node 的最新长期 LTS 版本已经到 8.9.1 了, React 就给了我们另外一个选择 npx npx create-react-app &lt;project&gt; 指令来初始化项目 但是 npx 要钱 npm 5.2.0+ 所以我的示例依然使用第一种来创建. 这个的采用由个人喜好 Hello React首先新建项目 1create-react-app &lt;project&gt; 然后进入项目目录,启动初始化的项目 1npm start 现在, 你已经看到新建立的网站了, 地址是 http://localhost:3000/ 接下来就是重头戏了, 打开项目目录, 在源码目录 src 下面找到 App.js 这个就是首页展示的内容 更改你的需要, 把 Welcome to React 改为 Hello React, 再次回到浏览器页面. Hello React 你已经很棒了. ToDoList按照惯例, 第一个实现的简单的功能就是 ToDoList 了 安装 UI 组件库这里推荐一款比较喜欢的组件库 Element , 可能你会说这个不是 Vue 的吗, 嘿嘿 传送门 引入 UI 库安装 1npm i element-react -S 这个还需主题包 1npm i element-theme-default -S]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[初探 Angular]]></title>
-    <url>%2Fblog%2F72960925.html%2F</url>
-    <content type="text"><![CDATA[Angular 的初探一直收到论坛和其他文章的影响, 觉得 Angular 学习曲线很陡, 不适合新手入门, 而且很重, 性能不好. 这些都是道听途说, 不一定是什么样的, 所以本人想亲自试一下! 参考教程中文官网 传送门 Quick Start来看看官方是如何介绍的Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop angular.cnWhat is Angular? 准备工作 Node 环境 安装脚手架工具 npm install -g @angular/cli Hello Angular国内的镜像还是蛮有用的, 让我们设置一下吧 1ng set --global packageManager=cnpm 新建项目 1ng new &lt;project&gt; 土包子长见识了, new 之后会自动执行, npm install 所以, 各位最好是先执行全局设置 cnpm 运行服务器 1ng serve --open 好了, 已经可以看到我们的网站了, 那么让我们写下第一行代码. 在项目的 src 目录下面, app 这个代码目录下, Angular 会自动创建一个 app-root 的组件, 在app.component.ts修改为: 123export class AppComponent &#123; title = 'Angular';&#125; 再次回到网页, 就会看到 Welcome to Angular! 你已经能用 angular 了 ToDoList让我们使用 Angular 实现我们的第一个功能吧 安装 UI 组件库这里推荐一款比较喜欢的组件库 Element , 可能你会说这个不是 Vue 的吗, 嘿嘿 传送门 1# npm i -S element-angular 引入 UI 库1234567891011// in /src/app/app.module.ts// add code:// improt element moduleimport &#123; ElModule &#125; from 'element-angular'// 并且在 imports 中添加引入 imports: [ BrowserModule, ElModule.forRoot(), // 新增引入 ], 12345// in /src/styles.css// add code:/* You can add global styles to this file, and also import other style files */@import "~element-angular/theme/index.css"; 路由##]]></content>
-      <categories>
-        <category>框架学习</category>
-        <category>前端框架</category>
-        <category>Angular</category>
-      </categories>
-      <tags>
-        <tag>Angular</tag>
-        <tag>JavaScript</tag>
-        <tag>Node</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[jekyll 玩不转]]></title>
-    <url>%2Fblog%2Fc7c14466.html%2F</url>
-    <content type="text"><![CDATA[玩转玩不转的jekyll因为 github pages]]></content>
-      <categories>
-        <category>建站系统</category>
-        <category>博客</category>
-      </categories>
-      <tags>
-        <tag>玩不转</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[RegEx 正则表达式 玩不转]]></title>
     <url>%2Fblog%2Fb9975ef4.html%2F</url>
     <content type="text"><![CDATA[玩转玩不转的正则1A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids. 正则表达式推荐几个在线的正则表达式测试以及常用规则 传送门 | 传送门II | 在线工具类 学习类参考 传送门 普通字符普通字符包括没有显式指定为元字符的所有可打印和不可打印字符。这包括所有大写和小写字母、所有数字、所有标点符号和一些其他符号。 特殊字符 特别字符 描述 $ 匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 ‘\n’ 或 ‘\r’。要匹配 $ 字符本身，请使用 \$。 ( ) 标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。 * 匹配前面的子表达式零次或多次。要匹配 字符，请使用 \。 + 匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 +。 . 匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。 [ 标记一个中括号表达式的开始。要匹配 [，请使用 [。 ? 匹配前面的子表达式零次或一次，或指明一个非贪婪限定符。要匹配 ? 字符，请使用 \?。 \ 将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。例如， ‘n’ 匹配字符 ‘n’。’\n’ 匹配换行符。序列 ‘\‘ 匹配 “\”，而 ‘(‘ 则匹配 “(“。 ^ 匹配输入字符串的开始位置，除非在方括号表达式中使用，此时它表示不接受该字符集合。要匹配 ^ 字符本身，请使用 \^。 { 标记限定符表达式的开始。要匹配 {，请使用 {。 指明两项之间的一个选择。要匹配 ，请使用 \ 。 非打印字符 字符 描述 \cx 匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 ‘c’ 字符。 \f 匹配一个换页符。等价于 \x0c 和 \cL。 \n 匹配一个换行符。等价于 \x0a 和 \cJ。 \r 匹配一个回车符。等价于 \x0d 和 \cM。 \s 匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。 \S 匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。 \t 匹配一个制表符。等价于 \x09 和 \cI。 \v 匹配一个垂直制表符。等价于 \x0b 和 \cK。 \w 匹配一个单字字符（字母、数字或者下划线）。等价于[A-Za-z0-9_]。例如, /\w/ 匹配 “apple,” 中的 ‘a’，”$5.28,”中的 ‘5’ 和 “3D.” 中的 ‘3’。 \W 匹配一个非单字字符。等价于[^A-Za-z0-9]。例如, /\W/ 或者 /[^A-Za-z0-9]/ 匹配 “50%.” 中的 ‘%’。 限定符 字符 描述 * 匹配前面的子表达式零次或多次。例如，zo 能匹配 “z” 以及 “zoo”。 等价于{0,}。 + 匹配前面的子表达式一次或多次。例如，’zo+’ 能匹配 “zo” 以及 “zoo”，但不能匹配 “z”。+ 等价于 {1,}。 ? 匹配前面的子表达式零次或一次。例如，”do(es)?” 可以匹配 “do” 、 “does” 中的 “does” 、 “doxy” 中的 “do” 。? 等价于 {0,1}。 {n} n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。 {n,} n 是一个非负整数。至少匹配n 次。例如，’o{2,}’ 不能匹配 “Bob” 中的 ‘o’，但能匹配 “foooood” 中的所有 o。’o{1,}’ 等价于 ‘o+’。’o{0,}’ 则等价于 ‘o*’。 {n,m} m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。例如，”o{1,3}” 将匹配 “fooooood” 中的前三个 o。’o{0,1}’ 等价于 ‘o?’。请注意在逗号和两个数之间不能有空格。 *、+限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个?就可以实现非贪婪或最小匹配 定位符 字符 描述 ^ 匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。 $ 匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与 \n 或 \r 之前的位置匹配。 \b 匹配一个字边界，即字与空格间的位置。 \B 非字边界匹配。]]></content>
