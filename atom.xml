@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MasterShu</title>
+  
+  <subtitle>JUST DO BEST</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://blog.mastershu.club/"/>
+  <updated>2018-07-04T03:10:57.427Z</updated>
+  <id>http://blog.mastershu.club/</id>
+  
+  <author>
+    <name>MasterShu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ARTS_27</title>
+    <link href="http://blog.mastershu.club/blog/185059fb.html/"/>
+    <id>http://blog.mastershu.club/blog/185059fb.html/</id>
+    <published>2018-07-04T03:10:57.426Z</published>
+    <updated>2018-07-04T03:10:57.427Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;2018-27th-week&quot;&gt;&lt;a href=&quot;#2018-27th-week&quot; class=&quot;headerlink&quot; title=&quot;2018 27th  week&quot;&gt;&lt;/a&gt;2018 27th  week&lt;/h1&gt;&lt;h2 id=&quot;Algorithm&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="分享" scheme="http://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="arts" scheme="http://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+    
+    
+      <category term="ARTS" scheme="http://blog.mastershu.club/tags/ARTS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>学习前端自动化构建</title>
+    <link href="http://blog.mastershu.club/blog/e4c4f4af.html/"/>
+    <id>http://blog.mastershu.club/blog/e4c4f4af.html/</id>
+    <published>2018-07-04T02:18:22.909Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;理论与需求&quot;&gt;&lt;a href=&quot;#理论与需求&quot; class=&quot;headerlink&quot; title=&quot;理论与需求&quot;&gt;&lt;/a&gt;理论与需求&lt;/h1&gt;&lt;p&gt;java 的构建工具说明&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ant 第一代,用配置来自动构建编译&lt;/li&gt;
+&lt;li&gt;maven 第二代, 用来自动加载依赖和配置&lt;/li&gt;
+&lt;li&gt;gradle 使用 groovy 语言构建脚本, 现代构建工具, 自动优选&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;而前端在很长一部分时间是简单粗暴的使用, 并没有所谓的构建工具, 而构建工具的流行, 也是最近几年, 而且在一些公司, 依然是简单粗暴的配置, 和编写 HTML 代码, 而构建工具的方便想分享给所有人使用.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="工具库" scheme="http://blog.mastershu.club/categories/%E5%B7%A5%E5%85%B7%E5%BA%93/"/>
+    
+      <category term="构建工具" scheme="http://blog.mastershu.club/categories/%E5%B7%A5%E5%85%B7%E5%BA%93/%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7/"/>
+    
+    
+      <category term="学习" scheme="http://blog.mastershu.club/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="慕课" scheme="http://blog.mastershu.club/tags/%E6%85%95%E8%AF%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初探 Angular</title>
+    <link href="http://blog.mastershu.club/blog/72960925.html/"/>
+    <id>http://blog.mastershu.club/blog/72960925.html/</id>
+    <published>2018-07-04T02:18:22.909Z</published>
+    <updated>2018-07-04T02:18:22.909Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Angular-的初探&quot;&gt;&lt;a href=&quot;#Angular-的初探&quot; class=&quot;headerlink&quot; title=&quot;Angular 的初探&quot;&gt;&lt;/a&gt;Angular 的初探&lt;/h1&gt;&lt;p&gt;一直收到论坛和其他文章的影响, 觉得 &lt;code&gt;Angular&lt;/code&gt; 学习曲线很陡, 不适合新手入门, 而且很重, 性能不好.&lt;/p&gt;
+&lt;p&gt;这些都是道听途说, 不一定是什么样的, 所以本人想亲自试一下! 参考教程中文官网 &lt;a href=&quot;https://angular.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;p&gt;来看看官方是如何介绍的&lt;br&gt;&lt;blockquote&gt;&lt;p&gt;Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop&lt;/p&gt;
+&lt;footer&gt;&lt;strong&gt;angular.cn&lt;/strong&gt;&lt;cite&gt;&lt;a href=&quot;https://angular.io/docs&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;What is Angular?&lt;/a&gt;&lt;/cite&gt;&lt;/footer&gt;&lt;/blockquote&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="框架学习" scheme="http://blog.mastershu.club/categories/%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="前端框架" scheme="http://blog.mastershu.club/categories/%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/"/>
+    
+      <category term="Angular" scheme="http://blog.mastershu.club/categories/%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A0/%E5%89%8D%E7%AB%AF%E6%A1%86%E6%9E%B6/Angular/"/>
+    
+    
+      <category term="Angular" scheme="http://blog.mastershu.club/tags/Angular/"/>
+    
+      <category term="JavaScript" scheme="http://blog.mastershu.club/tags/JavaScript/"/>
+    
+      <category term="Node" scheme="http://blog.mastershu.club/tags/Node/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>初探 React</title>
+    <link href="http://blog.mastershu.club/blog/94177a20.html/"/>
+    <id>http://blog.mastershu.club/blog/94177a20.html/</id>
+    <published>2018-07-04T02:18:22.909Z</published>
+    <updated>2018-07-04T02:18:22.909Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;React-的初探&quot;&gt;&lt;a href=&quot;#React-的初探&quot; class=&quot;headerlink&quot; title=&quot;React 的初探&quot;&gt;&lt;/a&gt;React 的初探&lt;/h1&gt;&lt;p&gt;React 一个由 &lt;code&gt;FaceBook&lt;/code&gt; 出品的
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jekyll 玩不转</title>
+    <link href="http://blog.mastershu.club/blog/c7c14466.html/"/>
+    <id>http://blog.mastershu.club/blog/c7c14466.html/</id>
+    <published>2018-07-04T02:18:22.909Z</published>
+    <updated>2018-07-04T02:18:22.909Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;玩转玩不转的jekyll&quot;&gt;&lt;a href=&quot;#玩转玩不转的jekyll&quot; class=&quot;headerlink&quot; title=&quot;玩转玩不转的jekyll&quot;&gt;&lt;/a&gt;玩转玩不转的jekyll&lt;/h1&gt;&lt;p&gt;因为 &lt;code&gt;github pages&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+      <category term="建站系统" scheme="http://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="博客" scheme="http://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="玩不转" scheme="http://blog.mastershu.club/tags/%E7%8E%A9%E4%B8%8D%E8%BD%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RegEx 正则表达式 玩不转</title>
+    <link href="http://blog.mastershu.club/blog/b9975ef4.html/"/>
+    <id>http://blog.mastershu.club/blog/b9975ef4.html/</id>
+    <published>2018-01-09T08:10:25.000Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;玩转玩不转的正则&quot;&gt;&lt;a href=&quot;#玩转玩不转的正则&quot; class=&quot;headerlink&quot; title=&quot;玩转玩不转的正则&quot;&gt;&lt;/a&gt;玩转玩不转的正则&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FEE前端探索交流会</title>
+    <link href="http://blog.mastershu.club/blog/c748d68a.html/"/>
+    <id>http://blog.mastershu.club/blog/c748d68a.html/</id>
+    <published>2017-12-11T01:54:51.000Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;开始你的表演&quot;&gt;&lt;a href=&quot;#开始你的表演&quot; class=&quot;headerlink&quot; title=&quot;开始你的表演&quot;&gt;&lt;/a&gt;开始你的表演&lt;/h1&gt;&lt;p&gt;这是一场关于 &lt;code&gt;AR&lt;/code&gt; 发展的基础讲说和 &lt;code&gt;iview&lt;/code&gt; 相关的一些说明.&lt;/p&gt;
+&lt;h1 id=&quot;WEBAR&quot;&gt;&lt;a href=&quot;#WEBAR&quot; class=&quot;headerlink&quot; title=&quot;WEBAR&quot;&gt;&lt;/a&gt;WEBAR&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;识别&amp;amp;跟踪&lt;/li&gt;
+&lt;li&gt;模型开发&lt;/li&gt;
+&lt;li&gt;终端适配&lt;/li&gt;
+&lt;li&gt;模型渲染&lt;ul&gt;
+&lt;li&gt;three.js&lt;/li&gt;
+&lt;li&gt;webrt
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 玩不转</title>
+    <link href="http://blog.mastershu.club/blog/64460.html/"/>
+    <id>http://blog.mastershu.club/blog/64460.html/</id>
+    <published>2017-12-05T03:00:57.000Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;玩转玩不转的-Markdown&quot;&gt;&lt;a href=&quot;#玩转玩不转的-Markdown&quot; class=&quot;headerlink&quot; title=&quot;玩转玩不转的 Markdown&quot;&gt;&lt;/a&gt;玩转玩不转的 Markdown&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 玩不转</title>
+    <link href="http://blog.mastershu.club/blog/4fce4897.html/"/>
+    <id>http://blog.mastershu.club/blog/4fce4897.html/</id>
+    <published>2017-12-02T06:14:06.000Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;玩转玩不转的Hexo&quot;&gt;&lt;a href=&quot;#玩转玩不转的Hexo&quot; class=&quot;headerlink&quot; title=&quot;玩转玩不转的Hexo&quot;&gt;&lt;/a&gt;玩转玩不转的&lt;code&gt;Hexo&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本文即是在 &lt;code&gt;Next&lt;/code&gt; 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;这儿是配置必要的环境, 已经配置好的请跳过
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="建站系统" scheme="http://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="博客" scheme="http://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="玩不转" scheme="http://blog.mastershu.club/tags/%E7%8E%A9%E4%B8%8D%E8%BD%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub Pages 玩不转</title>
+    <link href="http://blog.mastershu.club/blog/52725.html/"/>
+    <id>http://blog.mastershu.club/blog/52725.html/</id>
+    <published>2017-12-02T03:32:37.000Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h1 id=&quot;玩不转的GitHub-Pages&quot;&gt;&lt;a href=&quot;#玩不转的GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;玩不转的GitHub Pages&quot;&gt;&lt;/a&gt;玩不转的&lt;code&gt;GitHub Pages&lt;/code&gt;&lt;/h1&gt;&lt;/blockquote&gt;
+&lt;p&gt; 玩转玩不转, 就是把免费的博客搞起来. 非高端教程 ^_^&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt; 你所需要的环境&lt;/p&gt;
+&lt;h3 id=&quot;GitHub&quot;&gt;&lt;a href=&quot;#GitHub&quot; class=&quot;headerlink&quot; title=&quot;GitHub&quot;&gt;&lt;/a&gt;GitHub&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;首先的申请一个账号&lt;code&gt;GitHub&lt;/code&gt; &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;登录后, 创建一个新的仓库,并且以 &lt;code&gt;username.github.io&lt;/code&gt; 为仓库名, 这儿的username是你自己的&lt;code&gt;GihtHub&lt;/code&gt; 账号名 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Node&quot;&gt;&lt;a href=&quot;#Node&quot; class=&quot;headerlink&quot; title=&quot;Node&quot;&gt;&lt;/a&gt;Node&lt;/h3&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bat Windows 脚本的编写</title>
+    <link href="http://blog.mastershu.club/blog/59564.html/"/>
+    <id>http://blog.mastershu.club/blog/59564.html/</id>
+    <published>2017-12-02T01:36:57.000Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;BAT-脚本编写指南&quot;&gt;&lt;a href=&quot;#BAT-脚本编写指南&quot; class=&quot;headerlink&quot; title=&quot;BAT 脚本编写指南&quot;&gt;&lt;/a&gt;BAT 脚本编写指南&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!&lt;br&gt;BAT 脚本编码使用 &lt;code&gt;GB 2312&lt;/code&gt; 简体中文, 使用 &lt;code&gt;UTF-8&lt;/code&gt;后竟然乱码报错,没细究, 使用就对了^_^&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;常用指令&quot;&gt;&lt;a href=&quot;#常用指令&quot; class=&quot;headerlink&quot; title=&quot;常用指令&quot;&gt;&lt;/a&gt;常用指令&lt;/h2&gt;&lt;h3 id=&quot;显示&quot;&gt;&lt;a href=&quot;#显示&quot; class=&quot;headerlink&quot; title=&quot;显示&quot;&gt;&lt;/a&gt;显示&lt;/h3&gt;&lt;p&gt;&lt;code&gt;echo&lt;/code&gt; 表示显示此命令后的字符&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>frist article</title>
+    <link href="http://blog.mastershu.club/blog/52109.html/"/>
+    <id>http://blog.mastershu.club/blog/52109.html/</id>
+    <published>2017-12-01T03:37:23.000Z</published>
+    <updated>2018-07-04T02:18:22.919Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;My-First-Article&quot;&gt;&lt;a href=&quot;#My-First-Article&quot; class=&quot;headerlink&quot; title=&quot;My First Article&quot;&gt;&lt;/a&gt;My First Article&lt;/h1&gt;&lt;p&gt;I don’t know
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://blog.mastershu.club/blog/16107.html/"/>
+    <id>http://blog.mastershu.club/blog/16107.html/</id>
+    <published>2017-11-28T03:37:23.000Z</published>
+    <updated>2018-07-04T06:26:52.211Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>

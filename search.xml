@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[ARTS_27]]></title>
+    <url>%2Fblog%2F185059fb.html%2F</url>
+    <content type="text"><![CDATA[2018 27th weekAlgorithmReviewTipShare]]></content>
+      <categories>
+        <category>分享</category>
+        <category>arts</category>
+      </categories>
+      <tags>
+        <tag>ARTS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[学习前端自动化构建]]></title>
+    <url>%2Fblog%2Fe4c4f4af.html%2F</url>
+    <content type="text"><![CDATA[理论与需求java 的构建工具说明 ant 第一代,用配置来自动构建编译 maven 第二代, 用来自动加载依赖和配置 gradle 使用 groovy 语言构建脚本, 现代构建工具, 自动优选 而前端在很长一部分时间是简单粗暴的使用, 并没有所谓的构建工具, 而构建工具的流行, 也是最近几年, 而且在一些公司, 依然是简单粗暴的配置, 和编写 HTML 代码, 而构建工具的方便想分享给所有人使用. JavaScript 的构建BrowserifyBrowserify个人人为比较小巧一点儿, 相比 webpack 要自己定义打包配置, 但是却更灵巧和源码研读 更多关于 browserify 请点击 传送门 安装 browserify首先需要安装 node 1npm install -g browserify 使用 browserify1browserify main.js &gt; bundle.js 在 HTML 代码中 1&lt;script src="bundle.js"&gt;&lt;/script&gt; gulp自动化构建工具 安装 gulp 1npm install gulp-cli -g 正常情况下, 你更需要作为项目的开发依赖安装 1npm install --save-dev gulp 使用 gulp在项目根目录下创建一个名为 gulpfile.js 的文件： 12345var gulp = require('gulp');gulp.task('default', function() &#123; // 将你的默认的任务代码放在这&#125;); 运行 gulp 1gulp 此时默认的名为 default 的任务（task）将会被运行 想要单独执行特定的任务（task），请输入 gulp &lt;task&gt; &lt;othertask&gt; 。 自动化构建RollupCSS 构建]]></content>
+      <categories>
+        <category>工具库</category>
+        <category>构建工具</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>慕课</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初探 Angular]]></title>
+    <url>%2Fblog%2F72960925.html%2F</url>
+    <content type="text"><![CDATA[Angular 的初探一直收到论坛和其他文章的影响, 觉得 Angular 学习曲线很陡, 不适合新手入门, 而且很重, 性能不好. 这些都是道听途说, 不一定是什么样的, 所以本人想亲自试一下! 参考教程中文官网 传送门 Quick Start来看看官方是如何介绍的Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop angular.cnWhat is Angular? 准备工作 Node 环境 安装脚手架工具 npm install -g @angular/cli Hello Angular国内的镜像还是蛮有用的, 让我们设置一下吧 1ng set --global packageManager=cnpm 新建项目 1ng new &lt;project&gt; 土包子长见识了, new 之后会自动执行, npm install 所以, 各位最好是先执行全局设置 cnpm 运行服务器 1ng serve --open 好了, 已经可以看到我们的网站了, 那么让我们写下第一行代码. 在项目的 src 目录下面, app 这个代码目录下, Angular 会自动创建一个 app-root 的组件, 在app.component.ts修改为: 123export class AppComponent &#123; title = 'Angular';&#125; 再次回到网页, 就会看到 Welcome to Angular! 你已经能用 angular 了 ToDoList让我们使用 Angular 实现我们的第一个功能吧 安装 UI 组件库这里推荐一款比较喜欢的组件库 Element , 可能你会说这个不是 Vue 的吗, 嘿嘿 传送门 1# npm i -S element-angular 引入 UI 库1234567891011// in /src/app/app.module.ts// add code:// improt element moduleimport &#123; ElModule &#125; from 'element-angular'// 并且在 imports 中添加引入 imports: [ BrowserModule, ElModule.forRoot(), // 新增引入 ], 12345// in /src/styles.css// add code:/* You can add global styles to this file, and also import other style files */@import "~element-angular/theme/index.css"; 路由##]]></content>
+      <categories>
+        <category>框架学习</category>
+        <category>前端框架</category>
+        <category>Angular</category>
+      </categories>
+      <tags>
+        <tag>Angular</tag>
+        <tag>JavaScript</tag>
+        <tag>Node</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[初探 React]]></title>
+    <url>%2Fblog%2F94177a20.html%2F</url>
+    <content type="text"><![CDATA[React 的初探React 一个由 FaceBook 出品的 JavaScript 框架. 作为目前前端框架三巨头之一, 由于前段时间的开源协议问题, 现在已经更新了协议, 那就让我们来了解一下 React Quick Start准备工作 Node 环境 安装脚手架工具 npm i -g create-react-app 另一个选择, node 的最新长期 LTS 版本已经到 8.9.1 了, React 就给了我们另外一个选择 npx npx create-react-app &lt;project&gt; 指令来初始化项目 但是 npx 要钱 npm 5.2.0+ 所以我的示例依然使用第一种来创建. 这个的采用由个人喜好 Hello React首先新建项目 1create-react-app &lt;project&gt; 然后进入项目目录,启动初始化的项目 1npm start 现在, 你已经看到新建立的网站了, 地址是 http://localhost:3000/ 接下来就是重头戏了, 打开项目目录, 在源码目录 src 下面找到 App.js 这个就是首页展示的内容 更改你的需要, 把 Welcome to React 改为 Hello React, 再次回到浏览器页面. Hello React 你已经很棒了. ToDoList按照惯例, 第一个实现的简单的功能就是 ToDoList 了 安装 UI 组件库这里推荐一款比较喜欢的组件库 Element , 可能你会说这个不是 Vue 的吗, 嘿嘿 传送门 引入 UI 库安装 1npm i element-react -S 这个还需主题包 1npm i element-theme-default -S]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[jekyll 玩不转]]></title>
+    <url>%2Fblog%2Fc7c14466.html%2F</url>
+    <content type="text"><![CDATA[玩转玩不转的jekyll因为 github pages]]></content>
+      <categories>
+        <category>建站系统</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>玩不转</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[RegEx 正则表达式 玩不转]]></title>
+    <url>%2Fblog%2Fb9975ef4.html%2F</url>
+    <content type="text"><![CDATA[玩转玩不转的正则1A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids. 正则表达式推荐几个在线的正则表达式测试以及常用规则 传送门 | 传送门II | 在线工具类 学习类参考 传送门 普通字符普通字符包括没有显式指定为元字符的所有可打印和不可打印字符。这包括所有大写和小写字母、所有数字、所有标点符号和一些其他符号。 特殊字符 特别字符 描述 $ 匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 ‘\n’ 或 ‘\r’。要匹配 $ 字符本身，请使用 \$。 ( ) 标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。 * 匹配前面的子表达式零次或多次。要匹配 字符，请使用 \。 + 匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 +。 . 匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。 [ 标记一个中括号表达式的开始。要匹配 [，请使用 [。 ? 匹配前面的子表达式零次或一次，或指明一个非贪婪限定符。要匹配 ? 字符，请使用 \?。 \ 将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。例如， ‘n’ 匹配字符 ‘n’。’\n’ 匹配换行符。序列 ‘\‘ 匹配 “\”，而 ‘(‘ 则匹配 “(“。 ^ 匹配输入字符串的开始位置，除非在方括号表达式中使用，此时它表示不接受该字符集合。要匹配 ^ 字符本身，请使用 \^。 { 标记限定符表达式的开始。要匹配 {，请使用 {。 指明两项之间的一个选择。要匹配 ，请使用 \ 。 非打印字符 字符 描述 \cx 匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 ‘c’ 字符。 \f 匹配一个换页符。等价于 \x0c 和 \cL。 \n 匹配一个换行符。等价于 \x0a 和 \cJ。 \r 匹配一个回车符。等价于 \x0d 和 \cM。 \s 匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。 \S 匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。 \t 匹配一个制表符。等价于 \x09 和 \cI。 \v 匹配一个垂直制表符。等价于 \x0b 和 \cK。 \w 匹配一个单字字符（字母、数字或者下划线）。等价于[A-Za-z0-9_]。例如, /\w/ 匹配 “apple,” 中的 ‘a’，”$5.28,”中的 ‘5’ 和 “3D.” 中的 ‘3’。 \W 匹配一个非单字字符。等价于[^A-Za-z0-9]。例如, /\W/ 或者 /[^A-Za-z0-9]/ 匹配 “50%.” 中的 ‘%’。 限定符 字符 描述 * 匹配前面的子表达式零次或多次。例如，zo 能匹配 “z” 以及 “zoo”。 等价于{0,}。 + 匹配前面的子表达式一次或多次。例如，’zo+’ 能匹配 “zo” 以及 “zoo”，但不能匹配 “z”。+ 等价于 {1,}。 ? 匹配前面的子表达式零次或一次。例如，”do(es)?” 可以匹配 “do” 、 “does” 中的 “does” 、 “doxy” 中的 “do” 。? 等价于 {0,1}。 {n} n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。 {n,} n 是一个非负整数。至少匹配n 次。例如，’o{2,}’ 不能匹配 “Bob” 中的 ‘o’，但能匹配 “foooood” 中的所有 o。’o{1,}’ 等价于 ‘o+’。’o{0,}’ 则等价于 ‘o*’。 {n,m} m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。例如，”o{1,3}” 将匹配 “fooooood” 中的前三个 o。’o{0,1}’ 等价于 ‘o?’。请注意在逗号和两个数之间不能有空格。 *、+限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个?就可以实现非贪婪或最小匹配 定位符 字符 描述 ^ 匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。 $ 匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与 \n 或 \r 之前的位置匹配。 \b 匹配一个字边界，即字与空格间的位置。 \B 非字边界匹配。]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[FEE前端探索交流会]]></title>
+    <url>%2Fblog%2Fc748d68a.html%2F</url>
+    <content type="text"><![CDATA[开始你的表演这是一场关于 AR 发展的基础讲说和 iview 相关的一些说明. WEBAR 识别&amp;跟踪 模型开发 终端适配 模型渲染 three.js webrt AR.JS three.js 60fps 高效 基于 web 纯粹的浏览器支持 PAT 识别 NFT 识别 AR.JS 与 Mapbox 结合 artoolkitemscriptGoogle ARwebARonARCoreAndroid 实验性 Three.ar.jswebARonARkitios 实验性 继续编这次交流会因为时间的缘故, 并没有参加完. 不过 iview 作者也给出了关于 style 样式的修改意见, 通过全局修改样式, 并没有其他好的办法. ^_^]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown 玩不转]]></title>
+    <url>%2Fblog%2F64460.html%2F</url>
+    <content type="text"><![CDATA[玩转玩不转的 MarkdownMarkdown Style Guide 风格指南参考]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo 玩不转]]></title>
+    <url>%2Fblog%2F4fce4897.html%2F</url>
+    <content type="text"><![CDATA[玩转玩不转的Hexo官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考官网 本文即是在 Next 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明 准备工作这儿是配置必要的环境, 已经配置好的请跳过 Node Windows 下直接去官网 下载 安装完成后使用命令 node -v 检测是否安装成功 Hexo Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 在node 装好后, 使用命令 npm install hexo-cli -g 安装 hexo脚手架工具 更多指导跳官网 文章链接永久化 安装依赖 1npm i hexo-abbrlink -S 配置Permalink 1permalink: blog/:abbrlink/ - 此处的blog可换成任意你喜欢的目录 添加配置 123456789# abbrlink configabbrlink:alg: crc32 # 算法：crc16(default) and crc32rep: hex # 进制：dec(default) and hex可选择的算法:crc16 &amp; hexcrc16 &amp; deccrc32 &amp; hexcrc32 &amp; dec Next 主题本人仅选择一个主题作为介绍, 其他主题的用法或者功能或有不同, 不过可以参考和类推 自制主题 Next 主题 Quick Start12cd your-hexo-sitegit clone https://github.com/iissnan/hexo-theme-next themes/next next主题集成gitment评论系统当然Next主题中也包含了很多主题, 习惯了github的邮箱推送, 可能其他评论系统也有, 请自行发掘这个评论主要是把评论放到github的issues系统里. 注册Oauth点击注册 Authorization callback URL 就是你要申请登录的网站 修改配置 next 主题配置 _config.yml 添加 123456789# Gitment# Introduction: https://imsun.net/posts/gitment-introduction/gitment: enable: true githubID: yourid repo: yourrepo ClientID: yourid ClientSecret: yoursecret lazy: true 主题next目录下 languages/en.yml 添加 1gitmentbutton: Show comments from Gitment 主题next目录下 languages/zh-Hans.yml增加: 1gitmentbutton: 显示 Gitment 评论 添加gitment评论判断在layout/_partials/comments.swig 12&#123;% elseif theme.changyan.appid and theme.changyan.appkey %&#125; &lt;div id="SOHUCS"&gt;&lt;/div&gt; 下新增 1234567&#123;% elseif theme.gitment.enable %&#125; &#123;% if theme.gitment.lazy %&#125; &lt;div onclick="ShowGitment()" id="gitment-display-button"&gt;&#123;&#123; __('gitmentbutton') &#125;&#125;&lt;/div&gt; &lt;div id="gitment-container" style="display:none"&gt;&lt;/div&gt; &#123;% else %&#125; &lt;div id="gitment-container"&gt;&lt;/div&gt; &#123;% endif %&#125; 添加gitment显示文件在layout/_third-party/comments/目录下中添加文件gitment.swig并且引入在layout/_third-party/comments/index.swig文件中引入 include &#39;gitment.swig&#39; 12345678910111213141516171819202122232425262728293031323334353637&#123;% if theme.gitment.enable %&#125; &#123;% set owner = theme.gitment.githubID %&#125; &#123;% set repo = theme.gitment.repo %&#125; &#123;% set cid = theme.gitment.ClientID %&#125; &#123;% set cs = theme.gitment.ClientSecret %&#125; &lt;link rel=&quot;stylesheet&quot; href=&quot;https://imsun.github.io/gitment/style/default.css&quot;&gt; &lt;script src=&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&gt;&lt;/script&gt; &#123;% if not theme.gitment.lazy %&#125; &lt;script type=&quot;text/javascript&quot;&gt; var gitment = new Gitment(&#123; id: window.location.pathname, owner: &apos;&#123;&#123;owner&#125;&#125;&apos;, repo: &apos;&#123;&#123;repo&#125;&#125;&apos;, oauth: &#123; client_id: &apos;&#123;&#123;cid&#125;&#125;&apos;, client_secret: &apos;&#123;&#123;cs&#125;&#125;&apos;, &#125;&#125;); gitment.render(&apos;gitment-container&apos;); &lt;/script&gt; &#123;% else %&#125; &lt;script type=&quot;text/javascript&quot;&gt; function ShowGitment()&#123; document.getElementById(&quot;gitment-display-button&quot;).style.display = &quot;none&quot;; document.getElementById(&quot;gitment-container&quot;).style.display = &quot;block&quot;; var gitment = new Gitment(&#123; id: document.location.href, owner: &apos;&#123;&#123;owner&#125;&#125;&apos;, repo: &apos;&#123;&#123;repo&#125;&#125;&apos;, oauth: &#123; client_id: &apos;&#123;&#123;cid&#125;&#125;&apos;, client_secret: &apos;&#123;&#123;cs&#125;&#125;&apos;, &#125;&#125;); gitment.render(&apos;gitment-container&apos;); &#125; &lt;/script&gt; &#123;% endif %&#125;&#123;% endif %&#125; 添加gitment样式在主题目录下 source/css/_common/components/third-party/ 下添加gitment.styl文件并且在 source/css/_common/components/third-party/third-party.styl 下引入 @import &quot;gitment&quot;; 12345678910111213#gitment-display-button&#123; display: inline-block; padding: 0 15px; color: #0a9caf; cursor: pointer; font-size: 14px; border: 1px solid #0a9caf; border-radius: 4px; &#125; #gitment-display-button:hover&#123; color: #fff; background: #0a9caf; &#125; 迁移 迁移操作很简单, 更多详见 官方指南 目标: Jekyll 操作: 把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，并在 _config.yml 中修改 new_post_name 参数。new_post_name: :year-:month-:day-:title.md 标签与分类创建页面 标签与分类, 是为了更好的规整文档, 本段是配合next主题使用的 123cd your-hexo-site hexo new page tags # 创建标签页面hexo new page categories # 创建分类页面 修改页面类型分别在刚才添加的分类和标签页面 添加type 以及 comments 评论功能关闭 12345678910111213---title: categoriesdate: 2017-12-05 11:38:23type: "categories"comments: false------title: categoriesdate: 2017-12-05 11:38:23type: "tags"comments: false--- 修改配置文件修改菜单显示 在主题的配置文件 _config.yml 中添加标签和分类 12345menu: home: / archives: /archives/ tags: /tags/ categories: /categories/ 使用标签和分类在新建的文章中,添加tags 以及 categories即可. 示例: 123456789---title: Hexo 玩不转abbrlink: 4fce4897date: 2017-12-02 14:14:06tags: - 玩不转category: - 实践先锋--- Tag Plugins 标签插件 标签插件是用于在文章中快速插入特定内容的插件。 Quote 引用块 这儿只做简单示例, 更多使用请查看官网 123&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;content&#123;% endblockquote %&#125; 例如: 123&#123;% blockquote Hexo https://hexo.io/news/ Hexo 3.2 Released %&#125;It has been a long time that Hexo is poor at handling large website. (#710, #1124, #283, #1187, #550, #1769, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.&#123;% endblockquote %&#125; 显示效果 It has been a long time that Hexo is poor at handling large website. (#710, #1124, #283, #1187, #550, #1769, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2. HexoHexo 3.2 Released 资源与数据 这段主要讨论的是如何合理的使用资源和数据, 我会列出 Hexo 官方的做法, 以及个人的想法 资源文件夹基本加载方式最简单的方法就是将它们放在 source/images 文件夹中。然后通过类似于 ![](/images/image.jpg) 的方法访问它们。 相对路径引用的标签插件 修改配置文件_config.ymlpost_asset_folder: true 相对路径引用标签 1正确的引用图片方式是使用标签插件而不是 markdown 以上是官网给的回答, 个人认为Markdown的比较简单好用, 而且学习一个新的标签语法用来写博客也会增加学习成本. (毕竟就只是写个博客而已^_^) 数据文件夹 Hexo 3.0 新增的「数据文件」功能。此功能会载入 source/_data 内的 YAML 或 JSON 文件. 举例来说，在 source/_data 文件夹中新建 menu.yml 文件： 123Home: /Tags: /tags/Archives: /archives/ 您就能在模板中使用这些资料： 123&lt;% for (var link in site.data.menu) &#123; %&gt; &lt;a href=&quot;&lt;%= site.data.menu[link] %&gt;&quot;&gt; &lt;%= link %&gt; &lt;/a&gt;&lt;% &#125; %&gt; 渲染结果如下 : 123&lt;a href=&quot;/&quot;&gt; Home &lt;/a&gt;&lt;a href=&quot;/tags/&quot;&gt; Tags &lt;/a&gt;&lt;a href=&quot;/archives/&quot;&gt; Archives &lt;/a&gt; 草稿与推送Hexo 的一种特殊布局 Draft 草稿, 是保存在 source/_drafts 目录下, 草稿默认不会显示在页面中, 这就方便了我们编写, 不会把半成品推上去 ^_^ 操作指令新建草稿文本 1hexo new draft &lt;title&gt; 发布草稿文本 1hexo publish [layout] &lt;title&gt; 预览设置为了方便调试, 你可以修改该配置来预览草稿 1render_drafts: true]]></content>
+      <categories>
+        <category>建站系统</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>玩不转</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[GitHub Pages 玩不转]]></title>
+    <url>%2Fblog%2F52725.html%2F</url>
+    <content type="text"><![CDATA[玩不转的GitHub Pages 玩转玩不转, 就是把免费的博客搞起来. 非高端教程 ^_^ 准备工作 你所需要的环境 GitHub 首先的申请一个账号GitHub 传送门 登录后, 创建一个新的仓库,并且以 username.github.io 为仓库名, 这儿的username是你自己的GihtHub 账号名 Node Windows 下直接去官网 下载 安装完成后使用命令 node -v 检测是否安装成功 Hexo Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 在node 装好后, 使用命令 npm install hexo-cli -g 安装 hexo脚手架工具 更多指导跳官网 看到你的 Hello World 首先把 username.github.io 这个版本 clone 到本地 然后在 cd username.github.io 进入该版本库 创建一个名为 hexo 的分支 git checkout -b hexo 创建 Hexo 项目 hexo init 安装依赖 npm i 修改配置信息 _config.yml 修改网站的 title 之类 , 详细参考Hexo 玩不转 主要是填写 版本库的地址1234deploy: type: git repo: https://github.com/MasterShu/mastershu.github.io.git - 这儿填写你自己的地址 branch: master 上传 GitHub 安装依赖 npm install hexo-deployer-git --save 执行上传, 上传过程中可能需要输入你自己的 GitHub 账号密码 123hexo cleanhexo generatehexo deploy 然后访问 http://username.github.io 就可以看到自己的博客了 免费的博客进行的这一步, 其实已经完成了自己的 `GitHub Pages` 的主要操作了, 对于SEO之类的, 反正我不是很懂, 就是为了 装*, 接下来, 就是配置自己的域名访问 首先的注册一个域名, 阿里云, 腾讯云之类的都可以, 不打广告 就行域名解析, 获取要解析的域名IP ping username.github.io 获取你的自己的IP 解析一个二级域名到该IP blog 配置 GItHub 上的自定义 Custom domain ,输入自己刚才解析的 blog.userdomain.name , 在版本的 setting 下 至此, 一个免费的博客就完成了, 可以通过你自己的域名访问的博客]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[bat Windows 脚本的编写]]></title>
+    <url>%2Fblog%2F59564.html%2F</url>
+    <content type="text"><![CDATA[BAT 脚本编写指南 由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!BAT 脚本编码使用 GB 2312 简体中文, 使用 UTF-8后竟然乱码报错,没细究, 使用就对了^_^ 常用指令显示echo 表示显示此命令后的字符 echo off 表示在此语句后所有运行的命令都不显示命令行本身 @ 与 echo off相象，但它是加在每个命令行的最前面，表示运行时不显示这一行的命令行（只能影响当前行）。 调用call 调用另一个批处理文件（如果不用call而直接调用别的批处理文件，那么执行完那个批处理文件后将无法返回当前文件并执行当前文件的后续命令）。 暂停pause 运行此句会暂停批处理的执行并在屏幕上显示Press any key to continue...的提示，等待用户按任意键后继续 注释rem 表示此命令后的字符为解释行（注释），不执行，只是给自己今后参考用的（相当于程序中的注释）。 当然,我们还可以使用 :: 来代替 rem 目录操作创建目录12MKDIR # 全拼MD # 简写 创建单个文件夹 格式：MD [路径\]目录 示例: md &quot;C:\Documents and Settings\Master^ Shu&quot; 同时创建多个目录 格式: MD [路径\]目录1 [路径\]目录2 [路径\]目录3…… 示例: md abc D:\Dcouments\123 qwe 在当前目录下建立abc和qwe两个目录,同时D:\gmae下也建立一个目录123。 创建多级目录 格式: MD [路径\]目录1\目录2\目录3\… 示例: md d:\abc\abcd\abcde 在 d 盘下 创建目录 abd ,在abc 下创建 abcd … 删除目录12345RMDIR [/S] [/Q] [drive:]pathRD [/S] [/Q] [drive:]path /S 除目录本身外，还将删除指定目录下的所有子目录和 文件。用于删除目录树。 /Q 安静模式，带 /S 删除目录树时不要求确认 示例: rd /s /q d:\abc 不用确认删除 abc 目录树, 即 abc以及abc中的内容,示例: rd /s d:\abc 需要用户确认方可删除 abc 目录树, 即 abc以及abc中的内容,示例: rd d:\abc 删除 abc 空目录, 即 abc中有内容不是空目录时无法删除, 重命名OSQL 一个SQL Ssever 的命令行工具注意: osql 并不支持 SQL Server 的所有功能。请使用 sqlcmd。有关详细信息，请参阅 SQL Server 联机丛书。用法: osql [-U 登录 ID] [-P 密码] [-S 服务器] [-H 主机名] [-E 可信连接] [-d 使用数据库名称] [-l 登录超时值] [-t 查询超时值] [-h 标题] [-s 列分隔符] [-w 列宽] [-a 数据包大小] [-e 回显输入] [-I 允许带引号的标识符] [-L 列出服务器] [-c 命令结束] [-D ODBC DSN 名称] [-q “命令行查询”] [-Q “命令行查询” 并退出] [-n 删除编号方式] [-m 错误级别] [-r 发送到 stderr 的消息] [-V 严重级别] [-i 输入文件] [-o 输出文件] [-p 打印统计信息] [-b 出错时中止批处理] [-X[1] 禁用命令，[退出的同时显示警告]] [-O 使用旧 ISQL 行为禁用下列项] 批处理 自动调整控制台宽度 宽消息 默认错误级别为 -1 和 1 [-? 显示语法摘要] 常用的主要是-E 可信连接-S 服务器ip-d 数据库名称-U 连接用户名-P 用户的密码-i 执行的sql文件-o sql语句输出的结果文件]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[frist article]]></title>
+    <url>%2Fblog%2F52109.html%2F</url>
+    <content type="text"><![CDATA[My First ArticleI don’t know say what, it just for test article! means hello.]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fblog%2F16107.html%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>

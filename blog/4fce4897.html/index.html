@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="玩转玩不转的Hexo官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考官网 本文即是在 Next 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明 准备工作这儿是配置必要的环境, 已经配置好的请跳过">
+<meta name="keywords" content="玩不转">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 玩不转">
+<meta property="og:url" content="http://blog.mastershu.club/blog/4fce4897.html/index.html">
+<meta property="og:site_name" content="MasterShu">
+<meta property="og:description" content="玩转玩不转的Hexo官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考官网 本文即是在 Next 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明 准备工作这儿是配置必要的环境, 已经配置好的请跳过">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-07-04T02:18:22.919Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo 玩不转">
+<meta name="twitter:description" content="玩转玩不转的Hexo官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考官网 本文即是在 Next 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明 准备工作这儿是配置必要的环境, 已经配置好的请跳过">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="MasterShu" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://blog.mastershu.club/blog/4fce4897.html/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Hexo 玩不转 | MasterShu</title>
+  
+
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?dd38fa8ae1d7926694625e125ad07d5a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">MasterShu</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <h1 class="site-subtitle" itemprop="description">JUST DO BEST</h1>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签<span class="badge">7</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类<span class="badge">9</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档<span class="badge">13</span></a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-commonweal">
+    <a href="/404/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />公益 404</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://blog.mastershu.club/blog/4fce4897.html/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="MasterShu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://i.loli.net/2017/12/05/5a2666ea0c1b2.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="MasterShu">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Hexo 玩不转
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2017-12-02 14:14:06" itemprop="dateCreated datePublished" datetime="2017-12-02T14:14:06+08:00">2017-12-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-07-04 10:18:22" itemprop="dateModified" datetime="2018-07-04T10:18:22+08:00">2018-07-04</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/建站系统/" itemprop="url" rel="index"><span itemprop="name">建站系统</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/建站系统/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/blog/4fce4897.html/" class="leancloud_visitors" data-flag-title="Hexo 玩不转">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数：</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="玩转玩不转的Hexo"><a href="#玩转玩不转的Hexo" class="headerlink" title="玩转玩不转的Hexo"></a>玩转玩不转的<code>Hexo</code></h2><p>官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考<a href="https://hexo.io/" target="_blank" rel="noopener">官网</a></p>
+<p>本文即是在 <code>Next</code> 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><pre><code>这儿是配置必要的环境, 已经配置好的请跳过
+</code></pre><a id="more"></a>
+<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><ul>
+<li><p>Windows 下直接去官网 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载</a></p>
+</li>
+<li><p>安装完成后使用命令 <code>node -v</code> 检测是否安装成功</p>
+</li>
+</ul>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<ul>
+<li>在node 装好后, 使用命令 <code>npm install hexo-cli -g</code> 安装 hexo脚手架工具</li>
+<li>更多指导跳<a href="https://hexo.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h2 id="文章链接永久化"><a href="#文章链接永久化" class="headerlink" title="文章链接永久化"></a>文章链接永久化</h2><ul>
+<li><p>安装依赖</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-abbrlink -S</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置<code>Permalink</code></p>
+  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">blog/:abbrlink/</span>  <span class="bullet">-</span> <span class="string">此处的blog可换成任意你喜欢的目录</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加配置</p>
+  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># abbrlink config</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line"><span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line"><span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"><span class="string">可选择的算法:</span></span><br><span class="line"><span class="string">crc16</span> <span class="string">&amp;</span> <span class="string">hex</span></span><br><span class="line"><span class="string">crc16</span> <span class="string">&amp;</span> <span class="string">dec</span></span><br><span class="line"><span class="string">crc32</span> <span class="string">&amp;</span> <span class="string">hex</span></span><br><span class="line"><span class="string">crc32</span> <span class="string">&amp;</span> <span class="string">dec</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="Next-主题"><a href="#Next-主题" class="headerlink" title="Next 主题"></a>Next 主题</h2><p>本人仅选择一个主题作为介绍, 其他主题的用法或者功能或有不同, 不过可以参考和类推 <a href="https://hexo.io/zh-cn/docs/themes.html" target="_blank" rel="noopener">自制主题</a> <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next 主题</a></p>
+<h3 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd your-hexo-site</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+<h3 id="next主题集成gitment评论系统"><a href="#next主题集成gitment评论系统" class="headerlink" title="next主题集成gitment评论系统"></a>next主题集成gitment评论系统</h3><p>当然<code>Next</code>主题中也包含了很多主题, 习惯了github的邮箱推送, 可能其他评论系统也有,  请自行<a href="">发掘</a><br>这个评论主要是把评论放到github的issues系统里.</p>
+<h4 id="注册Oauth"><a href="#注册Oauth" class="headerlink" title="注册Oauth"></a>注册Oauth</h4><p><a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">点击注册</a>  <code>Authorization callback URL</code> 就是你要申请登录的网站</p>
+<h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><ul>
+<li><code>next</code> 主题配置 <code>_config.yml</code> 添加</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Gitment</span></span><br><span class="line"><span class="comment"># Introduction: https://imsun.net/posts/gitment-introduction/</span></span><br><span class="line"><span class="attr">gitment:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    githubID:</span> <span class="string">yourid</span></span><br><span class="line"><span class="attr">    repo:</span> <span class="string">yourrepo</span></span><br><span class="line"><span class="attr">    ClientID:</span> <span class="string">yourid</span></span><br><span class="line"><span class="attr">    ClientSecret:</span> <span class="string">yoursecret</span></span><br><span class="line"><span class="attr">    lazy:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>主题<code>next</code>目录下 <code>languages/en.yml</code> 添加</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitmentbutton:</span> <span class="string">Show</span> <span class="string">comments</span> <span class="string">from</span> <span class="string">Gitment</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>主题<code>next</code>目录下 <code>languages/zh-Hans.yml</code>增加:</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitmentbutton:</span> <span class="string">显示</span> <span class="string">Gitment</span> <span class="string">评论</span></span><br></pre></td></tr></table></figure>
+<h4 id="添加gitment评论判断"><a href="#添加gitment评论判断" class="headerlink" title="添加gitment评论判断"></a>添加gitment评论判断</h4><p>在<code>layout/_partials/comments.swig</code> </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% elseif theme.changyan.appid and theme.changyan.appkey %&#125;</span><br><span class="line">  &lt;div id=<span class="string">"SOHUCS"</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>下新增</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;% elseif theme.gitment.enable %&#125;</span><br><span class="line">   &#123;% <span class="keyword">if</span> theme.gitment.lazy %&#125;</span><br><span class="line">     &lt;div onclick=<span class="string">"ShowGitment()"</span> id=<span class="string">"gitment-display-button"</span>&gt;&#123;&#123;  __(<span class="string">'gitmentbutton'</span>) &#125;&#125;&lt;/div&gt;</span><br><span class="line">     &lt;div id=<span class="string">"gitment-container"</span> style=<span class="string">"display:none"</span>&gt;&lt;/div&gt;</span><br><span class="line">   &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">     &lt;div id=<span class="string">"gitment-container"</span>&gt;&lt;/div&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="添加gitment显示文件"><a href="#添加gitment显示文件" class="headerlink" title="添加gitment显示文件"></a>添加<code>gitment</code>显示文件</h4><p>在<code>layout/_third-party/comments/</code>目录下中添加文件<code>gitment.swig</code><br>并且引入在<code>layout/_third-party/comments/index.swig</code>文件中引入 <code>include &#39;gitment.swig&#39;</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if theme.gitment.enable %&#125;</span><br><span class="line">   &#123;% set owner = theme.gitment.githubID %&#125;</span><br><span class="line">   &#123;% set repo = theme.gitment.repo %&#125;</span><br><span class="line">   &#123;% set cid = theme.gitment.ClientID %&#125;</span><br><span class="line">   &#123;% set cs = theme.gitment.ClientSecret %&#125;</span><br><span class="line">   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://imsun.github.io/gitment/style/default.css&quot;&gt;</span><br><span class="line">   &lt;script src=&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">   &#123;% if not theme.gitment.lazy %&#125;</span><br><span class="line">       &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">           var gitment = new Gitment(&#123;</span><br><span class="line">               id: window.location.pathname, </span><br><span class="line">               owner: &apos;&#123;&#123;owner&#125;&#125;&apos;,</span><br><span class="line">               repo: &apos;&#123;&#123;repo&#125;&#125;&apos;,</span><br><span class="line">               oauth: &#123;</span><br><span class="line">                   client_id: &apos;&#123;&#123;cid&#125;&#125;&apos;,</span><br><span class="line">                   client_secret: &apos;&#123;&#123;cs&#125;&#125;&apos;,</span><br><span class="line">               &#125;&#125;);</span><br><span class="line">           gitment.render(&apos;gitment-container&apos;);</span><br><span class="line">       &lt;/script&gt;</span><br><span class="line">   &#123;% else %&#125;</span><br><span class="line">       &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">           function ShowGitment()&#123;</span><br><span class="line">               document.getElementById(&quot;gitment-display-button&quot;).style.display = &quot;none&quot;;</span><br><span class="line">               document.getElementById(&quot;gitment-container&quot;).style.display = &quot;block&quot;;</span><br><span class="line">               var gitment = new Gitment(&#123;</span><br><span class="line">                   id: document.location.href, </span><br><span class="line">                   owner: &apos;&#123;&#123;owner&#125;&#125;&apos;,</span><br><span class="line">                   repo: &apos;&#123;&#123;repo&#125;&#125;&apos;,</span><br><span class="line">                   oauth: &#123;</span><br><span class="line">                       client_id: &apos;&#123;&#123;cid&#125;&#125;&apos;,</span><br><span class="line">                       client_secret: &apos;&#123;&#123;cs&#125;&#125;&apos;,</span><br><span class="line">                   &#125;&#125;);</span><br><span class="line">               gitment.render(&apos;gitment-container&apos;);</span><br><span class="line">           &#125;</span><br><span class="line">       &lt;/script&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="添加gitment样式"><a href="#添加gitment样式" class="headerlink" title="添加gitment样式"></a>添加<code>gitment</code>样式</h4><p>在主题目录下 <code>source/css/_common/components/third-party/</code> 下添加<code>gitment.styl</code>文件<br>并且在 <code>source/css/_common/components/third-party/third-party.styl</code> 下引入 <code>@import &quot;gitment&quot;;</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#gitment-display-button</span>&#123;</span><br><span class="line">     <span class="attribute">display</span>: inline-block;</span><br><span class="line">     <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">15px</span>;</span><br><span class="line">     <span class="attribute">color</span>: <span class="number">#0a9caf</span>;</span><br><span class="line">     <span class="attribute">cursor</span>: pointer;</span><br><span class="line">     <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">     <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#0a9caf</span>;</span><br><span class="line">     <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="selector-id">#gitment-display-button</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">     <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">     <span class="attribute">background</span>: <span class="number">#0a9caf</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h2><blockquote>
+<p>迁移操作很简单, 更多详见 <a href="https://hexo.io/zh-cn/docs/migration.html" target="_blank" rel="noopener">官方指南</a></p>
+</blockquote>
+<ul>
+<li>目标: Jekyll</li>
+<li>操作: 把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，并在 _config.yml 中修改 new_post_name 参数。<br><code>new_post_name: :year-:month-:day-:title.md</code></li>
+</ul>
+<h2 id="标签与分类"><a href="#标签与分类" class="headerlink" title="标签与分类"></a>标签与分类</h2><h3 id="创建页面"><a href="#创建页面" class="headerlink" title="创建页面"></a>创建页面</h3><blockquote>
+<p>标签与分类, 是为了更好的规整文档, 本段是配合<code>next</code>主题使用的</p>
+</blockquote>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd your-hexo-site </span><br><span class="line">hexo new page tags  # 创建标签页面</span><br><span class="line">hexo new page categories  # 创建分类页面</span><br></pre></td></tr></table></figure>
+<h3 id="修改页面类型"><a href="#修改页面类型" class="headerlink" title="修改页面类型"></a>修改页面类型</h3><p>分别在刚才添加的分类和标签页面 添加<code>type</code> 以及 <code>comments</code> 评论功能关闭<br>  <figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2017-12-05 11:38:23</span><br><span class="line">type: "categories"</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2017-12-05 11:38:23</span><br><span class="line">type: "tags"</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>修改菜单显示 在主题的配置文件 <code>_config.yml</code> 中添加标签和分类<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="使用标签和分类"><a href="#使用标签和分类" class="headerlink" title="使用标签和分类"></a>使用标签和分类</h3><p>在新建的文章中,添加<code>tags</code> 以及 <code>categories</code>即可. 示例:<br>  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 玩不转</span><br><span class="line">abbrlink: 4fce4897</span><br><span class="line">date: 2017-12-02 14:14:06</span><br><span class="line">tags: </span><br><span class="line">  - 玩不转</span><br><span class="line">category: </span><br><span class="line">  - 实践先锋</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h2 id="Tag-Plugins-标签插件"><a href="#Tag-Plugins-标签插件" class="headerlink" title="Tag Plugins 标签插件"></a>Tag Plugins 标签插件</h2><blockquote>
+<p>标签插件是用于在文章中快速插入特定内容的插件。</p>
+</blockquote>
+<h3 id="Quote-引用块"><a href="#Quote-引用块" class="headerlink" title="Quote 引用块"></a>Quote 引用块</h3><blockquote>
+<p>这儿只做简单示例, 更多使用请查看<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener">官网</a></p>
+</blockquote>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+<p>例如:<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote Hexo https://hexo.io/news/ Hexo 3.2 Released %&#125;</span><br><span class="line">It has been a long time that Hexo is poor at handling large website. (#710, #1124, #283, #1187, #550, #1769, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>显示效果<br>  <blockquote><p>It has been a long time that Hexo is poor at handling large website. (#710, #1124, #283, #1187, #550, #1769, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.</p>
+<footer><strong>Hexo</strong><cite><a href="https://hexo.io/news/" target="_blank" rel="noopener">Hexo 3.2 Released</a></cite></footer></blockquote></p>
+<h2 id="资源与数据"><a href="#资源与数据" class="headerlink" title="资源与数据"></a>资源与数据</h2><blockquote>
+<p>这段主要讨论的是如何合理的使用资源和数据, 我会列出 <code>Hexo</code> 官方的做法, 以及个人的想法</p>
+</blockquote>
+<h3 id="资源文件夹"><a href="#资源文件夹" class="headerlink" title="资源文件夹"></a>资源文件夹</h3><h4 id="基本加载方式"><a href="#基本加载方式" class="headerlink" title="基本加载方式"></a>基本加载方式</h4><p>最简单的方法就是将它们放在 <code>source/images</code> 文件夹中。然后通过类似于 <code>![](/images/image.jpg)</code> 的方法访问它们。</p>
+<h4 id="相对路径引用的标签插件"><a href="#相对路径引用的标签插件" class="headerlink" title="相对路径引用的标签插件"></a>相对路径引用的标签插件</h4><ol>
+<li>修改配置文件<code>_config.yml</code><br><code>post_asset_folder: true</code></li>
+<li><p>相对路径引用标签<br><code></code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">正确的引用图片方式是使用标签插件而不是 markdown</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>以上是官网给的回答, 个人认为<code>Markdown</code>的比较简单好用, 而且学习一个新的标签语法用来写博客也会增加学习成本. (毕竟就只是写个博客而已^_^)</p>
+<h3 id="数据文件夹"><a href="#数据文件夹" class="headerlink" title="数据文件夹"></a>数据文件夹</h3><blockquote>
+<p>Hexo 3.0 新增的「数据文件」功能。此功能会载入 source/_data 内的 YAML 或 JSON 文件.</p>
+</blockquote>
+<p>举例来说，在 source/_data 文件夹中新建 menu.yml 文件：<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">Tags:</span> <span class="string">/tags/</span></span><br><span class="line"><span class="attr">Archives:</span> <span class="string">/archives/</span></span><br></pre></td></tr></table></figure></p>
+<p>您就能在模板中使用这些资料：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;% for (var link in site.data.menu) &#123; %&gt;</span><br><span class="line">  &lt;a href=&quot;&lt;%= site.data.menu[link] %&gt;&quot;&gt; &lt;%= link %&gt; &lt;/a&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></p>
+<p>渲染结果如下 :<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;/&quot;&gt; Home &lt;/a&gt;</span><br><span class="line">&lt;a href=&quot;/tags/&quot;&gt; Tags &lt;/a&gt;</span><br><span class="line">&lt;a href=&quot;/archives/&quot;&gt; Archives &lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="草稿与推送"><a href="#草稿与推送" class="headerlink" title="草稿与推送"></a>草稿与推送</h2><p><code>Hexo</code> 的一种特殊布局 <code>Draft</code> 草稿, 是保存在 <code>source/_drafts</code> 目录下, 草稿默认不会显示在页面中, 这就方便了我们编写, 不会把半成品推上去 ^_^</p>
+<h3 id="操作指令"><a href="#操作指令" class="headerlink" title="操作指令"></a>操作指令</h3><p>新建草稿文本<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
+<p>发布草稿文本<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="预览设置"><a href="#预览设置" class="headerlink" title="预览设置"></a>预览设置</h3><p>为了方便调试, 你可以修改该配置来预览草稿<br>  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">render_drafts:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/玩不转/" rel="tag"># 玩不转</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/52725.html/" rel="next" title="GitHub Pages 玩不转">
+                <i class="fa fa-chevron-left"></i> GitHub Pages 玩不转
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/64460.html/" rel="prev" title="Markdown 玩不转">
+                Markdown 玩不转 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://i.loli.net/2017/12/05/5a2666ea0c1b2.jpg"
+                alt="MasterShu" />
+            
+              <p class="site-author-name" itemprop="name">MasterShu</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/MasterShu" target="_blank" title="GitHub" rel="external nofollow"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:maste2shu@foxmail.com" target="_blank" title="E-Mail" rel="external nofollow"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#玩转玩不转的Hexo"><span class="nav-number">1.</span> <span class="nav-text">玩转玩不转的Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Node"><span class="nav-number">2.1.</span> <span class="nav-text">Node</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo"><span class="nav-number">2.2.</span> <span class="nav-text">Hexo</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文章链接永久化"><span class="nav-number">3.</span> <span class="nav-text">文章链接永久化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next-主题"><span class="nav-number">4.</span> <span class="nav-text">Next 主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Quick-Start"><span class="nav-number">4.1.</span> <span class="nav-text">Quick Start</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#next主题集成gitment评论系统"><span class="nav-number">4.2.</span> <span class="nav-text">next主题集成gitment评论系统</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#注册Oauth"><span class="nav-number">4.2.1.</span> <span class="nav-text">注册Oauth</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修改配置"><span class="nav-number">4.2.2.</span> <span class="nav-text">修改配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加gitment评论判断"><span class="nav-number">4.2.3.</span> <span class="nav-text">添加gitment评论判断</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加gitment显示文件"><span class="nav-number">4.2.4.</span> <span class="nav-text">添加gitment显示文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#添加gitment样式"><span class="nav-number">4.2.5.</span> <span class="nav-text">添加gitment样式</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#迁移"><span class="nav-number">5.</span> <span class="nav-text">迁移</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标签与分类"><span class="nav-number">6.</span> <span class="nav-text">标签与分类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建页面"><span class="nav-number">6.1.</span> <span class="nav-text">创建页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改页面类型"><span class="nav-number">6.2.</span> <span class="nav-text">修改页面类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#修改配置文件"><span class="nav-number">6.3.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用标签和分类"><span class="nav-number">6.4.</span> <span class="nav-text">使用标签和分类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tag-Plugins-标签插件"><span class="nav-number">7.</span> <span class="nav-text">Tag Plugins 标签插件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Quote-引用块"><span class="nav-number">7.1.</span> <span class="nav-text">Quote 引用块</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#资源与数据"><span class="nav-number">8.</span> <span class="nav-text">资源与数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#资源文件夹"><span class="nav-number">8.1.</span> <span class="nav-text">资源文件夹</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本加载方式"><span class="nav-number">8.1.1.</span> <span class="nav-text">基本加载方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#相对路径引用的标签插件"><span class="nav-number">8.1.2.</span> <span class="nav-text">相对路径引用的标签插件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据文件夹"><span class="nav-number">8.2.</span> <span class="nav-text">数据文件夹</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#草稿与推送"><span class="nav-number">9.</span> <span class="nav-text">草稿与推送</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#操作指令"><span class="nav-number">9.1.</span> <span class="nav-text">操作指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#预览设置"><span class="nav-number">9.2.</span> <span class="nav-text">预览设置</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">MasterShu</span>
+
+  
+
+  
+</div>
+
+
+  
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" rel="external nofollow" href="https://hexo.io">Hexo</a> 强力驱动 v3.4.2</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" rel="external nofollow" href="https://theme-next.org">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=64353174";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("oDg0h97FqU5H5hsfnsmMWuzn-gzGzoHsz", "gm5rO2TDbt6cgu3WeksX1K17");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text(counter.get('time'));
+            
+            counter.save(null, {
+              success: function(counter) {
+                
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            
+              var $element = $(document.getElementById(url));
+              $element.find('.leancloud-visitors-count').text('Counter not initialized! See more at console err msg.');
+              console.error('ATTENTION! LeanCloud counter has security bug, see here how to solve it: https://github.com/theme-next/hexo-leancloud-counter-security. \n But you also can use LeanCloud without security, by set \'security\' option to \'false\'.');
+            
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
