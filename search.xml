@@ -26,6 +26,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[初探 React]]></title>
+    <url>%2Fblog%2F94177a20.html%2F</url>
+    <content type="text"><![CDATA[React 的初探React 一个由 FaceBook 出品的 JavaScript 框架. 作为目前前端框架三巨头之一, 由于前段时间的开源协议问题, 现在已经更新了协议, 那就让我们来了解一下 React Quick Start准备工作 Node 环境 安装脚手架工具 npm i -g create-react-app 另一个选择, node 的最新长期 LTS 版本已经到 8.9.1 了, React 就给了我们另外一个选择 npx npx create-react-app &lt;project&gt; 指令来初始化项目 但是 npx 要钱 npm 5.2.0+ 所以我的示例依然使用第一种来创建. 这个的采用由个人喜好 Hello React首先新建项目 1create-react-app &lt;project&gt; 然后进入项目目录,启动初始化的项目 1npm start 现在, 你已经看到新建立的网站了, 地址是 http://localhost:3000/ 接下来就是重头戏了, 打开项目目录, 在源码目录 src 下面找到 App.js 这个就是首页展示的内容 更改你的需要, 把 Welcome to React 改为 Hello React, 再次回到浏览器页面. Hello React 你已经很棒了. ToDoList按照惯例, 第一个实现的简单的功能就是 ToDoList 了 安装 UI 组件库这里推荐一款比较喜欢的组件库 Element , 可能你会说这个不是 Vue 的吗, 嘿嘿 传送门 引入 UI 库安装 1npm i element-react -S 这个还需主题包 1npm i element-theme-default -S]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[初探 Angular]]></title>
     <url>%2Fblog%2F72960925.html%2F</url>
     <content type="text"><![CDATA[Angular 的初探一直收到论坛和其他文章的影响, 觉得 Angular 学习曲线很陡, 不适合新手入门, 而且很重, 性能不好. 这些都是道听途说, 不一定是什么样的, 所以本人想亲自试一下! 参考教程中文官网 传送门 Quick Start来看看官方是如何介绍的Angular is a platform that makes it easy to build applications with the web. Angular combines declarative templates, dependency injection, end to end tooling, and integrated best practices to solve development challenges. Angular empowers developers to build applications that live on the web, mobile, or the desktop angular.cnWhat is Angular? 准备工作 Node 环境 安装脚手架工具 npm install -g @angular/cli Hello Angular国内的镜像还是蛮有用的, 让我们设置一下吧 1ng set --global packageManager=cnpm 新建项目 1ng new &lt;project&gt; 土包子长见识了, new 之后会自动执行, npm install 所以, 各位最好是先执行全局设置 cnpm 运行服务器 1ng serve --open 好了, 已经可以看到我们的网站了, 那么让我们写下第一行代码. 在项目的 src 目录下面, app 这个代码目录下, Angular 会自动创建一个 app-root 的组件, 在app.component.ts修改为: 123export class AppComponent &#123; title = 'Angular';&#125; 再次回到网页, 就会看到 Welcome to Angular! 你已经能用 angular 了 ToDoList让我们使用 Angular 实现我们的第一个功能吧 安装 UI 组件库这里推荐一款比较喜欢的组件库 Element , 可能你会说这个不是 Vue 的吗, 嘿嘿 传送门 1# npm i -S element-angular 引入 UI 库1234567891011// in /src/app/app.module.ts// add code:// improt element moduleimport &#123; ElModule &#125; from 'element-angular'// 并且在 imports 中添加引入 imports: [ BrowserModule, ElModule.forRoot(), // 新增引入 ], 12345// in /src/styles.css// add code:/* You can add global styles to this file, and also import other style files */@import "~element-angular/theme/index.css"; 路由##]]></content>
@@ -39,11 +44,6 @@
         <tag>JavaScript</tag>
         <tag>Node</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[初探 React]]></title>
-    <url>%2Fblog%2F94177a20.html%2F</url>
-    <content type="text"><![CDATA[React 的初探React 一个由 FaceBook 出品的 JavaScript 框架. 作为目前前端框架三巨头之一, 由于前段时间的开源协议问题, 现在已经更新了协议, 那就让我们来了解一下 React Quick Start准备工作 Node 环境 安装脚手架工具 npm i -g create-react-app 另一个选择, node 的最新长期 LTS 版本已经到 8.9.1 了, React 就给了我们另外一个选择 npx npx create-react-app &lt;project&gt; 指令来初始化项目 但是 npx 要钱 npm 5.2.0+ 所以我的示例依然使用第一种来创建. 这个的采用由个人喜好 Hello React首先新建项目 1create-react-app &lt;project&gt; 然后进入项目目录,启动初始化的项目 1npm start 现在, 你已经看到新建立的网站了, 地址是 http://localhost:3000/ 接下来就是重头戏了, 打开项目目录, 在源码目录 src 下面找到 App.js 这个就是首页展示的内容 更改你的需要, 把 Welcome to React 改为 Hello React, 再次回到浏览器页面. Hello React 你已经很棒了. ToDoList按照惯例, 第一个实现的简单的功能就是 ToDoList 了 安装 UI 组件库这里推荐一款比较喜欢的组件库 Element , 可能你会说这个不是 Vue 的吗, 嘿嘿 传送门 引入 UI 库安装 1npm i element-react -S 这个还需主题包 1npm i element-theme-default -S]]></content>
   </entry>
   <entry>
     <title><![CDATA[jekyll 玩不转]]></title>
