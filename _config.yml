@@ -7,14 +7,14 @@ title: MasterShu
 subtitle: JUST DO BEST
 description:
 author: MasterShu
-language: zh-Hans
+language: zh-CN
 timezone: PRC
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.mastershu.club
 root: /
-permalink: blog/:abbrlink.html/
+permalink: :abbrlink.html/
 permalink_defaults:
 
 # Directory
@@ -33,7 +33,7 @@ default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
-render_drafts: true
+render_drafts: false
 post_asset_folder: true
 relative_link: false
 future: true
@@ -78,9 +78,10 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/MasterShu/mastershu.github.io.git
-  branch: master
+  - type: git
+    repo: https://github.com/MasterShu/mastershu.github.io.git
+    branch: master
+  - type: baidu_url_submitter
 
 # Custom permalink
 abbrlink:
@@ -111,3 +112,10 @@ archive_generator:
 
 tag_generator:
   per_page: 10
+
+baidu_url_submit:
+  count: 1000 # 提交最新的一个链接
+  host: blog.mastershu.club # 在百度站长平台中注册的域名
+  token: dziReb4Gji7U96iK # 请注意这是您的秘钥，所以请不要把博客源代码发布在公众仓库里!
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
+
