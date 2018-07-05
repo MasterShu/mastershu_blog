@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="玩转玩不转的 MarkdownMarkdown Style Guide 风格指南参考">
+  <meta name="description" content="BAT 脚本编写指南 由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!BAT 脚本编码使用 GB 2312 简体中文, 使用 UTF-8后竟然乱码报错,没细究, 使用就对了^_^  常用指令显示echo 表示显示此命令后的字符">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown 玩不转">
-<meta property="og:url" content="http://blog.mastershu.club/blog/64460.html/index.html">
+<meta property="og:title" content="bat Windows 脚本的编写">
+<meta property="og:url" content="http://blog.mastershu.club/59564.html/index.html">
 <meta property="og:site_name" content="MasterShu">
-<meta property="og:description" content="玩转玩不转的 MarkdownMarkdown Style Guide 风格指南参考">
+<meta property="og:description" content="BAT 脚本编写指南 由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!BAT 脚本编码使用 GB 2312 简体中文, 使用 UTF-8后竟然乱码报错,没细究, 使用就对了^_^  常用指令显示echo 表示显示此命令后的字符">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-07-04T02:18:22.919Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown 玩不转">
-<meta name="twitter:description" content="玩转玩不转的 MarkdownMarkdown Style Guide 风格指南参考">
+<meta name="twitter:title" content="bat Windows 脚本的编写">
+<meta name="twitter:description" content="BAT 脚本编写指南 由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!BAT 脚本编码使用 GB 2312 简体中文, 使用 UTF-8后竟然乱码报错,没细究, 使用就对了^_^  常用指令显示echo 表示显示此命令后的字符">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.mastershu.club/blog/64460.html/"/>
+  <link rel="canonical" href="http://blog.mastershu.club/59564.html/"/>
 
 
 
@@ -137,7 +137,7 @@
   };
 </script>
 
-  <title>Markdown 玩不转 | MasterShu</title>
+  <title>bat Windows 脚本的编写 | MasterShu</title>
   
 
 
@@ -351,7 +351,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.mastershu.club/blog/64460.html/">
+    <link itemprop="mainEntityOfPage" href="http://blog.mastershu.club/59564.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MasterShu">
@@ -368,7 +368,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Markdown 玩不转
+          <h2 class="post-title" itemprop="name headline">bat Windows 脚本的编写
               
             
           </h2>
@@ -393,7 +393,7 @@
                 
               
 
-              <time title="创建时间：2017-12-05 11:00:57" itemprop="dateCreated datePublished" datetime="2017-12-05T11:00:57+08:00">2017-12-05</time>
+              <time title="创建时间：2017-12-02 09:36:57" itemprop="dateCreated datePublished" datetime="2017-12-02T09:36:57+08:00">2017-12-02</time>
             
 
             
@@ -424,8 +424,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/blog/64460.html/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/blog/64460.html/" itemprop="commentsCount"></span>
+                <a href="/59564.html/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/59564.html/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -461,7 +461,30 @@
       
 
       
-        <h1 id="玩转玩不转的-Markdown"><a href="#玩转玩不转的-Markdown" class="headerlink" title="玩转玩不转的 Markdown"></a>玩转玩不转的 Markdown</h1><h2 id="Markdown-Style-Guide-风格指南"><a href="#Markdown-Style-Guide-风格指南" class="headerlink" title="Markdown Style Guide 风格指南"></a>Markdown Style Guide 风格指南</h2><p><a href="http://www.cirosantilli.com/markdown-style-guide/" target="_blank" rel="noopener">参考</a></p>
+        <h1 id="BAT-脚本编写指南"><a href="#BAT-脚本编写指南" class="headerlink" title="BAT 脚本编写指南"></a>BAT 脚本编写指南</h1><blockquote>
+<p>由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!<br>BAT 脚本编码使用 <code>GB 2312</code> 简体中文, 使用 <code>UTF-8</code>后竟然乱码报错,没细究, 使用就对了^_^</p>
+</blockquote>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h3 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h3><p><code>echo</code> 表示显示此命令后的字符</p>
+<a id="more"></a>
+<p><code>echo off</code> 表示在此语句后所有运行的命令都不显示命令行本身</p>
+<p><code>@</code> 与 <code>echo off</code>相象，但它是加在每个命令行的最前面，表示运行时不显示这一行的命令行（只能影响当前行）。</p>
+<h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><p><code>call</code> 调用另一个批处理文件（如果不用call而直接调用别的批处理文件，那么执行完那个批处理文件后将无法返回当前文件并执行当前文件的后续命令）。</p>
+<h3 id="暂停"><a href="#暂停" class="headerlink" title="暂停"></a>暂停</h3><p><code>pause</code> 运行此句会暂停批处理的执行并在屏幕上显示<code>Press any key to continue...</code>的提示，等待用户按任意键后继续 </p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p><code>rem</code> 表示此命令后的字符为解释行（注释），不执行，只是给自己今后参考用的（相当于程序中的注释）。 当然,我们还可以使用 <code>::</code> 来代替 <code>rem</code></p>
+<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MKDIR  # 全拼</span><br><span class="line">MD # 简写</span><br></pre></td></tr></table></figure>
+<ol>
+<li><p>创建单个文件夹<br> 格式：<code>MD [路径\]目录</code><br> 示例: <code>md &quot;C:\Documents and Settings\Master^ Shu&quot;</code></p>
+</li>
+<li><p>同时创建多个目录<br> 格式: <code>MD [路径\]目录1 [路径\]目录2 [路径\]目录3……</code><br> 示例: <code>md abc D:\Dcouments\123 qwe</code>   在当前目录下建立<code>abc</code>和<code>qwe</code>两个目录,同时D:\gmae下也建立一个目录<code>123</code>。</p>
+</li>
+<li>创建多级目录<br> 格式: <code>MD [路径\]目录1\目录2\目录3\…</code><br> 示例: <code>md d:\abc\abcd\abcde</code>  在 d 盘下 创建目录 abd ,在abc 下创建 abcd …</li>
+</ol>
+<h3 id="删除目录"><a href="#删除目录" class="headerlink" title="删除目录"></a>删除目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">RMDIR [/S] [/Q] [drive:]path</span><br><span class="line">RD [/S] [/Q] [drive:]path</span><br><span class="line">    /S      除目录本身外，还将删除指定目录下的所有子目录和</span><br><span class="line">            文件。用于删除目录树。</span><br><span class="line">    /Q      安静模式，带 /S 删除目录树时不要求确认</span><br></pre></td></tr></table></figure>
+<p>示例: <code>rd /s /q d:\abc</code>   不用确认删除 <code>abc</code> 目录树, 即 <code>abc</code>以及<code>abc</code>中的内容,<br>示例: <code>rd /s d:\abc</code>   需要用户确认方可删除 <code>abc</code> 目录树, 即 <code>abc</code>以及<code>abc</code>中的内容,<br>示例: <code>rd d:\abc</code>   删除 <code>abc</code> 空目录, 即 <code>abc</code>中有内容不是空目录时无法删除,</p>
+<h3 id="重命名"><a href="#重命名" class="headerlink" title="重命名"></a>重命名</h3><h2 id="OSQL"><a href="#OSQL" class="headerlink" title="OSQL"></a>OSQL</h2><blockquote>
+<p>一个SQL Ssever 的命令行工具<br>注意: osql 并不支持 SQL Server 的所有功能。<br>请使用 sqlcmd。有关详细信息，请参阅 SQL Server 联机丛书。<br>用法: osql                   [-U 登录 ID]          [-P 密码]<br>  [-S 服务器]                [-H 主机名]           [-E 可信连接]<br>  [-d 使用数据库名称]        [-l 登录超时值]       [-t 查询超时值]<br>  [-h 标题]                  [-s 列分隔符]         [-w 列宽]<br>  [-a 数据包大小]            [-e 回显输入]         [-I 允许带引号的标识符]<br>  [-L 列出服务器]            [-c 命令结束]         [-D ODBC DSN 名称]<br>  [-q “命令行查询”]          [-Q “命令行查询” 并退出]<br>  [-n 删除编号方式]          [-m 错误级别]<br>  [-r 发送到 stderr 的消息]  [-V 严重级别]<br>  [-i 输入文件]              [-o 输出文件]<br>  [-p 打印统计信息]          [-b 出错时中止批处理]<br>  [-X[1] 禁用命令，[退出的同时显示警告]]<br>  [-O 使用旧 ISQL 行为禁用下列项]<br>      <eof> 批处理<br>      自动调整控制台宽度<br>      宽消息<br>      默认错误级别为 -1 和 1<br>  [-? 显示语法摘要]</eof></p>
+</blockquote>
+<p>常用的主要是<br>-E 可信连接<br>-S 服务器ip<br>-d 数据库名称<br>-U 连接用户名<br>-P 用户的密码<br>-i 执行的sql文件<br>-o sql语句输出的结果文件</p>
 
       
     </div>
@@ -489,8 +512,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/4fce4897.html/" rel="next" title="Hexo 玩不转">
-                <i class="fa fa-chevron-left"></i> Hexo 玩不转
+              <a href="/52109.html/" rel="next" title="frist article">
+                <i class="fa fa-chevron-left"></i> frist article
               </a>
             
           </div>
@@ -499,8 +522,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/blog/c748d68a.html/" rel="prev" title="FEE前端探索交流会">
-                FEE前端探索交流会 <i class="fa fa-chevron-right"></i>
+              <a href="/52725.html/" rel="prev" title="GitHub Pages 玩不转">
+                GitHub Pages 玩不转 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -703,7 +726,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#玩转玩不转的-Markdown"><span class="nav-number">1.</span> <span class="nav-text">玩转玩不转的 Markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown-Style-Guide-风格指南"><span class="nav-number">1.1.</span> <span class="nav-text">Markdown Style Guide 风格指南</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BAT-脚本编写指南"><span class="nav-number">1.</span> <span class="nav-text">BAT 脚本编写指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用指令"><span class="nav-number">1.1.</span> <span class="nav-text">常用指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#显示"><span class="nav-number">1.1.1.</span> <span class="nav-text">显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调用"><span class="nav-number">1.1.2.</span> <span class="nav-text">调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#暂停"><span class="nav-number">1.1.3.</span> <span class="nav-text">暂停</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.1.4.</span> <span class="nav-text">注释</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录操作"><span class="nav-number">1.2.</span> <span class="nav-text">目录操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建目录"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除目录"><span class="nav-number">1.2.2.</span> <span class="nav-text">删除目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重命名"><span class="nav-number">1.2.3.</span> <span class="nav-text">重命名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OSQL"><span class="nav-number">1.3.</span> <span class="nav-text">OSQL</span></a></li></ol></li></ol></div>
             
 
           </div>

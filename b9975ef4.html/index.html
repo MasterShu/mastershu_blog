@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="BAT 脚本编写指南 由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!BAT 脚本编码使用 GB 2312 简体中文, 使用 UTF-8后竟然乱码报错,没细究, 使用就对了^_^  常用指令显示echo 表示显示此命令后的字符">
+  <meta name="description" content="玩转玩不转的正则1A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wild">
 <meta property="og:type" content="article">
-<meta property="og:title" content="bat Windows 脚本的编写">
-<meta property="og:url" content="http://blog.mastershu.club/blog/59564.html/index.html">
+<meta property="og:title" content="RegEx 正则表达式 玩不转">
+<meta property="og:url" content="http://blog.mastershu.club/b9975ef4.html/index.html">
 <meta property="og:site_name" content="MasterShu">
-<meta property="og:description" content="BAT 脚本编写指南 由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!BAT 脚本编码使用 GB 2312 简体中文, 使用 UTF-8后竟然乱码报错,没细究, 使用就对了^_^  常用指令显示echo 表示显示此命令后的字符">
+<meta property="og:description" content="玩转玩不转的正则1A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids. 正则表达式推荐几个在线的正则表达式测试以及">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2018-07-04T02:18:22.919Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="bat Windows 脚本的编写">
-<meta name="twitter:description" content="BAT 脚本编写指南 由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!BAT 脚本编码使用 GB 2312 简体中文, 使用 UTF-8后竟然乱码报错,没细究, 使用就对了^_^  常用指令显示echo 表示显示此命令后的字符">
+<meta name="twitter:title" content="RegEx 正则表达式 玩不转">
+<meta name="twitter:description" content="玩转玩不转的正则1A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids. 正则表达式推荐几个在线的正则表达式测试以及">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <link rel="canonical" href="http://blog.mastershu.club/blog/59564.html/"/>
+  <link rel="canonical" href="http://blog.mastershu.club/b9975ef4.html/"/>
 
 
 
@@ -137,7 +137,7 @@
   };
 </script>
 
-  <title>bat Windows 脚本的编写 | MasterShu</title>
+  <title>RegEx 正则表达式 玩不转 | MasterShu</title>
   
 
 
@@ -351,7 +351,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.mastershu.club/blog/59564.html/">
+    <link itemprop="mainEntityOfPage" href="http://blog.mastershu.club/b9975ef4.html/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="MasterShu">
@@ -368,7 +368,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">bat Windows 脚本的编写
+          <h2 class="post-title" itemprop="name headline">RegEx 正则表达式 玩不转
               
             
           </h2>
@@ -393,7 +393,7 @@
                 
               
 
-              <time title="创建时间：2017-12-02 09:36:57" itemprop="dateCreated datePublished" datetime="2017-12-02T09:36:57+08:00">2017-12-02</time>
+              <time title="创建时间：2018-01-09 16:10:25" itemprop="dateCreated datePublished" datetime="2018-01-09T16:10:25+08:00">2018-01-09</time>
             
 
             
@@ -424,8 +424,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/blog/59564.html/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/blog/59564.html/" itemprop="commentsCount"></span>
+                <a href="/b9975ef4.html/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count gitment-comments-count" data-xid="/b9975ef4.html/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -461,30 +461,180 @@
       
 
       
-        <h1 id="BAT-脚本编写指南"><a href="#BAT-脚本编写指南" class="headerlink" title="BAT 脚本编写指南"></a>BAT 脚本编写指南</h1><blockquote>
-<p>由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!<br>BAT 脚本编码使用 <code>GB 2312</code> 简体中文, 使用 <code>UTF-8</code>后竟然乱码报错,没细究, 使用就对了^_^</p>
-</blockquote>
-<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h3 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h3><p><code>echo</code> 表示显示此命令后的字符</p>
-<a id="more"></a>
-<p><code>echo off</code> 表示在此语句后所有运行的命令都不显示命令行本身</p>
-<p><code>@</code> 与 <code>echo off</code>相象，但它是加在每个命令行的最前面，表示运行时不显示这一行的命令行（只能影响当前行）。</p>
-<h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><p><code>call</code> 调用另一个批处理文件（如果不用call而直接调用别的批处理文件，那么执行完那个批处理文件后将无法返回当前文件并执行当前文件的后续命令）。</p>
-<h3 id="暂停"><a href="#暂停" class="headerlink" title="暂停"></a>暂停</h3><p><code>pause</code> 运行此句会暂停批处理的执行并在屏幕上显示<code>Press any key to continue...</code>的提示，等待用户按任意键后继续 </p>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p><code>rem</code> 表示此命令后的字符为解释行（注释），不执行，只是给自己今后参考用的（相当于程序中的注释）。 当然,我们还可以使用 <code>::</code> 来代替 <code>rem</code></p>
-<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">MKDIR  # 全拼</span><br><span class="line">MD # 简写</span><br></pre></td></tr></table></figure>
-<ol>
-<li><p>创建单个文件夹<br> 格式：<code>MD [路径\]目录</code><br> 示例: <code>md &quot;C:\Documents and Settings\Master^ Shu&quot;</code></p>
-</li>
-<li><p>同时创建多个目录<br> 格式: <code>MD [路径\]目录1 [路径\]目录2 [路径\]目录3……</code><br> 示例: <code>md abc D:\Dcouments\123 qwe</code>   在当前目录下建立<code>abc</code>和<code>qwe</code>两个目录,同时D:\gmae下也建立一个目录<code>123</code>。</p>
-</li>
-<li>创建多级目录<br> 格式: <code>MD [路径\]目录1\目录2\目录3\…</code><br> 示例: <code>md d:\abc\abcd\abcde</code>  在 d 盘下 创建目录 abd ,在abc 下创建 abcd …</li>
-</ol>
-<h3 id="删除目录"><a href="#删除目录" class="headerlink" title="删除目录"></a>删除目录</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">RMDIR [/S] [/Q] [drive:]path</span><br><span class="line">RD [/S] [/Q] [drive:]path</span><br><span class="line">    /S      除目录本身外，还将删除指定目录下的所有子目录和</span><br><span class="line">            文件。用于删除目录树。</span><br><span class="line">    /Q      安静模式，带 /S 删除目录树时不要求确认</span><br></pre></td></tr></table></figure>
-<p>示例: <code>rd /s /q d:\abc</code>   不用确认删除 <code>abc</code> 目录树, 即 <code>abc</code>以及<code>abc</code>中的内容,<br>示例: <code>rd /s d:\abc</code>   需要用户确认方可删除 <code>abc</code> 目录树, 即 <code>abc</code>以及<code>abc</code>中的内容,<br>示例: <code>rd d:\abc</code>   删除 <code>abc</code> 空目录, 即 <code>abc</code>中有内容不是空目录时无法删除,</p>
-<h3 id="重命名"><a href="#重命名" class="headerlink" title="重命名"></a>重命名</h3><h2 id="OSQL"><a href="#OSQL" class="headerlink" title="OSQL"></a>OSQL</h2><blockquote>
-<p>一个SQL Ssever 的命令行工具<br>注意: osql 并不支持 SQL Server 的所有功能。<br>请使用 sqlcmd。有关详细信息，请参阅 SQL Server 联机丛书。<br>用法: osql                   [-U 登录 ID]          [-P 密码]<br>  [-S 服务器]                [-H 主机名]           [-E 可信连接]<br>  [-d 使用数据库名称]        [-l 登录超时值]       [-t 查询超时值]<br>  [-h 标题]                  [-s 列分隔符]         [-w 列宽]<br>  [-a 数据包大小]            [-e 回显输入]         [-I 允许带引号的标识符]<br>  [-L 列出服务器]            [-c 命令结束]         [-D ODBC DSN 名称]<br>  [-q “命令行查询”]          [-Q “命令行查询” 并退出]<br>  [-n 删除编号方式]          [-m 错误级别]<br>  [-r 发送到 stderr 的消息]  [-V 严重级别]<br>  [-i 输入文件]              [-o 输出文件]<br>  [-p 打印统计信息]          [-b 出错时中止批处理]<br>  [-X[1] 禁用命令，[退出的同时显示警告]]<br>  [-O 使用旧 ISQL 行为禁用下列项]<br>      <eof> 批处理<br>      自动调整控制台宽度<br>      宽消息<br>      默认错误级别为 -1 和 1<br>  [-? 显示语法摘要]</eof></p>
-</blockquote>
-<p>常用的主要是<br>-E 可信连接<br>-S 服务器ip<br>-d 数据库名称<br>-U 连接用户名<br>-P 用户的密码<br>-i 执行的sql文件<br>-o sql语句输出的结果文件</p>
+        <h1 id="玩转玩不转的正则"><a href="#玩转玩不转的正则" class="headerlink" title="玩转玩不转的正则"></a>玩转玩不转的正则</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids.</span><br></pre></td></tr></table></figure>
+<p>正则表达式<br>推荐几个在线的正则表达式测试以及常用规则 <a href="https://c.runoob.com/front-end/854" target="_blank" rel="noopener">传送门</a> | <a href="http://tool.oschina.net/regex/" target="_blank" rel="noopener">传送门II</a> | <a href="http://tool.oschina.net/" target="_blank" rel="noopener">在线工具类</a></p>
+<p>学习类参考 <a href="http://www.regular-expressions.info/" target="_blank" rel="noopener">传送门</a></p>
+<h1 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h1><p>普通字符包括没有显式指定为元字符的所有可打印和不可打印字符。这包括所有大写和小写字母、所有数字、所有标点符号和一些其他符号。</p>
+<h1 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h1><table>
+<thead>
+<tr>
+<th>特别字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$</td>
+<td>匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 ‘\n’ 或 ‘\r’。要匹配 $ 字符本身，请使用 \$。</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前面的子表达式零次或多次。要匹配 <em> 字符，请使用 \</em>。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 +。</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。</td>
+</tr>
+<tr>
+<td>[</td>
+<td>标记一个中括号表达式的开始。要匹配 [，请使用 [。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前面的子表达式零次或一次，或指明一个非贪婪限定符。要匹配 ? 字符，请使用 \?。</td>
+</tr>
+<tr>
+<td>\</td>
+<td>将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。例如， ‘n’ 匹配字符 ‘n’。’\n’ 匹配换行符。序列 ‘\‘ 匹配 “\”，而 ‘(‘ 则匹配 “(“。</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配输入字符串的开始位置，除非在方括号表达式中使用，此时它表示不接受该字符集合。要匹配 ^ 字符本身，请使用 \^。</td>
+</tr>
+<tr>
+<td>{</td>
+<td>标记限定符表达式的开始。要匹配 {，请使用 {。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>指明两项之间的一个选择。要匹配</td>
+<td>，请使用 \</td>
+<td>。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="非打印字符"><a href="#非打印字符" class="headerlink" title="非打印字符"></a>非打印字符</h1><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>\cx</td>
+<td>匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 ‘c’ 字符。</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>匹配一个换页符。等价于 \x0c 和 \cL。</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>匹配一个换行符。等价于 \x0a 和 \cJ。</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>匹配一个回车符。等价于 \x0d 和 \cM。</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>匹配一个制表符。等价于 \x09 和 \cI。</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>匹配一个垂直制表符。等价于 \x0b 和 \cK。</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配一个单字字符（字母、数字或者下划线）。等价于[A-Za-z0-9_]。例如, /\w/ 匹配 “apple,” 中的 ‘a’，”$5.28,”中的 ‘5’ 和 “3D.” 中的 ‘3’。</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配一个非单字字符。等价于[^A-Za-z0-9<em>]。例如, /\W/ 或者 /[^A-Za-z0-9</em>]/ 匹配 “50%.” 中的 ‘%’。</td>
+</tr>
+</tbody>
+</table>
+<h1 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h1><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td>
+<td>匹配前面的子表达式零次或多次。例如，zo<em> 能匹配 “z” 以及 “zoo”。</em> 等价于{0,}。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面的子表达式一次或多次。例如，’zo+’ 能匹配 “zo” 以及 “zoo”，但不能匹配 “z”。+ 等价于 {1,}。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前面的子表达式零次或一次。例如，”do(es)?” 可以匹配 “do” 、 “does” 中的 “does” 、 “doxy” 中的 “do” 。? 等价于 {0,1}。</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>n 是一个非负整数。至少匹配n 次。例如，’o{2,}’ 不能匹配 “Bob” 中的 ‘o’，但能匹配 “foooood” 中的所有 o。’o{1,}’ 等价于 ‘o+’。’o{0,}’ 则等价于 ‘o*’。</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。例如，”o{1,3}” 将匹配 “fooooood” 中的前三个 o。’o{0,1}’ 等价于 ‘o?’。请注意在逗号和两个数之间不能有空格。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>*、+限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个?就可以实现非贪婪或最小匹配</li>
+</ul>
+<h1 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h1><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>^</td>
+<td>匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与 \n 或 \r 之前的位置匹配。</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>匹配一个字边界，即字与空格间的位置。</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>非字边界匹配。</td>
+</tr>
+</tbody>
+</table>
 
       
     </div>
@@ -512,8 +662,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/blog/52109.html/" rel="next" title="frist article">
-                <i class="fa fa-chevron-left"></i> frist article
+              <a href="/c748d68a.html/" rel="next" title="FEE前端探索交流会">
+                <i class="fa fa-chevron-left"></i> FEE前端探索交流会
               </a>
             
           </div>
@@ -521,10 +671,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/blog/52725.html/" rel="prev" title="GitHub Pages 玩不转">
-                GitHub Pages 玩不转 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -726,7 +872,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#BAT-脚本编写指南"><span class="nav-number">1.</span> <span class="nav-text">BAT 脚本编写指南</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#常用指令"><span class="nav-number">1.1.</span> <span class="nav-text">常用指令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#显示"><span class="nav-number">1.1.1.</span> <span class="nav-text">显示</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调用"><span class="nav-number">1.1.2.</span> <span class="nav-text">调用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#暂停"><span class="nav-number">1.1.3.</span> <span class="nav-text">暂停</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">1.1.4.</span> <span class="nav-text">注释</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#目录操作"><span class="nav-number">1.2.</span> <span class="nav-text">目录操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#创建目录"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除目录"><span class="nav-number">1.2.2.</span> <span class="nav-text">删除目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重命名"><span class="nav-number">1.2.3.</span> <span class="nav-text">重命名</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OSQL"><span class="nav-number">1.3.</span> <span class="nav-text">OSQL</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#玩转玩不转的正则"><span class="nav-number">1.</span> <span class="nav-text">玩转玩不转的正则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#普通字符"><span class="nav-number">2.</span> <span class="nav-text">普通字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#特殊字符"><span class="nav-number">3.</span> <span class="nav-text">特殊字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#非打印字符"><span class="nav-number">4.</span> <span class="nav-text">非打印字符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#限定符"><span class="nav-number">5.</span> <span class="nav-text">限定符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#定位符"><span class="nav-number">6.</span> <span class="nav-text">定位符</span></a></li></ol></div>
             
 
           </div>
