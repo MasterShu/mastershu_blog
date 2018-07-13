@@ -5,9 +5,9 @@
   <subtitle>JUST DO BEST</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://blog.mastershu.club/"/>
-  <updated>2018-07-05T03:48:36.969Z</updated>
-  <id>http://blog.mastershu.club/</id>
+  <link href="https://blog.mastershu.club/"/>
+  <updated>2018-07-11T09:10:14.579Z</updated>
+  <id>https://blog.mastershu.club/</id>
   
   <author>
     <name>MasterShu</name>
@@ -17,9 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>利用Laradock配置PHP开发环境</title>
+    <link href="https://blog.mastershu.club/e047a409.html/"/>
+    <id>https://blog.mastershu.club/e047a409.html/</id>
+    <published>2018-07-11T09:05:42.000Z</published>
+    <updated>2018-07-11T09:10:14.579Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;需要一个简易的开发环境&quot;&gt;&lt;a href=&quot;#需要一个简易的开发环境&quot; class=&quot;headerlink&quot; title=&quot;需要一个简易的开发环境&quot;&gt;&lt;/a&gt;需要一个简易的开发环境&lt;/h2&gt;&lt;p&gt;传统的开发环境, 需要自己下 PHP, Nginx, MySQL…
+        
+      
+    
+    </summary>
+    
+      <category term="工具库" scheme="https://blog.mastershu.club/categories/%E5%B7%A5%E5%85%B7%E5%BA%93/"/>
+    
+      <category term="开发环境" scheme="https://blog.mastershu.club/categories/%E5%B7%A5%E5%85%B7%E5%BA%93/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+      <category term="docker" scheme="https://blog.mastershu.club/tags/docker/"/>
+    
+      <category term="laradock" scheme="https://blog.mastershu.club/tags/laradock/"/>
+    
+  </entry>
+  
+  <entry>
     <title>ARTS_27</title>
-    <link href="http://blog.mastershu.club/185059fb.html/"/>
-    <id>http://blog.mastershu.club/185059fb.html/</id>
+    <link href="https://blog.mastershu.club/185059fb.html/"/>
+    <id>https://blog.mastershu.club/185059fb.html/</id>
     <published>2018-07-05T03:40:26.000Z</published>
     <updated>2018-07-05T03:48:36.969Z</updated>
     
@@ -29,21 +61,21 @@
     
     </summary>
     
-      <category term="分享" scheme="http://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
     
-      <category term="arts" scheme="http://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+      <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
     
     
-      <category term="ARTS" scheme="http://blog.mastershu.club/tags/ARTS/"/>
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
     
-      <category term="PHP" scheme="http://blog.mastershu.club/tags/PHP/"/>
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
     
   </entry>
   
   <entry>
     <title>RegEx 正则表达式 玩不转</title>
-    <link href="http://blog.mastershu.club/b9975ef4.html/"/>
-    <id>http://blog.mastershu.club/b9975ef4.html/</id>
+    <link href="https://blog.mastershu.club/b9975ef4.html/"/>
+    <id>https://blog.mastershu.club/b9975ef4.html/</id>
     <published>2018-01-09T08:10:25.000Z</published>
     <updated>2018-07-04T02:18:22.919Z</updated>
     
@@ -64,8 +96,8 @@
   
   <entry>
     <title>FEE前端探索交流会</title>
-    <link href="http://blog.mastershu.club/c748d68a.html/"/>
-    <id>http://blog.mastershu.club/c748d68a.html/</id>
+    <link href="https://blog.mastershu.club/c748d68a.html/"/>
+    <id>https://blog.mastershu.club/c748d68a.html/</id>
     <published>2017-12-11T01:54:51.000Z</published>
     <updated>2018-07-04T02:18:22.919Z</updated>
     
@@ -87,8 +119,8 @@
   
   <entry>
     <title>Markdown 玩不转</title>
-    <link href="http://blog.mastershu.club/64460.html/"/>
-    <id>http://blog.mastershu.club/64460.html/</id>
+    <link href="https://blog.mastershu.club/64460.html/"/>
+    <id>https://blog.mastershu.club/64460.html/</id>
     <published>2017-12-05T03:00:57.000Z</published>
     <updated>2018-07-04T02:18:22.919Z</updated>
     
@@ -109,8 +141,8 @@
   
   <entry>
     <title>Hexo 玩不转</title>
-    <link href="http://blog.mastershu.club/4fce4897.html/"/>
-    <id>http://blog.mastershu.club/4fce4897.html/</id>
+    <link href="https://blog.mastershu.club/4fce4897.html/"/>
+    <id>https://blog.mastershu.club/4fce4897.html/</id>
     <published>2017-12-02T06:14:06.000Z</published>
     <updated>2018-07-04T02:18:22.919Z</updated>
     
@@ -123,19 +155,19 @@
     
     </summary>
     
-      <category term="建站系统" scheme="http://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/"/>
+      <category term="建站系统" scheme="https://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/"/>
     
-      <category term="博客" scheme="http://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="博客" scheme="https://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/%E5%8D%9A%E5%AE%A2/"/>
     
     
-      <category term="玩不转" scheme="http://blog.mastershu.club/tags/%E7%8E%A9%E4%B8%8D%E8%BD%AC/"/>
+      <category term="玩不转" scheme="https://blog.mastershu.club/tags/%E7%8E%A9%E4%B8%8D%E8%BD%AC/"/>
     
   </entry>
   
   <entry>
     <title>GitHub Pages 玩不转</title>
-    <link href="http://blog.mastershu.club/52725.html/"/>
-    <id>http://blog.mastershu.club/52725.html/</id>
+    <link href="https://blog.mastershu.club/52725.html/"/>
+    <id>https://blog.mastershu.club/52725.html/</id>
     <published>2017-12-02T03:32:37.000Z</published>
     <updated>2018-07-04T02:18:22.919Z</updated>
     
@@ -158,8 +190,8 @@
   
   <entry>
     <title>bat Windows 脚本的编写</title>
-    <link href="http://blog.mastershu.club/59564.html/"/>
-    <id>http://blog.mastershu.club/59564.html/</id>
+    <link href="https://blog.mastershu.club/59564.html/"/>
+    <id>https://blog.mastershu.club/59564.html/</id>
     <published>2017-12-02T01:36:57.000Z</published>
     <updated>2018-07-04T02:18:22.919Z</updated>
     
@@ -177,8 +209,8 @@
   
   <entry>
     <title>frist article</title>
-    <link href="http://blog.mastershu.club/52109.html/"/>
-    <id>http://blog.mastershu.club/52109.html/</id>
+    <link href="https://blog.mastershu.club/52109.html/"/>
+    <id>https://blog.mastershu.club/52109.html/</id>
     <published>2017-12-01T03:37:23.000Z</published>
     <updated>2018-07-04T02:18:22.919Z</updated>
     
@@ -199,8 +231,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://blog.mastershu.club/16107.html/"/>
-    <id>http://blog.mastershu.club/16107.html/</id>
+    <link href="https://blog.mastershu.club/16107.html/"/>
+    <id>https://blog.mastershu.club/16107.html/</id>
     <published>2017-11-28T03:37:23.000Z</published>
     <updated>2018-07-04T06:26:52.211Z</updated>
     

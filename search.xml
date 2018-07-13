@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[利用Laradock配置PHP开发环境]]></title>
+    <url>%2Fe047a409.html%2F</url>
+    <content type="text"><![CDATA[需要一个简易的开发环境传统的开发环境, 需要自己下 PHP, Nginx, MySQL… 等一大堆东西, 但是 docker 给我们带来了便利, 从此就告别了, 本地环境跑的好好的东西,为啥服务器就是不给力, 各种未知的bug. 准备工作 docker 环境不管你是 Mac, windows 或者 linux 等, 先去官网搞定这个基础环境. 传送门 Git你需要 clone 源码. 开始你的表演 拉取源码进入你的开发代码目录 git clone https://github.com/laradock/laradock.git 修改配置1cp env-example .env 接下就可以修改 .env 里面的配置了. 12# 修改composer 为中国镜像 提速WORKSPACE_COMPOSER_REPO_PACKAGIST=https://packagist.phpcomposer.com 1234# 接下来运行 Nginx 以及 mysql redis...docker-compose up -d nginx mysql# 因为是首次拉取, 所以会比较慢 当然你可以使用加速器来加速docker 需要注册登录, 并且是免费的 https://www.daocloud.io/mirror#accelerator-doc 12# 这样你就可以进入工作台了docker-compose exec --user=laradock workspace bash phpstorm xdebug在这儿用 Windows 做例子, 毕竟用 Windows 开发是坑最多了. 开启 xdebug123456789# laradock/.env 文件# 修改### WORKSPACE #############################################WORKSPACE_INSTALL_XDEBUG=trueWORKSPACE_INSTALL_WORKSPACE_SSH=true### PHP_FPM ###############################################PHP_FPM_INSTALL_XDEBUG=true 修改 .ini 配置1234567891011121314; laradock/workspace/xdebug.ini; laradock/php-fpm/xdebug.ini; 修改两个文件; remote_host 的 "dockerhost" 是 laradock/.env 文件下的 DOCKER_HOST_IP 的值, 需要在 系统的 hosts 文件添加这么一条记录 10.0.75.1 dockerhostxdebug.remote_host=dockerhost xdebug.remote_connect_back=0xdebug.remote_port=9000xdebug.idekey=PHPSTORMxdebug.remote_autostart=1xdebug.remote_enable=1xdebug.cli_color=1 修改 hosts 文件此处需要 管理员权限 配置 phpstorm 配置 deployment 配置 server PHP_IDE_CONFIG=serverName=laradock 配置 debug (非必填) 配置 test Framework Edit Run/Debug configuration]]></content>
+      <categories>
+        <category>工具库</category>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>docker</tag>
+        <tag>laradock</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[ARTS_27]]></title>
     <url>%2F185059fb.html%2F</url>
     <content type="text"><![CDATA[2018 27th weekAlgorithm 给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。 设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。 注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。 初次完成的12345678910111213141516171819202122232425func maxProfit(prices []int) int &#123; if len(prices) &lt;= 0 &#123; return 0 &#125; income := 0 j := len(prices) i := 0; for i &lt; (j - 1) &#123; rLarge := prices[i] rNum := i for l := i + 1 ; l &lt; j ; l ++ &#123; if rLarge &gt; prices[l] &#123; break &#125; if rLarge &lt; prices[l] &#123; rLarge = prices[l] rNum = l &#125; &#125; income = income + rLarge - prices[i] i = rNum + 1 &#125; return income&#125; 最终完成的12345678910111213141516func maxProfit(prices []int) int &#123; if len(prices) &lt;= 0 &#123; return 0 &#125; income := 0 j := len(prices) i := 0; for i &lt; (j - 1) &#123; if prices[i] &lt; prices[i + 1] &#123; income += prices[i+1] - prices[i] &#125; i++ &#125; return income&#125; 我的想法一开始, 是我想多了, 按照自己的思维, 这种算法对人来说, 可能加的运算少了, 比较容易计算, 但是边界问题没有处理, 多次出现问题 最后发现, 总归是要遍历的, 一次从头到尾就ok了, 为啥还要那么麻烦. Review PHP 学习的必备网站原文 Best Websites for Learning PHP Programming https://medium.com/@simpliv/best-websites-for-learning-php-programming-5562697d5fbb This article show 16 website for learning PHP programing. Codecourse You can learn PHP and other web development. It also available watch videos at their YouTube channel. Stone River eLearning In this website, the course is not free. It is not a PHP specific website PHP Manual Learn PHP, this website is helpful. It also has comments and support Chinese. Killer PHP Maybe you don’t have technical backgrounds, This website is match you. PHP 101 PHP For the Absolute Beginner Tutorials Point W3Schools, when I first sawed it, but is not true. It has more content and more importantly, the right content. Tizag This website looks like antique.I can not understand author Simpliv This is video course site point.(and not free) I can not Accept their accent. Hacking with PHP Update to PHP7 you just need $20 Codeigniter CodeIgniter is a powerful PHP framework, But I love Laravel Lynda This website is teaching many kinds of course (Not free) Udemy Support Chinese, a on-line course website. (Note free) W3 Schools It need not instruction. Name means content. Derek Banas Video Tutorial on YouTube It is so old. StackOverflow As a coder no one does not know it. Code Academy You can learn many different language. (Free) Tip 看了下自己的博客, 已经好久没有更新了. 真是汗颜. 正好此次写 ARTS , Next 主题进行了大的版本升级, 内置了 gitment. 关于 hexo 主题 Next 的 6.3 升级步骤 源码库1git clone https://github.com/theme-next/hexo-theme-next themes/next 修改你的主题配置12# gitment: .... so easy it 关于 Markdown 有一个以前不常用的 图片链接记录下 1[![微信图片_20180705113552.jpg](https://i.loli.net/2018/07/05/5b3d922e4bfea.jpg)](https://i.loli.net/2018/07/05/5b3d922e4bfea.jpg) Share 因为是首次的分享, so, 我就说下放弃 blog 的这些日子吧.真的是很轻松, 而且没有什么压力和负担.但是技术好像也荒废了, 能及时的把知识, 归纳成体系, 总结成系统, 这个是很有必要. 希望回过头, 看看自己走过的路, 不是那么的迷茫未来. 最主要也是感谢一下, 耗子叔(陈皓), 左耳听风专栏的作者. 给了我很大的支持以及鼓励. 传送门 如果你也喜欢, 欢迎订阅他的专栏 下一次分享, 本人计划把, slack 好好研究下, 做个分享.]]></content>
@@ -9,8 +23,8 @@
         <category>arts</category>
       </categories>
       <tags>
-        <tag>ARTS</tag>
         <tag>PHP</tag>
+        <tag>ARTS</tag>
       </tags>
   </entry>
   <entry>
