@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.mastershu.club/"/>
-  <updated>2018-07-13T09:40:40.148Z</updated>
+  <updated>2018-07-24T11:51:08.957Z</updated>
   <id>https://blog.mastershu.club/</id>
   
   <author>
@@ -15,6 +15,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018年 ARTS 周周享 (29)</title>
+    <link href="https://blog.mastershu.club/d060c1c9.html/"/>
+    <id>https://blog.mastershu.club/d060c1c9.html/</id>
+    <published>2018-07-24T11:50:22.000Z</published>
+    <updated>2018-07-24T11:51:08.957Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm&quot;&gt;&lt;a href=&quot;#Algorithm&quot; class=&quot;headerlink&quot; title=&quot;Algorithm&quot;&gt;&lt;/a&gt;Algorithm&lt;/h2&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;存在重复元素&lt;/p&gt;
+&lt;p&gt;给定一个整数数组，判断是否存在重复元素。&lt;/p&gt;
+&lt;p&gt;如果任何值在数组中出现至少两次，函数返回 true。如果数组中每个元素都不相同，则返回 false。&lt;/p&gt;
+&lt;p&gt;示例 1:&lt;/p&gt;
+&lt;p&gt;输入: [1,2,3,1]&lt;br&gt;输出: true&lt;br&gt;示例 2:&lt;/p&gt;
+&lt;p&gt;输入: [1,2,3,4]&lt;br&gt;输出: false&lt;/p&gt;
+&lt;p&gt;来看我的第一次解答&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+    
+    
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+      <category term="Docker" scheme="https://blog.mastershu.club/tags/Docker/"/>
+    
+      <category term="面试" scheme="https://blog.mastershu.club/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>2018年 ARTS 周周享 (28)</title>
@@ -42,9 +79,9 @@
       <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
     
     
-      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
-    
       <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
     
   </entry>
   
@@ -94,9 +131,9 @@
       <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
     
     
-      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
-    
       <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
     
   </entry>
   
