@@ -7,7 +7,9 @@ title: MasterShu
 subtitle: JUST DO BEST
 description:
 author: MasterShu
-language: zh-CN
+language: 
+  - zh-CN
+  - en
 timezone: PRC
 
 # URL
