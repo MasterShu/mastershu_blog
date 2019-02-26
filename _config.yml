@@ -83,8 +83,8 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: https://github.com/MasterShu/mastershu.github.io.git
-    branch: master
+    repo: https://github.com/MasterShu/mastershu_blog
+    branch: gh-pages
   - type: baidu_url_submitter
 
 # Custom permalink
