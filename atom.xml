@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MasterShu</title>
+  
+  <subtitle>JUST DO BEST</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://blog.mastershu.club/"/>
+  <updated>2019-04-30T02:38:20.000Z</updated>
+  <id>https://blog.mastershu.club/</id>
+  
+  <author>
+    <name>MasterShu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TDD（四）开始你的表演</title>
+    <link href="https://blog.mastershu.club/c5ede4f9.html/"/>
+    <id>https://blog.mastershu.club/c5ede4f9.html/</id>
+    <published>2019-04-30T02:38:20.000Z</published>
+    <updated>2019-04-30T02:38:20.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;正式开练&quot;&gt;&lt;a href=&quot;#正式开练&quot; class=&quot;headerlink&quot; title=&quot;正式开练&quot;&gt;&lt;/a&gt;正式开练&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;This Kata is presented in Robert C.. Martin’s
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="CleanCode" scheme="https://blog.mastershu.club/tags/CleanCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TDD（三）再重头，收拾旧山河</title>
+    <link href="https://blog.mastershu.club/5e5b91e2.html/"/>
+    <id>https://blog.mastershu.club/5e5b91e2.html/</id>
+    <published>2019-04-29T11:34:13.000Z</published>
+    <updated>2019-04-29T11:34:13.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;再重头&quot;&gt;&lt;a href=&quot;#再重头&quot; class=&quot;headerlink&quot; title=&quot;再重头&quot;&gt;&lt;/a&gt;再重头&lt;/h2&gt;&lt;p&gt;曾经的“待重头，收拾旧山河，朝天阙。”而如今，我就重头再来一遍 FizzBuzz 吧！&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="GO" scheme="https://blog.mastershu.club/tags/GO/"/>
+    
+      <category term="重构" scheme="https://blog.mastershu.club/tags/%E9%87%8D%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TDD（二）整理工作环境，工欲善其事必先利其器</title>
+    <link href="https://blog.mastershu.club/7259745d.html/"/>
+    <id>https://blog.mastershu.club/7259745d.html/</id>
+    <published>2019-04-27T10:25:22.000Z</published>
+    <updated>2019-04-27T10:25:22.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;整理工作环境&quot;&gt;&lt;a href=&quot;#整理工作环境&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="VIM" scheme="https://blog.mastershu.club/tags/VIM/"/>
+    
+      <category term="GO" scheme="https://blog.mastershu.club/tags/GO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>TDD（一）热身，不可否认是最佳的开始方式</title>
+    <link href="https://blog.mastershu.club/f59cc526.html/"/>
+    <id>https://blog.mastershu.club/f59cc526.html/</id>
+    <published>2019-04-25T02:32:32.000Z</published>
+    <updated>2019-04-25T02:32:32.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;FizzBuzz&quot;&gt;&lt;a href=&quot;#FizzBuzz&quot; class=&quot;headerlink&quot; title=&quot;FizzBuzz&quot;&gt;&lt;/a&gt;FizzBuzz&lt;/h2&gt;&lt;p&gt;首先，放出地址&lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>练拳不练功，到老一场空。</title>
+    <link href="https://blog.mastershu.club/668c793c.html/"/>
+    <id>https://blog.mastershu.club/668c793c.html/</id>
+    <published>2019-04-24T03:15:55.000Z</published>
+    <updated>2019-04-24T03:15:55.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;程序员的练功房&quot;&gt;&lt;a href=&quot;#程序员的练功房&quot; class=&quot;headerlink&quot; title=&quot;程序员的练功房&quot;&gt;&lt;/a&gt;程序员的练功房&lt;/h2&gt;&lt;p&gt;一场由熊节熊总发起的程序员练功房打卡活动。&lt;/p&gt;
+&lt;p&gt;他说道，80%
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
+    
+      <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OKR 来了</title>
+    <link href="https://blog.mastershu.club/2f668ef4.html/"/>
+    <id>https://blog.mastershu.club/2f668ef4.html/</id>
+    <published>2019-02-26T11:00:35.000Z</published>
+    <updated>2019-02-26T11:00:35.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;OKR-什么鬼&quot;&gt;&lt;a href=&quot;#OKR-什么鬼&quot; class=&quot;headerlink&quot; title=&quot;OKR 什么鬼&quot;&gt;&lt;/a&gt;OKR 什么鬼&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;每每天干日，东风多作怪！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+      <category term="管理" scheme="https://blog.mastershu.club/categories/%E7%AE%A1%E7%90%86/"/>
+    
+    
+      <category term="管理" scheme="https://blog.mastershu.club/tags/%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年 ARTS 周周享 (32)</title>
+    <link href="https://blog.mastershu.club/32567235.html/"/>
+    <id>https://blog.mastershu.club/32567235.html/</id>
+    <published>2019-02-26T10:59:06.000Z</published>
+    <updated>2019-02-26T10:59:06.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Algorithm&quot;&gt;&lt;a href=&quot;#Algorithm&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年 ARTS 周周享 (31)</title>
+    <link href="https://blog.mastershu.club/197b21f6.html/"/>
+    <id>https://blog.mastershu.club/197b21f6.html/</id>
+    <published>2019-02-26T10:58:50.000Z</published>
+    <updated>2019-02-26T10:58:50.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Algorithm&quot;&gt;&lt;a href=&quot;#Algorithm&quot; class=&quot;headerlink&quot; title=&quot;Algorithm&quot;&gt;&lt;/a&gt;Algorithm&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;两个数据的交集
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+    
+    
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+      <category term="Golang" scheme="https://blog.mastershu.club/tags/Golang/"/>
+    
+      <category term="Laravel" scheme="https://blog.mastershu.club/tags/Laravel/"/>
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年 ARTS 周周享 (30)</title>
+    <link href="https://blog.mastershu.club/6010b7.html/"/>
+    <id>https://blog.mastershu.club/6010b7.html/</id>
+    <published>2019-02-26T10:58:19.000Z</published>
+    <updated>2019-02-26T10:58:19.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Algorithm&quot;&gt;&lt;a href=&quot;#Algorithm&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+    
+    
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+      <category term="Golang" scheme="https://blog.mastershu.club/tags/Golang/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年 ARTS 周周享 (29)</title>
+    <link href="https://blog.mastershu.club/d060c1c9.html/"/>
+    <id>https://blog.mastershu.club/d060c1c9.html/</id>
+    <published>2018-07-24T11:50:22.000Z</published>
+    <updated>2018-07-24T11:50:22.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm&quot;&gt;&lt;a href=&quot;#Algorithm&quot; class=&quot;headerlink&quot; title=&quot;Algorithm&quot;&gt;&lt;/a&gt;Algorithm&lt;/h2&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;存在重复元素&lt;/p&gt;
+&lt;p&gt;给定一个整数数组，判断是否存在重复元素。&lt;/p&gt;
+&lt;p&gt;如果任何值在数组中出现至少两次，函数返回 true。如果数组中每个元素都不相同，则返回 false。&lt;/p&gt;
+&lt;p&gt;示例 1:&lt;/p&gt;
+&lt;p&gt;输入: [1,2,3,1]&lt;br&gt;输出: true&lt;br&gt;示例 2:&lt;/p&gt;
+&lt;p&gt;输入: [1,2,3,4]&lt;br&gt;输出: false&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;来看我的第一次解答&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+    
+    
+      <category term="Docker" scheme="https://blog.mastershu.club/tags/Docker/"/>
+    
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+      <category term="面试" scheme="https://blog.mastershu.club/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年 ARTS 周周享 (28)</title>
+    <link href="https://blog.mastershu.club/c97bf088.html/"/>
+    <id>https://blog.mastershu.club/c97bf088.html/</id>
+    <published>2018-07-13T10:40:26.000Z</published>
+    <updated>2018-07-13T10:40:26.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm&quot;&gt;&lt;a href=&quot;#Algorithm&quot; class=&quot;headerlink&quot; title=&quot;Algorithm&quot;&gt;&lt;/a&gt;Algorithm&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;旋转数组&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。&lt;/p&gt;
+&lt;p&gt;示例 1:&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;输入: [1,2,3,4,5,6,7] 和 k = 3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;输出: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;解释:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;向右旋转 1 步: [7,1,2,3,4,5,6]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;向右旋转 2 步: [6,7,1,2,3,4,5]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;向右旋转 3 步: [5,6,7,1,2,3,4]&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;以下是第一次想出来&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+    
+    
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>利用Laradock配置PHP开发环境</title>
+    <link href="https://blog.mastershu.club/e047a409.html/"/>
+    <id>https://blog.mastershu.club/e047a409.html/</id>
+    <published>2018-07-11T09:05:42.000Z</published>
+    <updated>2018-07-11T09:05:42.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;需要一个简易的开发环境&quot;&gt;&lt;a href=&quot;#需要一个简易的开发环境&quot; class=&quot;headerlink&quot; title=&quot;需要一个简易的开发环境&quot;&gt;&lt;/a&gt;需要一个简易的开发环境&lt;/h2&gt;&lt;p&gt;传统的开发环境, 需要自己下 PHP, Nginx, MySQL… 等一大堆东西, 但是 docker 给我们带来了便利, 从此就告别了, 本地环境跑的好好的东西,&lt;br&gt;为啥服务器就是不给力, 各种未知的bug. &lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&quot;docker-环境&quot;&gt;&lt;a href=&quot;#docker-环境&quot; class=&quot;headerlink&quot; title=&quot;docker 环境&quot;&gt;&lt;/a&gt;docker 环境&lt;/h3&gt;
+    
+    </summary>
+    
+    
+      <category term="工具库" scheme="https://blog.mastershu.club/categories/%E5%B7%A5%E5%85%B7%E5%BA%93/"/>
+    
+      <category term="开发环境" scheme="https://blog.mastershu.club/categories/%E5%B7%A5%E5%85%B7%E5%BA%93/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+      <category term="docker" scheme="https://blog.mastershu.club/tags/docker/"/>
+    
+      <category term="laradock" scheme="https://blog.mastershu.club/tags/laradock/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2018年 ARTS 周周享 (27)</title>
+    <link href="https://blog.mastershu.club/185059fb.html/"/>
+    <id>https://blog.mastershu.club/185059fb.html/</id>
+    <published>2018-07-05T03:40:26.000Z</published>
+    <updated>2018-07-05T03:40:26.000Z</updated>
+    
+    <summary type="html">
+    
+      PHP 学习的必备网站, 以及个人的站点升级分享
+    
+    </summary>
+    
+    
+      <category term="分享" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="arts" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/arts/"/>
+    
+    
+      <category term="ARTS" scheme="https://blog.mastershu.club/tags/ARTS/"/>
+    
+      <category term="PHP" scheme="https://blog.mastershu.club/tags/PHP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RegEx 正则表达式 玩不转</title>
+    <link href="https://blog.mastershu.club/b9975ef4.html/"/>
+    <id>https://blog.mastershu.club/b9975ef4.html/</id>
+    <published>2018-01-09T08:10:25.000Z</published>
+    <updated>2018-01-09T08:10:25.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;玩转玩不转的正则&quot;&gt;&lt;a href=&quot;#玩转玩不转的正则&quot; class=&quot;headerlink&quot; title=&quot;玩转玩不转的正则&quot;&gt;&lt;/a&gt;玩转玩不转的正则&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids.&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;正则表达式&lt;br&gt;推荐几个在线的正则表达式测试以及常用规则 &lt;a href=&quot;https://c.runoob.com/front-end/854&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt; | &lt;a href=&quot;http://tool.oschina.net/regex/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门II&lt;/a&gt; | &lt;a href=&quot;http://tool.oschina.net/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;在线工具类&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;学习类参考 &lt;a href=&quot;http://www.regular-expressions.info/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>FEE前端探索交流会</title>
+    <link href="https://blog.mastershu.club/c748d68a.html/"/>
+    <id>https://blog.mastershu.club/c748d68a.html/</id>
+    <published>2017-12-11T01:54:51.000Z</published>
+    <updated>2017-12-11T01:54:51.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;开始你的表演&quot;&gt;&lt;a href=&quot;#开始你的表演&quot; class=&quot;headerlink&quot; title=&quot;开始你的表演&quot;&gt;&lt;/a&gt;开始你的表演&lt;/h1&gt;&lt;p&gt;这是一场关于 &lt;code&gt;AR&lt;/code&gt; 发展的基础讲说和 &lt;code&gt;iview&lt;/code&gt; 相关的一些说明.&lt;/p&gt;
+&lt;h1 id=&quot;WEBAR&quot;&gt;&lt;a href=&quot;#WEBAR&quot; class=&quot;headerlink&quot; title=&quot;WEBAR&quot;&gt;&lt;/a&gt;WEBAR&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;识别&amp;amp;跟踪&lt;/li&gt;
+&lt;li&gt;模型开发&lt;/li&gt;
+&lt;li&gt;终端适配&lt;/li&gt;
+&lt;li&gt;模型渲染&lt;ul&gt;
+&lt;li&gt;three.js&lt;/li&gt;
+&lt;li&gt;webrt
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown 玩不转</title>
+    <link href="https://blog.mastershu.club/64460.html/"/>
+    <id>https://blog.mastershu.club/64460.html/</id>
+    <published>2017-12-05T03:00:57.000Z</published>
+    <updated>2017-12-05T03:00:57.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;玩转玩不转的-Markdown&quot;&gt;&lt;a href=&quot;#玩转玩不转的-Markdown&quot; class=&quot;headerlink&quot; title=&quot;玩转玩不转的 Markdown&quot;&gt;&lt;/a&gt;玩转玩不转的 Markdown&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo 玩不转</title>
+    <link href="https://blog.mastershu.club/4fce4897.html/"/>
+    <id>https://blog.mastershu.club/4fce4897.html/</id>
+    <published>2017-12-02T06:14:06.000Z</published>
+    <updated>2017-12-02T06:14:06.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;玩转玩不转的Hexo&quot;&gt;&lt;a href=&quot;#玩转玩不转的Hexo&quot; class=&quot;headerlink&quot; title=&quot;玩转玩不转的Hexo&quot;&gt;&lt;/a&gt;玩转玩不转的&lt;code&gt;Hexo&lt;/code&gt;&lt;/h2&gt;&lt;p&gt;官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;本文即是在 &lt;code&gt;Next&lt;/code&gt; 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;这儿是配置必要的环境, 已经配置好的请跳过&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+    
+      <category term="建站系统" scheme="https://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="博客" scheme="https://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="玩不转" scheme="https://blog.mastershu.club/tags/%E7%8E%A9%E4%B8%8D%E8%BD%AC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GitHub Pages 玩不转</title>
+    <link href="https://blog.mastershu.club/52725.html/"/>
+    <id>https://blog.mastershu.club/52725.html/</id>
+    <published>2017-12-02T03:32:37.000Z</published>
+    <updated>2017-12-02T03:32:37.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;h1 id=&quot;玩不转的GitHub-Pages&quot;&gt;&lt;a href=&quot;#玩不转的GitHub-Pages&quot; class=&quot;headerlink&quot; title=&quot;玩不转的GitHub Pages&quot;&gt;&lt;/a&gt;玩不转的&lt;code&gt;GitHub Pages&lt;/code&gt;&lt;/h1&gt;&lt;/blockquote&gt;
+&lt;p&gt; 玩转玩不转, 就是把免费的博客搞起来. 非高端教程 ^_^&lt;/p&gt;
+&lt;h2 id=&quot;准备工作&quot;&gt;&lt;a href=&quot;#准备工作&quot; class=&quot;headerlink&quot; title=&quot;准备工作&quot;&gt;&lt;/a&gt;准备工作&lt;/h2&gt;&lt;p&gt; 你所需要的环境&lt;/p&gt;
+&lt;h3 id=&quot;GitHub&quot;&gt;&lt;a href=&quot;#GitHub&quot; class=&quot;headerlink&quot; title=&quot;GitHub&quot;&gt;&lt;/a&gt;GitHub&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;首先的申请一个账号&lt;code&gt;GitHub&lt;/code&gt; &lt;a href=&quot;https://github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;传送门&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;登录后, 创建一个新的仓库,并且以 &lt;code&gt;username.github.io&lt;/code&gt; 为仓库名, 这儿的username是你自己的&lt;code&gt;GihtHub&lt;/code&gt; 账号名 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;Node&quot;&gt;&lt;a href=&quot;#Node&quot; class=&quot;headerlink&quot; title=&quot;Node&quot;&gt;&lt;/a&gt;Node&lt;/h3&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>bat Windows 脚本的编写</title>
+    <link href="https://blog.mastershu.club/59564.html/"/>
+    <id>https://blog.mastershu.club/59564.html/</id>
+    <published>2017-12-02T01:36:57.000Z</published>
+    <updated>2017-12-02T01:36:57.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;BAT-脚本编写指南&quot;&gt;&lt;a href=&quot;#BAT-脚本编写指南&quot; class=&quot;headerlink&quot; title=&quot;BAT 脚本编写指南&quot;&gt;&lt;/a&gt;BAT 脚本编写指南&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!&lt;br&gt;BAT 脚本编码使用 &lt;code&gt;GB 2312&lt;/code&gt; 简体中文, 使用 &lt;code&gt;UTF-8&lt;/code&gt;后竟然乱码报错,没细究, 使用就对了^_^&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;常用指令&quot;&gt;&lt;a href=&quot;#常用指令&quot; class=&quot;headerlink&quot; title=&quot;常用指令&quot;&gt;&lt;/a&gt;常用指令&lt;/h2&gt;&lt;h3 id=&quot;显示&quot;&gt;&lt;a href=&quot;#显示&quot; class=&quot;headerlink&quot; title=&quot;显示&quot;&gt;&lt;/a&gt;显示&lt;/h3&gt;&lt;p&gt;&lt;code&gt;echo&lt;/code&gt; 表示显示此命令后的字符&lt;/p&gt;
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>frist article</title>
+    <link href="https://blog.mastershu.club/52109.html/"/>
+    <id>https://blog.mastershu.club/52109.html/</id>
+    <published>2017-12-01T03:37:23.000Z</published>
+    <updated>2017-12-01T03:37:23.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;My-First-Article&quot;&gt;&lt;a href=&quot;#My-First-Article&quot; class=&quot;headerlink&quot; title=&quot;My First Article&quot;&gt;&lt;/a&gt;My First Article&lt;/h1&gt;&lt;p&gt;I don’t know
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>

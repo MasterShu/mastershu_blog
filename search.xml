@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>TDD（四）开始你的表演</title>
+    <url>/c5ede4f9.html/</url>
+    <content><![CDATA[<h2 id="正式开练"><a href="#正式开练" class="headerlink" title="正式开练"></a>正式开练</h2><blockquote>
+<p>This Kata is presented in Robert C.. Martin’s book “Clean Code”, chapter 14.</p>
+</blockquote>
+<p>按照惯例，先放出题目地址 <a href="http://codingdojo.org/kata/Args/" target="_blank" rel="noopener">传送门</a></p>
+<h3 id="任务清单"><a href="#任务清单" class="headerlink" title="任务清单"></a>任务清单</h3><ul>
+<li><p>需要做到完成第一阶段先</p>
+<ul>
+<li>判断 l 的 Boolean 参数</li>
+<li>判断 p 的 数字 参数</li>
+<li>判断 d 的 string 参数</li>
+</ul>
+</li>
+<li><p>进行编码</p>
+<ul>
+<li>解析 -l 参数</li>
+<li>解析 p</li>
+<li>解析 d</li>
+</ul>
+</li>
+</ul>
+<h3 id="完成它吧"><a href="#完成它吧" class="headerlink" title="完成它吧"></a>完成它吧</h3><p>先放上 unclebob 的 ruby 版本的 <a href="https://github.com/unclebob/rubyargs" target="_blank" rel="noopener">传送门</a></p>
+<p>初次完成, 用时在 50 分钟左右。</p>
+<p>代码还没有上传，后续更新博客。</p>
+<h3 id="一些思考"><a href="#一些思考" class="headerlink" title="一些思考"></a>一些思考</h3><p>TDD 的测试驱动方式就是要以最少d的代码量来完成工作，这就要求有测试思维。个人觉得是目标思维，如何使用最少的工作量来<br>完成，而不是写一大坨代码。然后重构。</p>
+<p>一开始完成的代码，总是很烂，不过能完成需求，这就已经是 ok， 算是完成了第一步。</p>
+<p>代码是写给计算机用的，但是最终还是给人看的。重构是必不可少的一步，不然 WTF，It is my code！</p>
+<p>这个和语言也是有关系，在 Clean Code 上，作者也提到了用 ruby 就让代码少至 1/7 这个就很厉害了。</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>练功房</category>
+      </categories>
+      <tags>
+        <tag>TDD</tag>
+        <tag>练功房</tag>
+        <tag>CleanCode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TDD（三）再重头，收拾旧山河</title>
+    <url>/5e5b91e2.html/</url>
+    <content><![CDATA[<h2 id="再重头"><a href="#再重头" class="headerlink" title="再重头"></a>再重头</h2><p>曾经的“待重头，收拾旧山河，朝天阙。”而如今，我就重头再来一遍 FizzBuzz 吧！</p>
+<h3 id="时间会证明一切"><a href="#时间会证明一切" class="headerlink" title="时间会证明一切"></a>时间会证明一切</h3><p>5 分钟，是个人能做到的最好（现阶段）。</p>
+<p>说起来，确实是提速了不少，总结一下提速的原因吧。</p>
+<ol>
+<li>熟练使用了一些快捷键。当然 vim 的便捷远不止于此。</li>
+<li>对一些操作需要用到方法熟悉，不需要额外查阅文档</li>
+<li>花时间去学习其他兄弟的做法，提取对自己有用的信息，这儿主要是在测试的方法上改进了。【利用 Run 来执行用例】</li>
+</ol>
+<h3 id="速度与质量并存"><a href="#速度与质量并存" class="headerlink" title="速度与质量并存"></a>速度与质量并存</h3><p>如果说只是单纯的提速，而忽略质量，肯定是非常不可取的。</p>
+<p>这次的练习，同时提高了测试的质量以及便捷性。同时对重构有了新的认识。</p>
+<p>能抽象出来的，就抽象出来吧。让方法说明一切。并且利用 idea 的重构快捷方式，也提高了重构的效率和正确性。【当然，我在这儿用的是 GoLand，不过都是一家产品】</p>
+<h3 id="不要让精力白白消散"><a href="#不要让精力白白消散" class="headerlink" title="不要让精力白白消散"></a>不要让精力白白消散</h3><p>越来明白了一件事，把时间花费在有用的东西上。努力提高专注度，刻意练习。</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>练功房</category>
+      </categories>
+      <tags>
+        <tag>TDD</tag>
+        <tag>练功房</tag>
+        <tag>GO</tag>
+        <tag>重构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TDD（二）整理工作环境，工欲善其事必先利其器</title>
+    <url>/7259745d.html/</url>
+    <content><![CDATA[<h2 id="整理工作环境"><a href="#整理工作环境" class="headerlink" title="整理工作环境"></a>整理工作环境</h2><p>俗话说，<strong>磨刀不误砍柴工</strong>，今天我们就从工作环境入手。</p>
+<p>编辑器本人用的是 <a href="https://www.vim.org/" target="_blank" rel="noopener">vim</a>，这儿使用的语言是 <a href="https://golang.google.cn" target="_blank" rel="noopener">Golang</a>。</p>
+<p>具体来说是 MacVim，然后针对 Golang，安装一下对应的插件 <a href="https://github.com/fatih/vim-go/" target="_blank" rel="noopener">vim-go</a>。另外对应的文档可以在这儿查看 <a href="https://github.com/fatih/vim-go-tutorial" target="_blank" rel="noopener">vim-go-tutorial</a>。</p>
+<p>在这儿要说明一下的是，虽然 Vim 作为编辑器很强，但是重构的话，还是推荐使用 <a href="https://www.jetbrains.com/go/" target="_blank" rel="noopener">GoLand</a>。这个也是大牛告知的，Vim 确实不是很适合做重构。（欢迎反对意见）。</p>
+<h3 id="快捷键，让行动如飞"><a href="#快捷键，让行动如飞" class="headerlink" title="快捷键，让行动如飞"></a>快捷键，让行动如飞</h3><p>这个就让我想到以前练打字的游戏，“金山打字通”了。那段日子是真难熬啊，尤其是像我这种多动的人，每天练习打字半个小时到一两个小时不等，再加上天资驽钝，现在打字依旧不快，不过已经是可以实现完全的盲打了。我想快捷键的熟练使用，目的也在此吧，就是要大幅度的提高编程效率。</p>
+<p>Vim 的快捷键，个人觉得是多如牛毛，今天的联系依旧是昨天的内容，更多的为了实现无鼠标操作，这个倒不是很难，难就难在查文档的时候，没有鼠标，操作起来确实费劲。</p>
+<h3 id="谈点儿自己的理解"><a href="#谈点儿自己的理解" class="headerlink" title="谈点儿自己的理解"></a>谈点儿自己的理解</h3><p>Vim 给个人的感觉就是，总有新奇在等你，看书上提到过一个说法，不要重复你自己。</p>
+<p>这句话也真真印证了编程的一个思想。就举一个很简单的例子，也是本次练习中的一点儿收获。</p>
+<p>重复操作键 <code>.</code>，这个可以快速帮你重复上一次的操作，没想到很快就利用上。</p>
+<p>回现一下问题吧，不同的编程语言，对 <code>&quot;</code> 和 <code>&#39;</code> 的区分是不一样，本次的使用就是在这种情况下。有几个字符串并不能使用单引号。需要修改，就用到了这个重复操作快捷键，确实好用。当然，肯定还有更方便替换的方式，下次继续学习吧！</p>
+<h3 id="推荐一下学习资料"><a href="#推荐一下学习资料" class="headerlink" title="推荐一下学习资料"></a>推荐一下学习资料</h3><ul>
+<li><a href="https://www.vim.org/" target="_blank" rel="noopener">vim</a></li>
+<li><a href="https://www.runoob.com/linux/linux-vim.html" target="_blank" rel="noopener">vim 指令</a></li>
+<li><a href="https://www.w3cschool.cn/vim/" target="_blank" rel="noopener">vim 教程</a></li>
+<li><a href="https://github.com/wuzhouhui/hacking_vim" target="_blank" rel="noopener">Hacking vim</a></li>
+</ul>
+<blockquote>
+<p>以上资料来自网络</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>练功房</category>
+      </categories>
+      <tags>
+        <tag>TDD</tag>
+        <tag>练功房</tag>
+        <tag>VIM</tag>
+        <tag>GO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>TDD（一）热身，不可否认是最佳的开始方式</title>
+    <url>/f59cc526.html/</url>
+    <content><![CDATA[<h2 id="FizzBuzz"><a href="#FizzBuzz" class="headerlink" title="FizzBuzz"></a>FizzBuzz</h2><p>首先，放出地址<a href="http://codingdojo.org/kata/FizzBuzz/" target="_blank" rel="noopener">FizzBuzz</a>。</p>
+<h3 id="任务清单"><a href="#任务清单" class="headerlink" title="任务清单"></a>任务清单</h3><h4 id="stage-1"><a href="#stage-1" class="headerlink" title="stage 1"></a>stage 1</h4><ul>
+<li>测试代码 验证输出是否正确 从1到100的输出</li>
+<li>编写代码 循环1到100, 判断是否满足3和5的倍数, 3 的倍数, 5 的倍数, 并输出相应的值</li>
+</ul>
+<h4 id="stage-2"><a href="#stage-2" class="headerlink" title="stage 2"></a>stage 2</h4><ul>
+<li>测试代码 利用几个极限的数字的判断是否满足被3整除或包含3 以及被5整除或包含5</li>
+<li>编写代码 利用一个函数来处理这个问题<ul>
+<li>判断是否被3/5 整除 或包含 3/5</li>
+</ul>
+</li>
+</ul>
+<h3 id="My-Code"><a href="#My-Code" class="headerlink" title="My Code"></a>My Code</h3><p><a href="https://github.com/MasterShu/GoTDD/tree/master/src/fizzbuzz/lib" target="_blank" rel="noopener">我的代码</a></p>
+<h3 id="一些思考"><a href="#一些思考" class="headerlink" title="一些思考"></a>一些思考</h3><p>TDD，测试驱动开发，先编写测试代码，再编写功能代码。</p>
+<p>从这次的题中也发现了一个问题，就是在阶段二时，同时满足的情况如何处理，不是很懂。</p>
+<p>时间是耗费了很多了。大体来说前前后后耗费了一两个小时，包括安装环境调试代码等过程。</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>练功房</category>
+      </categories>
+      <tags>
+        <tag>TDD</tag>
+        <tag>练功房</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>练拳不练功，到老一场空。</title>
+    <url>/668c793c.html/</url>
+    <content><![CDATA[<h2 id="程序员的练功房"><a href="#程序员的练功房" class="headerlink" title="程序员的练功房"></a>程序员的练功房</h2><p>一场由熊节熊总发起的程序员练功房打卡活动。</p>
+<p>他说道，80% 的程序员的代码都是无法直视。</p>
+<h2 id="谈谈我的想法"><a href="#谈谈我的想法" class="headerlink" title="谈谈我的想法"></a>谈谈我的想法</h2><p>看到这个活动，让我想到了一句话 “练拳不练功，到老一场空”，基本功还是要的，不然根基不稳，难成大器。</p>
+<p>当然本篇文章主要是个引子，接下来，会有大篇文章跟进学习进度。也算是立个“flag”！</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>练功房</category>
+      </categories>
+      <tags>
+        <tag>TDD</tag>
+        <tag>练功房</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>OKR 来了</title>
+    <url>/2f668ef4.html/</url>
+    <content><![CDATA[<h1 id="OKR-什么鬼"><a href="#OKR-什么鬼" class="headerlink" title="OKR 什么鬼"></a>OKR 什么鬼</h1><blockquote>
+<p>每每天干日，东风多作怪！</p>
+</blockquote>
+<h2 id="风起时"><a href="#风起时" class="headerlink" title="风起时"></a>风起时</h2><p>OKR（objectives and key results），称为<strong>目标与关键结果</strong></p>
+<h2 id="看到了什么"><a href="#看到了什么" class="headerlink" title="看到了什么"></a>看到了什么</h2><ul>
+<li>少即是多</li>
+<li>自下而上设定目标</li>
+<li>共同参与</li>
+<li>保持灵活</li>
+<li>敢于失败</li>
+<li>OKR 是工具，而非武器</li>
+<li>耐心、坚定</li>
+</ul>
+<p>以上是 OKR 的通用说明，也是实施的参考。当然，也是纯理论，还是别人总结的经验。</p>
+<h2 id="想到了什么"><a href="#想到了什么" class="headerlink" title="想到了什么"></a>想到了什么</h2><p><strong>减法</strong><br>就是要聚焦，对优先事物，优先处理。当然，这也是最具有挑战性，毕竟有那么多人和事在催你，不过，这绝对是值得的。</p>
+<p><strong>多维度</strong><br>单一维度的 OKR，必定会带来一定风险。从书中也得到了一些提示，这会带来风险。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.whatmatters.com/" target="_blank" rel="noopener">Measure What Matters</a></p>
+]]></content>
+      <categories>
+        <category>管理</category>
+      </categories>
+      <tags>
+        <tag>管理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年 ARTS 周周享 (32)</title>
+    <url>/32567235.html/</url>
+    <content><![CDATA[<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><blockquote>
+<p>给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。</p>
+<p>最高位数字存放在数组的首位， 数组中每个元素只存储一个数字。</p>
+<p>你可以假设除了整数 0 之外，这个整数不会以零开头。</p>
+</blockquote>
+<blockquote>
+<p>示例 1:</p>
+<p>输入: [1,2,3]<br>输出: [1,2,4]<br>解释: 输入数组表示数字 123。</p>
+</blockquote>
+<blockquote>
+<p>示例 2:</p>
+<p>输入: [4,3,2,1]<br>输出: [4,3,2,2]<br>解释: 输入数组表示数字 4321。</p>
+</blockquote>
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">plusOne</span><span class="params">(digits []<span class="keyword">int</span>)</span> []<span class="title">int</span></span> &#123;</span><br><span class="line">    digitsLen := <span class="built_in">len</span>(digits)</span><br><span class="line">    isOver := <span class="literal">false</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> i := digitsLen - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i-- &#123;</span><br><span class="line">        <span class="keyword">if</span> digits[i] == <span class="number">9</span> &#123;</span><br><span class="line">            digits[i] = <span class="number">0</span></span><br><span class="line">            <span class="keyword">if</span> i == <span class="number">0</span> &#123;</span><br><span class="line">                isOver = <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            digits[i] = digits[i] + <span class="number">1</span></span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> isOver == <span class="literal">true</span> &#123;</span><br><span class="line">        overArr := []<span class="keyword">int</span>&#123;<span class="number">1</span>&#125;</span><br><span class="line">        digits = <span class="built_in">append</span>(overArr, digits...)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> digits</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p><a href="#https://medium.freecodecamp.org/this-is-what-modern-php-looks-like-769192a1320">This is what modern PHP looks like</a></p>
+<h2 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h2><h2 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h2>]]></content>
+      <tags>
+        <tag>ARTS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年 ARTS 周周享 (31)</title>
+    <url>/197b21f6.html/</url>
+    <content><![CDATA[<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><blockquote>
+<p>两个数据的交集 </p>
+<p>给定两个数组，写一个方法来计算它们的交集。</p>
+<p>例如:<br>给定 nums1 = [1, 2, 2, 1], nums2 = [2, 2], 返回 [2, 2].</p>
+</blockquote>
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">intersect</span><span class="params">(nums1 []<span class="keyword">int</span>, nums2 []<span class="keyword">int</span>)</span> []<span class="title">int</span></span> &#123;</span><br><span class="line">	result := []<span class="keyword">int</span> &#123;&#125;;</span><br><span class="line">	<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; <span class="built_in">len</span>(nums1); i++ &#123;</span><br><span class="line">		<span class="keyword">for</span> j := <span class="number">0</span>; j &lt; <span class="built_in">len</span>(nums2); j++ &#123;</span><br><span class="line">			<span class="keyword">if</span> nums1[i] == nums2[j] &#123;</span><br><span class="line">				result = <span class="built_in">append</span>(result, nums1[i])</span><br><span class="line">				nums2 = <span class="built_in">append</span>(nums2[<span class="number">0</span>:j], nums2[j+<span class="number">1</span>:]...)</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> result</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>就这么简单, 不过确实巩固了切片的用法.</p>
+<h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p><code>Simple TDD in Laravel with 11 steps</code> is read in this week.<br>The link <a href="https://medium.com/@jsdecena/simple-tdd-in-laravel-with-11-steps-c475f8b1b214" target="_blank" rel="noopener">https://medium.com/@jsdecena/simple-tdd-in-laravel-with-11-steps-c475f8b1b214</a></p>
+<blockquote>
+<p>Note: This is TDD for API responses.</p>
+</blockquote>
+<p>It has 11 steps for you, and tell you how to use TDD in Laravel.</p>
+<p>Show it.</p>
+<h3 id="Step-1-PREPARE-LARAVEL-TEST-SUITE"><a href="#Step-1-PREPARE-LARAVEL-TEST-SUITE" class="headerlink" title="Step 1: PREPARE LARAVEL TEST SUITE"></a>Step 1: PREPARE LARAVEL TEST SUITE</h3><p>First, update your <code>phpunit.xml</code> with add code:</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">env</span> <span class="attr">name</span>=<span class="string">"DB_CONNECTION"</span> <span class="attr">value</span>=<span class="string">"sqlite"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">env</span> <span class="attr">name</span>=<span class="string">"DB_DATABASE"</span> <span class="attr">value</span>=<span class="string">":memory:"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">env</span> <span class="attr">name</span>=<span class="string">"API_DEBUG"</span> <span class="attr">value</span>=<span class="string">"false"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ini</span> <span class="attr">name</span>=<span class="string">"memory_limit"</span> <span class="attr">value</span>=<span class="string">"512M"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>It means you need <code>sqlite</code> and we use in-memory, it more fast.</p>
+<p>Make sure your <code>TestCase.php</code> if prep for it.</p>
+<figure class="highlight php"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">Tests</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Foundation</span>\<span class="title">Testing</span>\<span class="title">DatabaseMigrations</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Foundation</span>\<span class="title">Testing</span>\<span class="title">DatabaseTransactions</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Illuminate</span>\<span class="title">Foundation</span>\<span class="title">Testing</span>\<span class="title">TestCase</span> <span class="title">as</span> <span class="title">BaseTestCase</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Faker</span>\<span class="title">Factory</span> <span class="title">as</span> <span class="title">Faker</span>;</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Class TestCase</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@package</span> Tests</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@runTestsInSeparateProcesses</span></span></span><br><span class="line"><span class="comment"> * <span class="doctag">@preserveGlobalState</span> disabled</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">TestCase</span> <span class="keyword">extends</span> <span class="title">BaseTestCase</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">use</span> <span class="title">CreatesApplication</span>, <span class="title">DatabaseMigrations</span>, <span class="title">DatabaseTransactions</span>;</span><br><span class="line">    <span class="keyword">protected</span> $faker;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Set up the test</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">setUp</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">parent</span>::setUp();</span><br><span class="line">        <span class="keyword">$this</span>-&gt;faker = Faker::create();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Reset the migrations</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">tearDown</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">$this</span>-&gt;artisan(<span class="string">'migrate:reset'</span>);</span><br><span class="line">        <span class="keyword">parent</span>::tearDown();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="STEP-2-WRITE-YOUR-ACTUAL-TEST"><a href="#STEP-2-WRITE-YOUR-ACTUAL-TEST" class="headerlink" title="STEP 2: WRITE YOUR ACTUAL TEST"></a>STEP 2: WRITE YOUR ACTUAL TEST</h3><h3 id="STEP-3-CREATE-THE-URL-IN-THE-ROUTE-FILE"><a href="#STEP-3-CREATE-THE-URL-IN-THE-ROUTE-FILE" class="headerlink" title="STEP 3: CREATE THE URL IN THE ROUTE FILE"></a>STEP 3: CREATE THE URL IN THE ROUTE FILE</h3><h3 id="STEP-4-DEBUG-YOUR-CONTROLLER"><a href="#STEP-4-DEBUG-YOUR-CONTROLLER" class="headerlink" title="STEP 4: DEBUG YOUR CONTROLLER"></a>STEP 4: DEBUG YOUR CONTROLLER</h3><h3 id="STEP-5-VALIDATE-YOUR-INPUTS"><a href="#STEP-5-VALIDATE-YOUR-INPUTS" class="headerlink" title="STEP 5: VALIDATE YOUR INPUTS"></a>STEP 5: VALIDATE YOUR INPUTS</h3><h3 id="STEP-6-RETURN-THE-CREATED-ARTICLE"><a href="#STEP-6-RETURN-THE-CREATED-ARTICLE" class="headerlink" title="STEP 6: RETURN THE CREATED ARTICLE"></a>STEP 6: RETURN THE CREATED ARTICLE</h3><h3 id="STEP-7-CREATE-THE-ARTICLE-CLASS"><a href="#STEP-7-CREATE-THE-ARTICLE-CLASS" class="headerlink" title="STEP 7: CREATE THE ARTICLE CLASS"></a>STEP 7: CREATE THE ARTICLE CLASS</h3><h3 id="STEP-8-RUN-PHPUNIT-AGAIN-TO-SEE-WHAT-IS-GOING-ON"><a href="#STEP-8-RUN-PHPUNIT-AGAIN-TO-SEE-WHAT-IS-GOING-ON" class="headerlink" title="STEP 8: RUN PHPUNIT AGAIN TO SEE WHAT IS GOING ON"></a>STEP 8: RUN PHPUNIT AGAIN TO SEE WHAT IS GOING ON</h3><h3 id="STEP-9-CREATE-THE-DATABASE-TABLE"><a href="#STEP-9-CREATE-THE-DATABASE-TABLE" class="headerlink" title="STEP 9: CREATE THE DATABASE TABLE"></a>STEP 9: CREATE THE DATABASE TABLE</h3><h3 id="STEP-10-RUN-THE-PHPUNIT-AGAIN"><a href="#STEP-10-RUN-THE-PHPUNIT-AGAIN" class="headerlink" title="STEP 10: RUN THE PHPUNIT AGAIN"></a>STEP 10: RUN THE PHPUNIT AGAIN</h3><h3 id="STEP-11-RUN-PHPUNIT-AND-HOPE-FOR-THE-BEST"><a href="#STEP-11-RUN-PHPUNIT-AND-HOPE-FOR-THE-BEST" class="headerlink" title="STEP 11: RUN PHPUNIT AND HOPE FOR THE BEST"></a>STEP 11: RUN PHPUNIT AND HOPE FOR THE BEST</h3><h2 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h2><p>其实也不算是 <code>Tip</code> 吧, 就是今天发现维基百科虽然有中文和英文不同的版本, 但是相同的内容, 中英文不同的版本, 内容差距真的是好大的说.</p>
+<p>来看下实例</p>
+<p><a href="https://zh.wikipedia.org/wiki/%E6%B5%8B%E8%AF%95%E9%A9%B1%E5%8A%A8%E5%BC%80%E5%8F%91" target="_blank" rel="noopener">测试驱动开发</a></p>
+<p><a href="https://en.wikipedia.org/wiki/Test-driven_development" target="_blank" rel="noopener">Test-driven development</a></p>
+<p><strong>论学好英语的重要性</strong></p>
+<h2 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h2><p><strong>极限编程</strong></p>
+<blockquote>
+<p>极限编程的主要目标在于降低因需求变更而带来的成本。在传统系统开发方法中，系统需求是在项目开发的开始阶段就确定下来，并在之后的开发过程中保持不变的。这意味着项目开发进入到之后的阶段时出现的需求变更（而这样的需求变更在一些发展极快的领域中是不可避免的）将导致开发成本急速增加。</p>
+</blockquote>
+<blockquote>
+<p>极限编程透过引入基本价值、原则、方法等概念来达到降低变更成本的目的。一个应用了极限编程方法的系统开发项目在应对需求变更时将显得更为灵活。</p>
+</blockquote>
+<p><strong>极限编程方法</strong>的基本特征是：</p>
+<ul>
+<li>增量和反复式的开发 - 一次小的改进跟着一个小的改进。</li>
+<li>反复性，通常是自动重复的单元测试，回归测试。参见JUnit。</li>
+<li>结对程序设计</li>
+<li>在程序设计团队中的用户交互（在场的客户）</li>
+<li>软件重构</li>
+<li>共享的代码所有权</li>
+<li>简单</li>
+<li>反馈</li>
+<li>用隐喻来组织系统</li>
+<li>可以忍受的速度</li>
+</ul>
+<p>目前还是无法探讨极限编程的具体意义. (<em>算是在这儿埋个坑吧</em>!)</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>arts</category>
+      </categories>
+      <tags>
+        <tag>ARTS</tag>
+        <tag>PHP</tag>
+        <tag>Golang</tag>
+        <tag>Laravel</tag>
+        <tag>TDD</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年 ARTS 周周享 (30)</title>
+    <url>/6010b7.html/</url>
+    <content><![CDATA[<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><hr>
+<blockquote>
+<p>只出现一次的数字</p>
+<p>给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。</p>
+</blockquote>
+<blockquote>
+<p>说明：</p>
+</blockquote>
+<blockquote>
+<p>你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？</p>
+</blockquote>
+<blockquote>
+<p>示例 1:</p>
+</blockquote>
+<blockquote>
+<p>输入: [2,2,1]<br>输出: 1</p>
+</blockquote>
+<h3 id="千辛万苦完成的"><a href="#千辛万苦完成的" class="headerlink" title="千辛万苦完成的"></a>千辛万苦完成的</h3><figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">singleNumber</span><span class="params">(nums []<span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</span><br><span class="line">	lens := <span class="built_in">len</span>(nums)</span><br><span class="line">	res := <span class="number">0</span></span><br><span class="line">	resIsOk:</span><br><span class="line">		<span class="keyword">for</span> i := <span class="number">0</span>; i &lt; lens ; i ++ &#123;</span><br><span class="line">            <span class="keyword">if</span> i == lens<span class="number">-1</span> &#123;</span><br><span class="line">                res = nums[i]</span><br><span class="line">                <span class="keyword">break</span> resIsOk</span><br><span class="line">            &#125;</span><br><span class="line">			<span class="keyword">for</span> j := i + <span class="number">1</span>; j &lt; lens; j ++ &#123;</span><br><span class="line">				<span class="keyword">if</span> nums[i] == nums[j] &amp;&amp; i != j&#123;</span><br><span class="line">					nums[i+<span class="number">1</span>], nums[j] = nums[j], nums[i+<span class="number">1</span>]</span><br><span class="line">					i++</span><br><span class="line">					<span class="keyword">break</span>;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span> j == lens<span class="number">-1</span> &amp;&amp; nums[i] != nums[j] &#123;</span><br><span class="line">					res = nums[i]</span><br><span class="line">					<span class="keyword">break</span> resIsOk</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> res</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>个人感觉算法蛮好的了</p>
+</blockquote>
+<h3 id="这个可以有"><a href="#这个可以有" class="headerlink" title="这个可以有"></a>这个可以有</h3><blockquote>
+<p>按位异或赋值运算</p>
+<p>位操作一直算是本人的弱项, 学习了新的操作方法</p>
+</blockquote>
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">singleNumber</span><span class="params">(nums []<span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</span><br><span class="line">  res := <span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> _, n := <span class="keyword">range</span> nums &#123;</span><br><span class="line">		res = res ^ n</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> res</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p>本周在 golang 的一个中文社区进行 Iris 框架文档翻译。 <a href="https://golangcaff.com/docs/iris-go" target="_blank" rel="noopener">传送门</a></p>
+<blockquote>
+<p>希望不要误人子弟。本人很多也是多次斟酌，并且还参考了在线翻译， 以及维基百科。尽量做到好理解，不出错。（原谅本人英文水平确实有限）</p>
+</blockquote>
+<h2 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h2><p>在学习 golang 的途中不知死活</p>
+<p><strong>New 和 Make</strong></p>
+<p><strong>make</strong> </p>
+<blockquote>
+<p>The make built-in function allocates and initializes an object of type slice, map, or chan (only). Like new, the first argument is a type, not a value. Unlike new, make’s return type is the same as the type of its argument, not a pointer to it. </p>
+</blockquote>
+<p><strong>new</strong></p>
+<blockquote>
+<p>The new built-in function allocates memory. The first argument is a type, not a value, and the value returned is a pointer to a newly allocated zero value of that type.</p>
+</blockquote>
+<p>对比官方文档, 我们不难看出它们都是内置函数, 并且 <code>new</code> 返回的是指针, 而 <code>make</code> 返回的该类型.</p>
+<p>比较重要的是, <code>make</code> 仅仅适用于 <code>slice</code>, <code>map</code> 和 <code>chan</code></p>
+<p>而是 <code>new</code> 并不常用, 我们通常都是采用短语句声明以及结构体的字面量达到我们的目的</p>
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line">user := users()</span><br></pre></td></tr></table></figure>
+
+<h2 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h2><p>本周，让我们谈谈关于学习方面的事。</p>
+<p>最近一直在学习，并且不断的搜集不同的学习资料。这种行为真的就像松鼠一样，囤积了好多的书以及网盘资料，但是根本就没有时间去看去学习。</p>
+<p>一天会抽出大量的时间用来学习，但是发现效果确实是不咋地。为什么会出现这样的情况呢，我仔细的想了想。</p>
+<ul>
+<li>学习的目的是什么？</li>
+<li>学习的效率如何呢？</li>
+<li>学完后，你还记得什么？</li>
+<li>是否真的能在实践中应用到？</li>
+</ul>
+<p>答案差强人意，就拿人工智能来说吧，这个确实很火，而且薪资应该也算不低了。我花费时间来学习，是否真的明白自己在做什么，好像并不知道，就因为人工智能火吗？那火的东西多了，为啥偏偏学他呢？那学习后的，我还记得什么，oh，shit。我竟然连昨天做的什么都忘了。</p>
+<p>说到这儿，我就不继续往下探究了。看来我是真的为了学习而学习了，不明白到底为了什么学习。好吧，接下来，我就该为自己制定详细的目标和计划。从第一步做起，我到底是为了什么？你真的明白吗？</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>arts</category>
+      </categories>
+      <tags>
+        <tag>ARTS</tag>
+        <tag>PHP</tag>
+        <tag>Golang</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年 ARTS 周周享 (29)</title>
+    <url>/d060c1c9.html/</url>
+    <content><![CDATA[<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><hr>
+<blockquote>
+<p>存在重复元素</p>
+<p>给定一个整数数组，判断是否存在重复元素。</p>
+<p>如果任何值在数组中出现至少两次，函数返回 true。如果数组中每个元素都不相同，则返回 false。</p>
+<p>示例 1:</p>
+<p>输入: [1,2,3,1]<br>输出: true<br>示例 2:</p>
+<p>输入: [1,2,3,4]<br>输出: false</p>
+</blockquote>
+<blockquote>
+<p>来看我的第一次解答</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">containsDuplicate</span><span class="params">(nums []<span class="keyword">int</span>)</span> <span class="title">bool</span></span> &#123;</span><br><span class="line">    numsLen := <span class="built_in">len</span>(nums)</span><br><span class="line">    <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; numsLen - <span class="number">1</span>; i++ &#123;</span><br><span class="line">        <span class="keyword">for</span> j := i + <span class="number">1</span>; j &lt; numsLen; j++ &#123;</span><br><span class="line">            <span class="keyword">if</span> nums[i] == nums[j] &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<blockquote>
+<p>来看看改良版本的</p>
+</blockquote>
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">containsDuplicate</span><span class="params">(nums []<span class="keyword">int</span>)</span> <span class="title">bool</span></span> &#123;</span><br><span class="line">    <span class="keyword">return</span> findDup(nums, <span class="number">0</span>, <span class="built_in">len</span>(nums))</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">findDup</span><span class="params">(nums []<span class="keyword">int</span>, start <span class="keyword">int</span>, end <span class="keyword">int</span>)</span> <span class="title">bool</span></span> &#123;</span><br><span class="line">    <span class="keyword">if</span> end - start &lt; <span class="number">2</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">if</span> end - start == <span class="number">2</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> nums[start] == nums[end<span class="number">-1</span>]</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    m := (end+start)/<span class="number">2</span></span><br><span class="line">    nums[start], nums[m] = nums[m], nums[start]</span><br><span class="line">    i := start + <span class="number">1</span></span><br><span class="line">    j := end <span class="number">-1</span></span><br><span class="line">    <span class="keyword">var</span> mid <span class="keyword">int</span></span><br><span class="line">    <span class="keyword">for</span> &#123;</span><br><span class="line">        <span class="keyword">for</span> i!=j &#123;</span><br><span class="line">            <span class="keyword">if</span> nums[i] == nums[start] &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> nums[i] &lt; nums[start] &#123;</span><br><span class="line">                i++</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> i!=j &#123;</span><br><span class="line">            <span class="keyword">if</span> nums[j]== nums[start] &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> nums[j] &gt; nums[start] &#123;</span><br><span class="line">                j--</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">break</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> i &lt; j &#123;</span><br><span class="line">            nums[i], nums[j] = nums[j], nums[i]</span><br><span class="line">            i++</span><br><span class="line">            j--</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> i == j &#123;</span><br><span class="line">            <span class="keyword">if</span> nums[i] == nums[start] &#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> nums[i] &lt; nums[start] &#123;</span><br><span class="line">                mid = i+<span class="number">1</span></span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                mid = i</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (i &gt; j) &#123;</span><br><span class="line">            mid = i</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> findDup(nums, start+<span class="number">1</span>, mid) || findDup(nums, mid, end)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>利用 map 来做重复判断, 这个算是取巧吗? ^_^</p>
+</blockquote>
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">containsDuplicate</span><span class="params">(nums []<span class="keyword">int</span>)</span> <span class="title">bool</span></span> &#123;</span><br><span class="line">    numsMap:=<span class="built_in">make</span>(<span class="keyword">map</span>[<span class="keyword">int</span>]<span class="keyword">bool</span>)</span><br><span class="line">    <span class="keyword">for</span> _,num:=<span class="keyword">range</span> nums&#123;</span><br><span class="line">        <span class="keyword">if</span> _,ok:=numsMap[num];ok&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">        &#125;</span><br><span class="line">        numsMap[num]=<span class="literal">true</span></span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p>本周在 golang 的一个中文社区进行 Iris 框架文档翻译。 <a href="https://golangcaff.com/docs/iris-go" target="_blank" rel="noopener">传送门</a></p>
+<blockquote>
+<p>希望不要误人子弟。本人很多也是多次斟酌，并且还参考了在线翻译， 以及维基百科。尽量做到好理解，不出错。（原谅本人英文水平确实有限）</p>
+</blockquote>
+<h2 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h2><p>这儿就记录一下，Docker 的不常用骚操作；</p>
+<h3 id="新建一个-镜像"><a href="#新建一个-镜像" class="headerlink" title="新建一个 镜像"></a>新建一个 镜像</h3><blockquote>
+<p>Create a new image from a container’s changes</p>
+</blockquote>
+<p><a href="https://docs.docker.com/engine/reference/commandline/commit/" target="_blank" rel="noopener">Commit</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">docker commit [OPTIONS] CONTAINER [REPOSITORY[:TAG]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line"></span><br><span class="line">docker commit c3f279d17e0a  microvision:v1</span><br></pre></td></tr></table></figure>
+
+<h3 id="保存-Docker-镜像"><a href="#保存-Docker-镜像" class="headerlink" title="保存 Docker 镜像"></a>保存 Docker 镜像</h3><blockquote>
+<p>Save one or more images to a tar archive (streamed to STDOUT by default)</p>
+</blockquote>
+<p><a href="https://docs.docker.com/engine/reference/commandline/save/" target="_blank" rel="noopener">Save</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">docker save [OPTIONS] IMAGE [IMAGE...]</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line"></span><br><span class="line">docker save -o image.tar microvision:v1</span><br></pre></td></tr></table></figure>
+
+<h3 id="导出压缩包"><a href="#导出压缩包" class="headerlink" title="导出压缩包"></a>导出压缩包</h3><blockquote>
+<p>Load an image from a tar archive or STDIN</p>
+</blockquote>
+<p><a href="https://docs.docker.com/engine/reference/commandline/load/" target="_blank" rel="noopener">Load</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">docker load [OPTIONS]</span><br><span class="line"></span><br><span class="line"><span class="comment"># example</span></span><br><span class="line"></span><br><span class="line">docker load --input image.tar</span><br></pre></td></tr></table></figure>
+
+<h2 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h2><p>上一周提到了面试一个 4 年工作经验的 PHPer，而这一周，我又可以吹大牛了－－本周面试了一个　8　年经验的　PHPer。</p>
+<p>本人一向秉着，面试不是为了为难面试者，让他觉得不如自己。而是为了测试他的水平到底到哪儿？这样，就隐身出了两个方面。一、都会什么；二、不会什么。说白了，就是知识的边界在哪儿？</p>
+<p>结合群里的参考，我就来说说此次的面试经历吧。</p>
+<p>首先说下面试过程吧。我们这儿都是人事面试完直接把做的题和简历给我。看到简历的一瞬间，我是懵逼的，８年的经验。ＷＴＦ，当时心里一下是这种感觉，然后见了面试者，说了一些简单的问题和他的经历。然后我就不知道该提问什么了？原本是计划招一个　１－３　年工作经验的，完全在意料之外，准备也不充分。</p>
+<p>事后，在<strong>耗子读书群</strong>的群友的帮助下，结合自身的一点儿微末经验，总结了一些面试须知：</p>
+<ul>
+<li>面试需要量化考核，当然，这主要是说我这种野路子，凭感觉来的。<ul>
+<li>基础块<ul>
+<li>测试语法基础</li>
+<li>考察编程思想</li>
+</ul>
+</li>
+<li>算法块<ul>
+<li>考察编码风格</li>
+<li>算法逻辑</li>
+</ul>
+</li>
+<li>场景块<ul>
+<li>对实际工作中会出现的问题，是否能有效提供解决方案</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>经验只是参考，更重要的与企业以及团队的匹配度<ul>
+<li>会发现，有些人更重视应用和业务</li>
+<li>有些人基础扎实，但是并不关注于业务</li>
+</ul>
+</li>
+<li>对知识的理解是否透彻<ul>
+<li>是否浮于表面，这点考察很重要，奈何想考察出来，也得下点儿功夫的</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>arts</category>
+      </categories>
+      <tags>
+        <tag>Docker</tag>
+        <tag>ARTS</tag>
+        <tag>PHP</tag>
+        <tag>面试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年 ARTS 周周享 (28)</title>
+    <url>/c97bf088.html/</url>
+    <content><![CDATA[<h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><blockquote>
+<p>旋转数组</p>
+</blockquote>
+<p>给定一个数组，将数组中的元素向右移动 k 个位置，其中 k 是非负数。</p>
+<p>示例 1:</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">输入: [1,2,3,4,5,6,7] 和 k = 3</span><br><span class="line">输出: [5,6,7,1,2,3,4]</span><br><span class="line">解释:</span><br><span class="line">向右旋转 1 步: [7,1,2,3,4,5,6]</span><br><span class="line">向右旋转 2 步: [6,7,1,2,3,4,5]</span><br><span class="line">向右旋转 3 步: [5,6,7,1,2,3,4]</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>以下是第一次想出来</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">rotate</span><span class="params">(nums []<span class="keyword">int</span>, k <span class="keyword">int</span>)</span> []<span class="title">int</span></span> &#123;</span><br><span class="line">  last := <span class="built_in">len</span>(nums)</span><br><span class="line">  	<span class="keyword">if</span> k &gt; last &#123;</span><br><span class="line">		k %= last</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> index := <span class="number">0</span>; index &lt; k; index ++ &#123;</span><br><span class="line">		temp := <span class="number">0</span></span><br><span class="line">		<span class="keyword">for</span> i := last ; i &gt;= <span class="number">0</span> ; i-- &#123;</span><br><span class="line">			<span class="keyword">if</span> i == last &#123;</span><br><span class="line">				temp = nums[i<span class="number">-1</span>]</span><br><span class="line">				<span class="keyword">continue</span></span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> i == <span class="number">0</span> &#123;</span><br><span class="line">				nums[<span class="number">0</span>] = temp</span><br><span class="line">				<span class="keyword">continue</span></span><br><span class="line">			&#125;</span><br><span class="line">			nums[i] = nums[i<span class="number">-1</span>]</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> nums</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>改进版本</p>
+</blockquote>
+<figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">rotate</span><span class="params">(nums []<span class="keyword">int</span>, k <span class="keyword">int</span>)</span> []<span class="title">int</span></span> &#123;</span><br><span class="line">	n := <span class="built_in">len</span>(nums)</span><br><span class="line">	<span class="keyword">if</span> k &gt; n &#123;</span><br><span class="line">		k %= n</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">if</span> k == <span class="number">0</span> || k == n &#123;</span><br><span class="line">		<span class="keyword">return</span> nums</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	reverse(nums, <span class="number">0</span>, n<span class="number">-1</span>)</span><br><span class="line">	reverse(nums, <span class="number">0</span>, k<span class="number">-1</span>)</span><br><span class="line">	reverse(nums, k, n<span class="number">-1</span>)</span><br><span class="line">	<span class="keyword">return</span> nums</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">reverse</span><span class="params">(nums []<span class="keyword">int</span>, i, j <span class="keyword">int</span>)</span></span> &#123;</span><br><span class="line">	<span class="keyword">for</span> i &lt; j &#123;</span><br><span class="line">		nums[i], nums[j] = nums[j], nums[i]</span><br><span class="line">		j--</span><br><span class="line">		i++</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p>本周在 golang 的一个中文社区进行文档翻译。 <a href="https://golangcaff.com/docs/the-little-go-book" target="_blank" rel="noopener">传送门</a></p>
+<blockquote>
+<p>希望不要误人子弟。本人很多也是多次斟酌，并且还参考了在线翻译， 以及维基百科。尽量做到好理解，不出错。（原谅本人英文水平确实有限）</p>
+</blockquote>
+<h2 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h2><p>本周在使用 laravel 中， 对官网的文档以及其他示例的网站源码学习了一下。</p>
+<h3 id="队列"><a href="#队列" class="headerlink" title="队列"></a>队列</h3><p>说实话， 使用了这么久的 PHP ， 并没有在真实的项目中使用过队列， 本周就把队列加入到服务中了。</p>
+<p>laravel 的队列使用比较简单的。</p>
+<ul>
+<li>首先它需要一个配置一下连接</li>
+<li>比较重要的是， 需要区分 连接 和 队列 。</li>
+<li>而连接的另一端便是重要的驱动需求。</li>
+<li>配置好了， 接下来就是创建任务了。</li>
+</ul>
+<h3 id="任务调度"><a href="#任务调度" class="headerlink" title="任务调度"></a>任务调度</h3><p>任务调度让我们不再需要在linux 下直接编写 Cron 项目。</p>
+<blockquote>
+<p>但是你需要这么一条指令来为你的项目增加没分钟的检测。</p>
+</blockquote>
+<p><code>* * * * * php /path-to-your-project/artisan schedule:run &gt;&gt; /dev/null 2&gt;&amp;1</code></p>
+<p>关于此处的东西， 会另开一篇文章来详细说明。</p>
+<h2 id="Shares"><a href="#Shares" class="headerlink" title="Shares"></a>Shares</h2><p>本周想分享的是在最近面试一个 4 年 PHPer 的感悟。</p>
+<p>首先，我一开始入行学的就是 PHP 这门语言了，但是在接下的战场，转战各个语言和框架，大多停留在表面，并未有深入的探究的研究。此次也是由于工作的原因，我又重新拿起了 PHP。</p>
+<p>不得不承认的是，作为一个现在化框架的 Laravel，确实拥有的很多值得称赞的东西。他紧追的时间的浪潮，让 PHP7 进入更多开发者视线。并且在组建团队的时候，面试了一个具有4年经验的 PHPer， 发现他一直用的是 PHP 5.4 ，这我并不是说就完全摒弃 PHP5 ，由于历史包袱的原因，我们这儿依旧维护的 PHP 5.6 的一个项目。</p>
+<p>但是他给你的感觉就是，PHP 5.4 用惯了，而且也挺好的。为啥要换啊，这你就很无语了，新版本的性能啊什么提高你没看到吗？就算你喜欢 PHP 5 ， 那人家 PHP5.6 号称最好的 PHP 5 ， 也没有见你用啊。你都没有了解过，就盲目的下结论。至少在我看来，这就是不愿走出舒适区。</p>
+<p>当然，这儿说这些话，不是说只喜欢新东西，旧的就是垃圾。主要是他的感觉就是，没啥真才实学。出口要 20k 左右。说的不好听点儿，你就是砖搬得稍微熟练点儿，要说竞争力，那是一毛钱都嫌多。如果你能看到这篇分享，希望你能提高自己，混日子，还想要高薪，可能就只能在梦里。</p>
+<p>啊~~ 在梦里。。。（联想邓丽君的《甜蜜蜜》）</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>arts</category>
+      </categories>
+      <tags>
+        <tag>ARTS</tag>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用Laradock配置PHP开发环境</title>
+    <url>/e047a409.html/</url>
+    <content><![CDATA[<h2 id="需要一个简易的开发环境"><a href="#需要一个简易的开发环境" class="headerlink" title="需要一个简易的开发环境"></a>需要一个简易的开发环境</h2><p>传统的开发环境, 需要自己下 PHP, Nginx, MySQL… 等一大堆东西, 但是 docker 给我们带来了便利, 从此就告别了, 本地环境跑的好好的东西,<br>为啥服务器就是不给力, 各种未知的bug. </p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><hr>
+<h3 id="docker-环境"><a href="#docker-环境" class="headerlink" title="docker 环境"></a>docker 环境</h3><a id="more"></a>
+
+<p>不管你是 Mac, windows 或者 linux 等, 先去官网搞定这个基础环境. <a href="https://docs.docker.com/install/" target="_blank" rel="noopener">传送门</a></p>
+<h3 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h3><p>你需要 clone 源码.</p>
+<h2 id="开始你的表演"><a href="#开始你的表演" class="headerlink" title="开始你的表演"></a>开始你的表演</h2><hr>
+<h3 id="拉取源码"><a href="#拉取源码" class="headerlink" title="拉取源码"></a>拉取源码</h3><p>进入你的开发代码目录</p>
+<p><code>git clone https://github.com/laradock/laradock.git</code></p>
+<h3 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cp env-example .env</span><br></pre></td></tr></table></figure>
+
+<p>接下就可以修改 <code>.env</code> 里面的配置了.</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 修改composer 为中国镜像 提速</span></span><br><span class="line">WORKSPACE_COMPOSER_REPO_PACKAGIST=https://packagist.phpcomposer.com</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 接下来运行 Nginx 以及 mysql redis...</span></span><br><span class="line">docker-compose up -d nginx mysql</span><br><span class="line"></span><br><span class="line"><span class="comment"># 因为是首次拉取, 所以会比较慢</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>当然你可以使用加速器来加速docker</p>
+<p>需要注册登录, 并且是免费的</p>
+<p><a href="https://www.daocloud.io/mirror#accelerator-doc" target="_blank" rel="noopener">https://www.daocloud.io/mirror#accelerator-doc</a></p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 这样你就可以进入工作台了</span></span><br><span class="line">docker-compose <span class="built_in">exec</span> --user=laradock workspace bash</span><br></pre></td></tr></table></figure>
+
+<h3 id="phpstorm-xdebug"><a href="#phpstorm-xdebug" class="headerlink" title="phpstorm xdebug"></a>phpstorm xdebug</h3><p>在这儿用 Windows 做例子, 毕竟用 Windows 开发是坑最多了.</p>
+<h4 id="开启-xdebug"><a href="#开启-xdebug" class="headerlink" title="开启 xdebug"></a>开启 xdebug</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#  laradock/.env 文件</span></span><br><span class="line"><span class="comment"># 修改</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### WORKSPACE #############################################</span></span><br><span class="line">WORKSPACE_INSTALL_XDEBUG=<span class="literal">true</span></span><br><span class="line">WORKSPACE_INSTALL_WORKSPACE_SSH=<span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### PHP_FPM ###############################################</span></span><br><span class="line">PHP_FPM_INSTALL_XDEBUG=<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="修改-ini-配置"><a href="#修改-ini-配置" class="headerlink" title="修改 .ini 配置"></a>修改 .ini 配置</h4><figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="comment">; laradock/workspace/xdebug.ini</span></span><br><span class="line"><span class="comment">; laradock/php-fpm/xdebug.ini</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; 修改两个文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment">; remote_host 的 "dockerhost" 是 laradock/.env 文件下的 DOCKER_HOST_IP 的值, 需要在 系统的 hosts 文件添加这么一条记录  10.0.75.1  dockerhost</span></span><br><span class="line"><span class="attr">xdebug.remote_host</span>=dockerhost </span><br><span class="line"><span class="attr">xdebug.remote_connect_back</span>=<span class="number">0</span></span><br><span class="line"><span class="attr">xdebug.remote_port</span>=<span class="number">9000</span></span><br><span class="line"><span class="attr">xdebug.idekey</span>=PHPSTORM</span><br><span class="line"></span><br><span class="line"><span class="attr">xdebug.remote_autostart</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.remote_enable</span>=<span class="number">1</span></span><br><span class="line"><span class="attr">xdebug.cli_color</span>=<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="修改-hosts-文件"><a href="#修改-hosts-文件" class="headerlink" title="修改 hosts 文件"></a>修改 hosts 文件</h4><p>此处需要 管理员权限</p>
+<h4 id="配置-phpstorm"><a href="#配置-phpstorm" class="headerlink" title="配置 phpstorm"></a>配置 phpstorm</h4><ul>
+<li>配置 deployment </li>
+<li>配置 server<ul>
+<li>PHP_IDE_CONFIG=serverName=laradock </li>
+</ul>
+</li>
+<li>配置 debug (非必填)</li>
+<li>配置 test Framework</li>
+<li>Edit Run/Debug configuration</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工具库</category>
+        <category>开发环境</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>docker</tag>
+        <tag>laradock</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2018年 ARTS 周周享 (27)</title>
+    <url>/185059fb.html/</url>
+    <content><![CDATA[<h1 id="2018-27th-week"><a href="#2018-27th-week" class="headerlink" title="2018 27th  week"></a>2018 27th  week</h1><h2 id="Algorithm"><a href="#Algorithm" class="headerlink" title="Algorithm"></a>Algorithm</h2><hr>
+<blockquote>
+<p>给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。</p>
+<p> 设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。</p>
+<p> 注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。</p>
+</blockquote>
+<h3 id="初次完成的"><a href="#初次完成的" class="headerlink" title="初次完成的"></a>初次完成的</h3><figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">maxProfit</span><span class="params">(prices []<span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</span><br><span class="line">	<span class="keyword">if</span> <span class="built_in">len</span>(prices) &lt;= <span class="number">0</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	income := <span class="number">0</span></span><br><span class="line">	j := <span class="built_in">len</span>(prices)</span><br><span class="line">	i := <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> i &lt; (j - <span class="number">1</span>) &#123;</span><br><span class="line">		rLarge := prices[i]</span><br><span class="line">		rNum := i</span><br><span class="line">		<span class="keyword">for</span> l := i + <span class="number">1</span> ; l &lt; j ; l ++ &#123;</span><br><span class="line">			<span class="keyword">if</span> rLarge &gt; prices[l] &#123;</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">if</span> rLarge &lt; prices[l] &#123;</span><br><span class="line">				rLarge = prices[l]</span><br><span class="line">				rNum = l</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		income = income + rLarge - prices[i]</span><br><span class="line">		i = rNum + <span class="number">1</span></span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> income</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="最终完成的"><a href="#最终完成的" class="headerlink" title="最终完成的"></a>最终完成的</h3><figure class="highlight golang"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">maxProfit</span><span class="params">(prices []<span class="keyword">int</span>)</span> <span class="title">int</span></span> &#123;</span><br><span class="line">	<span class="keyword">if</span> <span class="built_in">len</span>(prices) &lt;= <span class="number">0</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	income := <span class="number">0</span></span><br><span class="line">	j := <span class="built_in">len</span>(prices)</span><br><span class="line">	i := <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span> i &lt; (j - <span class="number">1</span>) &#123;</span><br><span class="line">		<span class="keyword">if</span> prices[i] &lt; prices[i + <span class="number">1</span>] &#123;</span><br><span class="line">			income += prices[i+<span class="number">1</span>] - prices[i]</span><br><span class="line">		&#125;</span><br><span class="line">		i++</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> income</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="我的想法"><a href="#我的想法" class="headerlink" title="我的想法"></a>我的想法</h3><p>一开始, 是我想多了, 按照自己的思维, 这种算法对人来说,<br>   可能加的运算少了, 比较容易计算, 但是边界问题没有处理, 多次出现问题</p>
+<p> 最后发现, 总归是要遍历的, 一次从头到尾就ok了, 为啥还要那么麻烦.</p>
+<h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><hr>
+<h3 id="PHP-学习的必备网站"><a href="#PHP-学习的必备网站" class="headerlink" title="PHP 学习的必备网站"></a>PHP 学习的必备网站</h3><p>原文 <a href="https://medium.com/@simpliv/best-websites-for-learning-php-programming-5562697d5fbb" target="_blank" rel="noopener">Best Websites for Learning PHP Programming</a></p>
+<blockquote>
+<p><a href="https://medium.com/@simpliv/best-websites-for-learning-php-programming-5562697d5fbb" target="_blank" rel="noopener">https://medium.com/@simpliv/best-websites-for-learning-php-programming-5562697d5fbb</a></p>
+</blockquote>
+<p>This article show 16 website for learning PHP programing.</p>
+<ol>
+<li><p><a href="https://codecourse.com/library" target="_blank" rel="noopener">Codecourse</a></p>
+<blockquote>
+<p>You can learn PHP and other web development.</p>
+<p>It also available watch videos at their YouTube channel.</p>
+</blockquote>
+</li>
+<li><p><a href="https://stoneriverelearning.com/courses" target="_blank" rel="noopener">Stone River eLearning</a></p>
+<blockquote>
+<p>In this website, the course is not free.</p>
+<p>It is not a PHP specific website</p>
+</blockquote>
+</li>
+<li><p><a href="http://php.net/" target="_blank" rel="noopener">PHP Manual</a></p>
+<blockquote>
+<p>Learn PHP, this website is helpful.</p>
+<p>It also has comments and support Chinese.</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.killerphp.com/" target="_blank" rel="noopener">Killer PHP</a></p>
+<blockquote>
+<p>Maybe you don’t have technical backgrounds, This website is match you.</p>
+</blockquote>
+</li>
+<li><p><a href="https://devzone.zend.com/6/php-101-php-for-the-absolute-beginner/" target="_blank" rel="noopener">PHP 101</a>   </p>
+<blockquote>
+<p>PHP For the Absolute Beginner</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.tutorialspoint.com/php/index.htm" target="_blank" rel="noopener">Tutorials Point</a></p>
+<blockquote>
+<p>W3Schools, when I first sawed it, but is not true.</p>
+<p>It has more content and more importantly, the right content.</p>
+</blockquote>
+</li>
+<li><p><a href="http://www.tizag.com/phpT/" target="_blank" rel="noopener">Tizag</a></p>
+<blockquote>
+<p>This website looks like antique.<br>I can not understand author</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.simpliv.com/" target="_blank" rel="noopener">Simpliv</a></p>
+<blockquote>
+<p>This is video course site point.(and not free)</p>
+<p>I can not Accept their accent.</p>
+</blockquote>
+</li>
+<li><p><a href="http://www.hackingwithphp.com/" target="_blank" rel="noopener">Hacking with PHP</a></p>
+<blockquote>
+<p>Update to PHP7 you just need $20</p>
+</blockquote>
+</li>
+<li><p><a href="https://codeigniter.com/" target="_blank" rel="noopener">Codeigniter</a></p>
+<blockquote>
+<p>CodeIgniter is a powerful PHP framework, But I love Laravel</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.lynda.com/" target="_blank" rel="noopener">Lynda</a></p>
+<blockquote>
+<p>This website is teaching many kinds of course (Not free)</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></p>
+<blockquote>
+<p>Support Chinese, a on-line course website. (Note free)</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3 Schools</a></p>
+<blockquote>
+<p>It need not instruction. Name means content.</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.youtube.com/user/derekbanas" target="_blank" rel="noopener">Derek Banas Video Tutorial on YouTube</a></p>
+<blockquote>
+<p>It is so old.</p>
+</blockquote>
+</li>
+<li><p><a href="https://stackoverflow.com/" target="_blank" rel="noopener">StackOverflow</a></p>
+<blockquote>
+<p>As a coder no one does not know it.</p>
+</blockquote>
+</li>
+<li><p><a href="https://www.codecademy.com/" target="_blank" rel="noopener">Code Academy</a></p>
+<blockquote>
+<p>You can learn many different language. (Free)</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="Tip"><a href="#Tip" class="headerlink" title="Tip"></a>Tip</h2><hr>
+<p>看了下自己的博客, 已经好久没有更新了. 真是汗颜.</p>
+<p>正好此次写 ARTS , Next 主题进行了大的版本升级, 内置了 gitment.</p>
+<blockquote>
+<p>关于 hexo 主题 Next 的 6.3 升级步骤</p>
+</blockquote>
+<blockquote>
+<p>源码库</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>修改你的主题配置</p>
+</blockquote>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># gitment: </span></span><br><span class="line"><span class="string">....</span></span><br></pre></td></tr></table></figure>
+
+<p>so easy it</p>
+<blockquote>
+<p>关于 Markdown 有一个以前不常用的 图片链接记录下</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">![微信图片_20180705113552.jpg</span>](<span class="link">https://i.loli.net/2018/07/05/5b3d922e4bfea.jpg</span>)](<span class="link">https://i.loli.net/2018/07/05/5b3d922e4bfea.jpg</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Share"><a href="#Share" class="headerlink" title="Share"></a>Share</h2><hr>
+<p>因为是首次的分享, so, 我就说下放弃 blog 的这些日子吧.<br>真的是很轻松, 而且没有什么压力和负担.<br>但是技术好像也荒废了, 能及时的把知识, 归纳成体系, 总结成系统, 这个是很有必要.</p>
+<p>希望回过头, 看看自己走过的路, 不是那么的迷茫未来.</p>
+<p>最主要也是感谢一下, 耗子叔(陈皓), 左耳听风专栏的作者. 给了我很大的支持以及鼓励. <a href="https://coolshell.cn/haoel" target="_blank" rel="noopener">传送门</a></p>
+<p>如果你也喜欢, 欢迎订阅他的专栏 <a href="http://stuq.com/a/100gM" target="_blank" rel="noopener"><img src="https://i.loli.net/2018/07/05/5b3d922e4bfea.jpg" alt="微信图片_20180705113552.jpg &quot;喜欢就订阅吧!&quot;"></a></p>
+<p>下一次分享, 本人计划把, slack 好好研究下, 做个分享.</p>
+]]></content>
+      <categories>
+        <category>分享</category>
+        <category>arts</category>
+      </categories>
+      <tags>
+        <tag>ARTS</tag>
+        <tag>PHP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>RegEx 正则表达式 玩不转</title>
+    <url>/b9975ef4.html/</url>
+    <content><![CDATA[<h1 id="玩转玩不转的正则"><a href="#玩转玩不转的正则" class="headerlink" title="玩转玩不转的正则"></a>玩转玩不转的正则</h1><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">A regular expression (regex or regexp for short) is a special text string for describing a search pattern. You can think of regular expressions as wildcards on steroids.</span><br></pre></td></tr></table></figure>
+<p>正则表达式<br>推荐几个在线的正则表达式测试以及常用规则 <a href="https://c.runoob.com/front-end/854" target="_blank" rel="noopener">传送门</a> | <a href="http://tool.oschina.net/regex/" target="_blank" rel="noopener">传送门II</a> | <a href="http://tool.oschina.net/" target="_blank" rel="noopener">在线工具类</a></p>
+<p>学习类参考 <a href="http://www.regular-expressions.info/" target="_blank" rel="noopener">传送门</a></p>
+<a id="more"></a>
+
+<h1 id="普通字符"><a href="#普通字符" class="headerlink" title="普通字符"></a>普通字符</h1><p>普通字符包括没有显式指定为元字符的所有可打印和不可打印字符。这包括所有大写和小写字母、所有数字、所有标点符号和一些其他符号。</p>
+<h1 id="特殊字符"><a href="#特殊字符" class="headerlink" title="特殊字符"></a>特殊字符</h1><table>
+<thead>
+<tr>
+<th>特别字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>$</td>
+<td>匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 ‘\n’ 或 ‘\r’。要匹配 $ 字符本身，请使用 $。</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>标记一个子表达式的开始和结束位置。子表达式可以获取供以后使用。要匹配这些字符，请使用 ( 和 )。</td>
+</tr>
+<tr>
+<td>*</td>
+<td>匹配前面的子表达式零次或多次。要匹配 * 字符，请使用 *。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面的子表达式一次或多次。要匹配 + 字符，请使用 +。</td>
+</tr>
+<tr>
+<td>.</td>
+<td>匹配除换行符 \n 之外的任何单字符。要匹配 . ，请使用 . 。</td>
+</tr>
+<tr>
+<td>[</td>
+<td>标记一个中括号表达式的开始。要匹配 [，请使用 [。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前面的子表达式零次或一次，或指明一个非贪婪限定符。要匹配 ? 字符，请使用 ?。</td>
+</tr>
+<tr>
+<td>\</td>
+<td>将下一个字符标记为或特殊字符、或原义字符、或向后引用、或八进制转义符。例如， ‘n’ 匹配字符 ‘n’。’\n’ 匹配换行符。序列 ‘\‘ 匹配 “&quot;，而 ‘(‘ 则匹配 “(“。</td>
+</tr>
+<tr>
+<td>^</td>
+<td>匹配输入字符串的开始位置，除非在方括号表达式中使用，此时它表示不接受该字符集合。要匹配 ^ 字符本身，请使用 ^。</td>
+</tr>
+<tr>
+<td>{</td>
+<td>标记限定符表达式的开始。要匹配 {，请使用 {。</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td># 非打印字符</td>
+<td></td>
+</tr>
+</tbody></table>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\cx</td>
+<td>匹配由x指明的控制字符。例如， \cM 匹配一个 Control-M 或回车符。x 的值必须为 A-Z 或 a-z 之一。否则，将 c 视为一个原义的 ‘c’ 字符。</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>匹配一个换页符。等价于 \x0c 和 \cL。</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>匹配一个换行符。等价于 \x0a 和 \cJ。</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>匹配一个回车符。等价于 \x0d 和 \cM。</td>
+</tr>
+<tr>
+<td>\s</td>
+<td>匹配任何空白字符，包括空格、制表符、换页符等等。等价于 [ \f\n\r\t\v]。</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>匹配任何非空白字符。等价于 [^ \f\n\r\t\v]。</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>匹配一个制表符。等价于 \x09 和 \cI。</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>匹配一个垂直制表符。等价于 \x0b 和 \cK。</td>
+</tr>
+<tr>
+<td>\w</td>
+<td>匹配一个单字字符（字母、数字或者下划线）。等价于[A-Za-z0-9_]。例如, /\w/ 匹配 “apple,” 中的 ‘a’，”$5.28,”中的 ‘5’ 和 “3D.” 中的 ‘3’。</td>
+</tr>
+<tr>
+<td>\W</td>
+<td>匹配一个非单字字符。等价于[^A-Za-z0-9_]。例如, /\W/ 或者 /[^A-Za-z0-9_]/ 匹配 “50%.” 中的 ‘%’。</td>
+</tr>
+</tbody></table>
+<h1 id="限定符"><a href="#限定符" class="headerlink" title="限定符"></a>限定符</h1><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>*</td>
+<td>匹配前面的子表达式零次或多次。例如，zo* 能匹配 “z” 以及 “zoo”。* 等价于{0,}。</td>
+</tr>
+<tr>
+<td>+</td>
+<td>匹配前面的子表达式一次或多次。例如，’zo+’ 能匹配 “zo” 以及 “zoo”，但不能匹配 “z”。+ 等价于 {1,}。</td>
+</tr>
+<tr>
+<td>?</td>
+<td>匹配前面的子表达式零次或一次。例如，”do(es)?” 可以匹配 “do” 、 “does” 中的 “does” 、 “doxy” 中的 “do” 。? 等价于 {0,1}。</td>
+</tr>
+<tr>
+<td>{n}</td>
+<td>n 是一个非负整数。匹配确定的 n 次。例如，’o{2}’ 不能匹配 “Bob” 中的 ‘o’，但是能匹配 “food” 中的两个 o。</td>
+</tr>
+<tr>
+<td>{n,}</td>
+<td>n 是一个非负整数。至少匹配n 次。例如，’o{2,}’ 不能匹配 “Bob” 中的 ‘o’，但能匹配 “foooood” 中的所有 o。’o{1,}’ 等价于 ‘o+’。’o{0,}’ 则等价于 ‘o*’。</td>
+</tr>
+<tr>
+<td>{n,m}</td>
+<td>m 和 n 均为非负整数，其中n &lt;= m。最少匹配 n 次且最多匹配 m 次。例如，”o{1,3}” 将匹配 “fooooood” 中的前三个 o。’o{0,1}’ 等价于 ‘o?’。请注意在逗号和两个数之间不能有空格。</td>
+</tr>
+</tbody></table>
+<ul>
+<li>*、+限定符都是贪婪的，因为它们会尽可能多的匹配文字，只有在它们的后面加上一个?就可以实现非贪婪或最小匹配</li>
+</ul>
+<h1 id="定位符"><a href="#定位符" class="headerlink" title="定位符"></a>定位符</h1><table>
+<thead>
+<tr>
+<th>字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>^</td>
+<td>匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与 \n 或 \r 之后的位置匹配。</td>
+</tr>
+<tr>
+<td>$</td>
+<td>匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与 \n 或 \r 之前的位置匹配。</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>匹配一个字边界，即字与空格间的位置。</td>
+</tr>
+<tr>
+<td>\B</td>
+<td>非字边界匹配。</td>
+</tr>
+</tbody></table>
+]]></content>
+  </entry>
+  <entry>
+    <title>FEE前端探索交流会</title>
+    <url>/c748d68a.html/</url>
+    <content><![CDATA[<h1 id="开始你的表演"><a href="#开始你的表演" class="headerlink" title="开始你的表演"></a>开始你的表演</h1><p>这是一场关于 <code>AR</code> 发展的基础讲说和 <code>iview</code> 相关的一些说明.</p>
+<h1 id="WEBAR"><a href="#WEBAR" class="headerlink" title="WEBAR"></a>WEBAR</h1><ul>
+<li>识别&amp;跟踪</li>
+<li>模型开发</li>
+<li>终端适配</li>
+<li>模型渲染<ul>
+<li>three.js</li>
+<li>webrt<a id="more"></a>
+<h2 id="AR-JS"><a href="#AR-JS" class="headerlink" title="AR.JS"></a>AR.JS</h2></li>
+</ul>
+</li>
+</ul>
+<h3 id="three-js"><a href="#three-js" class="headerlink" title="three.js"></a>three.js</h3><ul>
+<li><p>60fps 高效</p>
+</li>
+<li><p>基于 web 纯粹的浏览器支持</p>
+</li>
+<li><p>PAT 识别</p>
+</li>
+<li><p>NFT 识别</p>
+</li>
+<li><p>AR.JS 与 Mapbox 结合</p>
+</li>
+</ul>
+<h3 id="artoolkit"><a href="#artoolkit" class="headerlink" title="artoolkit"></a>artoolkit</h3><h3 id="emscript"><a href="#emscript" class="headerlink" title="emscript"></a>emscript</h3><h2 id="Google-AR"><a href="#Google-AR" class="headerlink" title="Google AR"></a>Google AR</h2><h3 id="webARonARCore"><a href="#webARonARCore" class="headerlink" title="webARonARCore"></a>webARonARCore</h3><p>Android 实验性</p>
+<h3 id="Three-ar-js"><a href="#Three-ar-js" class="headerlink" title="Three.ar.js"></a>Three.ar.js</h3><h3 id="webARonARkit"><a href="#webARonARkit" class="headerlink" title="webARonARkit"></a>webARonARkit</h3><p>ios 实验性</p>
+<h1 id="继续编"><a href="#继续编" class="headerlink" title="继续编"></a>继续编</h1><p>这次交流会因为时间的缘故, 并没有参加完.</p>
+<p>不过 <code>iview</code> 作者也给出了关于 <code>style</code> 样式的修改意见, 通过全局修改样式, 并没有其他好的办法. ^_^</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Markdown 玩不转</title>
+    <url>/64460.html/</url>
+    <content><![CDATA[<h1 id="玩转玩不转的-Markdown"><a href="#玩转玩不转的-Markdown" class="headerlink" title="玩转玩不转的 Markdown"></a>玩转玩不转的 Markdown</h1><h2 id="Markdown-Style-Guide-风格指南"><a href="#Markdown-Style-Guide-风格指南" class="headerlink" title="Markdown Style Guide 风格指南"></a>Markdown Style Guide 风格指南</h2><p><a href="http://www.cirosantilli.com/markdown-style-guide/" target="_blank" rel="noopener">参考</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hexo 玩不转</title>
+    <url>/4fce4897.html/</url>
+    <content><![CDATA[<h2 id="玩转玩不转的Hexo"><a href="#玩转玩不转的Hexo" class="headerlink" title="玩转玩不转的Hexo"></a>玩转玩不转的<code>Hexo</code></h2><p>官方指导, 是最具有权威的指导, 但是我依然要写这篇文章, 是为了让你能快速开发, 并且给出一些个人建议, 更多细节请参考<a href="https://hexo.io/" target="_blank" rel="noopener">官网</a></p>
+<p>本文即是在 <code>Next</code> 主题下实现, 而其中的某些配置也是配合该主题使用的, 本人也会在配置上说明</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><pre><code>这儿是配置必要的环境, 已经配置好的请跳过</code></pre><a id="more"></a>
+
+<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><ul>
+<li><p>Windows 下直接去官网 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载</a></p>
+</li>
+<li><p>安装完成后使用命令 <code>node -v</code> 检测是否安装成功</p>
+</li>
+</ul>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<ul>
+<li>在node 装好后, 使用命令 <code>npm install hexo-cli -g</code> 安装 hexo脚手架工具</li>
+<li>更多指导跳<a href="https://hexo.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h2 id="文章链接永久化"><a href="#文章链接永久化" class="headerlink" title="文章链接永久化"></a>文章链接永久化</h2><ul>
+<li><p>安装依赖</p>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i hexo-abbrlink -S</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置<code>Permalink</code></p>
+  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">permalink:</span> <span class="string">blog/:abbrlink/</span>  <span class="bullet">-</span> <span class="string">此处的blog可换成任意你喜欢的目录</span></span><br></pre></td></tr></table></figure></li>
+<li><p>添加配置</p>
+  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># abbrlink config</span></span><br><span class="line"><span class="attr">abbrlink:</span></span><br><span class="line"><span class="attr">alg:</span> <span class="string">crc32</span>  <span class="comment"># 算法：crc16(default) and crc32</span></span><br><span class="line"><span class="attr">rep:</span> <span class="string">hex</span>    <span class="comment"># 进制：dec(default) and hex</span></span><br><span class="line"><span class="string">可选择的算法:</span></span><br><span class="line"><span class="string">crc16</span> <span class="string">&amp;</span> <span class="string">hex</span></span><br><span class="line"><span class="string">crc16</span> <span class="string">&amp;</span> <span class="string">dec</span></span><br><span class="line"><span class="string">crc32</span> <span class="string">&amp;</span> <span class="string">hex</span></span><br><span class="line"><span class="string">crc32</span> <span class="string">&amp;</span> <span class="string">dec</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="Next-主题"><a href="#Next-主题" class="headerlink" title="Next 主题"></a>Next 主题</h2><p>本人仅选择一个主题作为介绍, 其他主题的用法或者功能或有不同, 不过可以参考和类推 <a href="https://hexo.io/zh-cn/docs/themes.html" target="_blank" rel="noopener">自制主题</a> <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">Next 主题</a></p>
+<h3 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd your-hexo-site</span><br><span class="line">git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
+
+<h3 id="next主题集成gitment评论系统"><a href="#next主题集成gitment评论系统" class="headerlink" title="next主题集成gitment评论系统"></a>next主题集成gitment评论系统</h3><p>当然<code>Next</code>主题中也包含了很多主题, 习惯了github的邮箱推送, 可能其他评论系统也有,  请自行<a href="">发掘</a><br>这个评论主要是把评论放到github的issues系统里.</p>
+<h4 id="注册Oauth"><a href="#注册Oauth" class="headerlink" title="注册Oauth"></a>注册Oauth</h4><p><a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">点击注册</a>  <code>Authorization callback URL</code> 就是你要申请登录的网站</p>
+<h4 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h4><ul>
+<li><code>next</code> 主题配置 <code>_config.yml</code> 添加</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Gitment</span></span><br><span class="line"><span class="comment"># Introduction: https://imsun.net/posts/gitment-introduction/</span></span><br><span class="line"><span class="attr">gitment:</span></span><br><span class="line"><span class="attr">    enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    githubID:</span> <span class="string">yourid</span></span><br><span class="line"><span class="attr">    repo:</span> <span class="string">yourrepo</span></span><br><span class="line"><span class="attr">    ClientID:</span> <span class="string">yourid</span></span><br><span class="line"><span class="attr">    ClientSecret:</span> <span class="string">yoursecret</span></span><br><span class="line"><span class="attr">    lazy:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>主题<code>next</code>目录下 <code>languages/en.yml</code> 添加</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">gitmentbutton:</span> <span class="string">Show</span> <span class="string">comments</span> <span class="string">from</span> <span class="string">Gitment</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>主题<code>next</code>目录下 <code>languages/zh-Hans.yml</code>增加:</li>
+</ul>
+<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">gitmentbutton:</span> <span class="string">显示</span> <span class="string">Gitment</span> <span class="string">评论</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="添加gitment评论判断"><a href="#添加gitment评论判断" class="headerlink" title="添加gitment评论判断"></a>添加gitment评论判断</h4><p>在<code>layout/_partials/comments.swig</code> </p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% elseif theme.changyan.appid and theme.changyan.appkey %&#125;</span><br><span class="line">  &lt;div id=<span class="string">"SOHUCS"</span>&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>下新增</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">&#123;% elseif theme.gitment.enable %&#125;</span><br><span class="line">   &#123;% <span class="keyword">if</span> theme.gitment.lazy %&#125;</span><br><span class="line">     &lt;div onclick=<span class="string">"ShowGitment()"</span> id=<span class="string">"gitment-display-button"</span>&gt;&#123;&#123;  __(<span class="string">'gitmentbutton'</span>) &#125;&#125;&lt;/div&gt;</span><br><span class="line">     &lt;div id=<span class="string">"gitment-container"</span> style=<span class="string">"display:none"</span>&gt;&lt;/div&gt;</span><br><span class="line">   &#123;% <span class="keyword">else</span> %&#125;</span><br><span class="line">     &lt;div id=<span class="string">"gitment-container"</span>&gt;&lt;/div&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加gitment显示文件"><a href="#添加gitment显示文件" class="headerlink" title="添加gitment显示文件"></a>添加<code>gitment</code>显示文件</h4><p>在<code>layout/_third-party/comments/</code>目录下中添加文件<code>gitment.swig</code><br>并且引入在<code>layout/_third-party/comments/index.swig</code>文件中引入 <code>include &#39;gitment.swig&#39;</code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% if theme.gitment.enable %&#125;</span><br><span class="line">   &#123;% set owner = theme.gitment.githubID %&#125;</span><br><span class="line">   &#123;% set repo = theme.gitment.repo %&#125;</span><br><span class="line">   &#123;% set cid = theme.gitment.ClientID %&#125;</span><br><span class="line">   &#123;% set cs = theme.gitment.ClientSecret %&#125;</span><br><span class="line">   &lt;link rel=&quot;stylesheet&quot; href=&quot;https://imsun.github.io/gitment/style/default.css&quot;&gt;</span><br><span class="line">   &lt;script src=&quot;https://imsun.github.io/gitment/dist/gitment.browser.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">   &#123;% if not theme.gitment.lazy %&#125;</span><br><span class="line">       &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">           var gitment = new Gitment(&#123;</span><br><span class="line">               id: window.location.pathname, </span><br><span class="line">               owner: &apos;&#123;&#123;owner&#125;&#125;&apos;,</span><br><span class="line">               repo: &apos;&#123;&#123;repo&#125;&#125;&apos;,</span><br><span class="line">               oauth: &#123;</span><br><span class="line">                   client_id: &apos;&#123;&#123;cid&#125;&#125;&apos;,</span><br><span class="line">                   client_secret: &apos;&#123;&#123;cs&#125;&#125;&apos;,</span><br><span class="line">               &#125;&#125;);</span><br><span class="line">           gitment.render(&apos;gitment-container&apos;);</span><br><span class="line">       &lt;/script&gt;</span><br><span class="line">   &#123;% else %&#125;</span><br><span class="line">       &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">           function ShowGitment()&#123;</span><br><span class="line">               document.getElementById(&quot;gitment-display-button&quot;).style.display = &quot;none&quot;;</span><br><span class="line">               document.getElementById(&quot;gitment-container&quot;).style.display = &quot;block&quot;;</span><br><span class="line">               var gitment = new Gitment(&#123;</span><br><span class="line">                   id: document.location.href, </span><br><span class="line">                   owner: &apos;&#123;&#123;owner&#125;&#125;&apos;,</span><br><span class="line">                   repo: &apos;&#123;&#123;repo&#125;&#125;&apos;,</span><br><span class="line">                   oauth: &#123;</span><br><span class="line">                       client_id: &apos;&#123;&#123;cid&#125;&#125;&apos;,</span><br><span class="line">                       client_secret: &apos;&#123;&#123;cs&#125;&#125;&apos;,</span><br><span class="line">                   &#125;&#125;);</span><br><span class="line">               gitment.render(&apos;gitment-container&apos;);</span><br><span class="line">           &#125;</span><br><span class="line">       &lt;/script&gt;</span><br><span class="line">   &#123;% endif %&#125;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="添加gitment样式"><a href="#添加gitment样式" class="headerlink" title="添加gitment样式"></a>添加<code>gitment</code>样式</h4><p>在主题目录下 <code>source/css/_common/components/third-party/</code> 下添加<code>gitment.styl</code>文件<br>并且在 <code>source/css/_common/components/third-party/third-party.styl</code> 下引入 <code>@import &quot;gitment&quot;;</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#gitment-display-button</span>&#123;</span><br><span class="line">     <span class="attribute">display</span>: inline-block;</span><br><span class="line">     <span class="attribute">padding</span>: <span class="number">0</span> <span class="number">15px</span>;</span><br><span class="line">     <span class="attribute">color</span>: <span class="number">#0a9caf</span>;</span><br><span class="line">     <span class="attribute">cursor</span>: pointer;</span><br><span class="line">     <span class="attribute">font-size</span>: <span class="number">14px</span>;</span><br><span class="line">     <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#0a9caf</span>;</span><br><span class="line">     <span class="attribute">border-radius</span>: <span class="number">4px</span>;</span><br><span class="line"> &#125;</span><br><span class="line"> <span class="selector-id">#gitment-display-button</span><span class="selector-pseudo">:hover</span>&#123;</span><br><span class="line">     <span class="attribute">color</span>: <span class="number">#fff</span>;</span><br><span class="line">     <span class="attribute">background</span>: <span class="number">#0a9caf</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="迁移"><a href="#迁移" class="headerlink" title="迁移"></a>迁移</h2><blockquote>
+<p>迁移操作很简单, 更多详见 <a href="https://hexo.io/zh-cn/docs/migration.html" target="_blank" rel="noopener">官方指南</a></p>
+</blockquote>
+<ul>
+<li>目标: Jekyll</li>
+<li>操作: 把 _posts 文件夹内的所有文件复制到 source/_posts 文件夹，并在 _config.yml 中修改 new_post_name 参数。<br><code>new_post_name: :year-:month-:day-:title.md</code></li>
+</ul>
+<h2 id="标签与分类"><a href="#标签与分类" class="headerlink" title="标签与分类"></a>标签与分类</h2><h3 id="创建页面"><a href="#创建页面" class="headerlink" title="创建页面"></a>创建页面</h3><blockquote>
+<p>标签与分类, 是为了更好的规整文档, 本段是配合<code>next</code>主题使用的</p>
+</blockquote>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd your-hexo-site </span><br><span class="line">hexo new page tags  # 创建标签页面</span><br><span class="line">hexo new page categories  # 创建分类页面</span><br></pre></td></tr></table></figure>
+
+<h3 id="修改页面类型"><a href="#修改页面类型" class="headerlink" title="修改页面类型"></a>修改页面类型</h3><p>分别在刚才添加的分类和标签页面 添加<code>type</code> 以及 <code>comments</code> 评论功能关闭<br>  <figure class="highlight md"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2017-12-05 11:38:23</span><br><span class="line">type: "categories"</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line">title: categories</span><br><span class="line">date: 2017-12-05 11:38:23</span><br><span class="line">type: "tags"</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>修改菜单显示 在主题的配置文件 <code>_config.yml</code> 中添加标签和分类<br>  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line"><span class="attr">  home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">  archives:</span> <span class="string">/archives/</span></span><br><span class="line"><span class="attr">  tags:</span> <span class="string">/tags/</span></span><br><span class="line"><span class="attr">  categories:</span> <span class="string">/categories/</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="使用标签和分类"><a href="#使用标签和分类" class="headerlink" title="使用标签和分类"></a>使用标签和分类</h3><p>在新建的文章中,添加<code>tags</code> 以及 <code>categories</code>即可. 示例:<br>  <figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo 玩不转</span><br><span class="line">abbrlink: 4fce4897</span><br><span class="line">date: 2017-12-02 14:14:06</span><br><span class="line">tags: </span><br><span class="line"><span class="bullet">  - </span>玩不转</span><br><span class="line">category: </span><br><span class="line"><span class="bullet">  - </span>实践先锋</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<h2 id="Tag-Plugins-标签插件"><a href="#Tag-Plugins-标签插件" class="headerlink" title="Tag Plugins 标签插件"></a>Tag Plugins 标签插件</h2><blockquote>
+<p>标签插件是用于在文章中快速插入特定内容的插件。</p>
+</blockquote>
+<h3 id="Quote-引用块"><a href="#Quote-引用块" class="headerlink" title="Quote 引用块"></a>Quote 引用块</h3><blockquote>
+<p>这儿只做简单示例, 更多使用请查看<a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="noopener">官网</a></p>
+</blockquote>
+  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure>
+
+<p>例如:<br>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% blockquote Hexo https://hexo.io/news/ Hexo 3.2 Released %&#125;</span><br><span class="line">It has been a long time that Hexo is poor at handling large website. (#710, #1124, #283, #1187, #550, #1769, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure><br>显示效果<br>  <blockquote><p>It has been a long time that Hexo is poor at handling large website. (#710, #1124, #283, #1187, #550, #1769, etc.) We tried hard to solve this problem and there’re several improvements in Hexo 3.2.</p>
+<footer><strong>Hexo</strong><cite><a href="https://hexo.io/news/" target="_blank" rel="noopener">Hexo 3.2 Released</a></cite></footer></blockquote></p>
+<h2 id="资源与数据"><a href="#资源与数据" class="headerlink" title="资源与数据"></a>资源与数据</h2><blockquote>
+<p>这段主要讨论的是如何合理的使用资源和数据, 我会列出 <code>Hexo</code> 官方的做法, 以及个人的想法</p>
+</blockquote>
+<h3 id="资源文件夹"><a href="#资源文件夹" class="headerlink" title="资源文件夹"></a>资源文件夹</h3><h4 id="基本加载方式"><a href="#基本加载方式" class="headerlink" title="基本加载方式"></a>基本加载方式</h4><p>最简单的方法就是将它们放在 <code>source/images</code> 文件夹中。然后通过类似于 <code>![](/images/image.jpg)</code> 的方法访问它们。</p>
+<h4 id="相对路径引用的标签插件"><a href="#相对路径引用的标签插件" class="headerlink" title="相对路径引用的标签插件"></a>相对路径引用的标签插件</h4><ol>
+<li><p>修改配置文件<code>_config.yml</code><br><code>post_asset_folder: true</code></p>
+</li>
+<li><p>相对路径引用标签<br><code></code></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">正确的引用图片方式是使用标签插件而不是 markdown</span><br></pre></td></tr></table></figure>
+<p>以上是官网给的回答, 个人认为<code>Markdown</code>的比较简单好用, 而且学习一个新的标签语法用来写博客也会增加学习成本. (毕竟就只是写个博客而已^_^)</p>
+</li>
+</ol>
+<h3 id="数据文件夹"><a href="#数据文件夹" class="headerlink" title="数据文件夹"></a>数据文件夹</h3><blockquote>
+<p>Hexo 3.0 新增的「数据文件」功能。此功能会载入 source/_data 内的 YAML 或 JSON 文件.</p>
+</blockquote>
+<p>举例来说，在 source/_data 文件夹中新建 menu.yml 文件：<br>  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">Home:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">Tags:</span> <span class="string">/tags/</span></span><br><span class="line"><span class="attr">Archives:</span> <span class="string">/archives/</span></span><br></pre></td></tr></table></figure><br>您就能在模板中使用这些资料：<br>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;% for (var link in site.data.menu) &#123; %&gt;</span><br><span class="line">  &lt;a href=&quot;&lt;%= site.data.menu[link] %&gt;&quot;&gt; &lt;%= link %&gt; &lt;/a&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure><br>渲染结果如下 :<br>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;a href=&quot;/&quot;&gt; Home &lt;/a&gt;</span><br><span class="line">&lt;a href=&quot;/tags/&quot;&gt; Tags &lt;/a&gt;</span><br><span class="line">&lt;a href=&quot;/archives/&quot;&gt; Archives &lt;/a&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="草稿与推送"><a href="#草稿与推送" class="headerlink" title="草稿与推送"></a>草稿与推送</h2><p><code>Hexo</code> 的一种特殊布局 <code>Draft</code> 草稿, 是保存在 <code>source/_drafts</code> 目录下, 草稿默认不会显示在页面中, 这就方便了我们编写, 不会把半成品推上去 ^_^</p>
+<h3 id="操作指令"><a href="#操作指令" class="headerlink" title="操作指令"></a>操作指令</h3><p>新建草稿文本<br>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo new draft &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
+<p>发布草稿文本<br>  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo publish [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="预览设置"><a href="#预览设置" class="headerlink" title="预览设置"></a>预览设置</h3><p>为了方便调试, 你可以修改该配置来预览草稿<br>  <figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">render_drafts:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>建站系统</category>
+        <category>博客</category>
+      </categories>
+      <tags>
+        <tag>玩不转</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>GitHub Pages 玩不转</title>
+    <url>/52725.html/</url>
+    <content><![CDATA[<blockquote>
+<h1 id="玩不转的GitHub-Pages"><a href="#玩不转的GitHub-Pages" class="headerlink" title="玩不转的GitHub Pages"></a>玩不转的<code>GitHub Pages</code></h1></blockquote>
+<p> 玩转玩不转, 就是把免费的博客搞起来. 非高端教程 ^_^</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p> 你所需要的环境</p>
+<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><ul>
+<li>首先的申请一个账号<code>GitHub</code> <a href="https://github.com/" target="_blank" rel="noopener">传送门</a></li>
+<li>登录后, 创建一个新的仓库,并且以 <code>username.github.io</code> 为仓库名, 这儿的username是你自己的<code>GihtHub</code> 账号名 </li>
+</ul>
+<h3 id="Node"><a href="#Node" class="headerlink" title="Node"></a>Node</h3><a id="more"></a>
+<ul>
+<li><p>Windows 下直接去官网 <a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载</a></p>
+</li>
+<li><p>安装完成后使用命令 <code>node -v</code> 检测是否安装成功</p>
+</li>
+</ul>
+<h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h3><p> Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+<ul>
+<li>在node 装好后, 使用命令 <code>npm install hexo-cli -g</code> 安装 hexo脚手架工具</li>
+<li>更多指导跳<a href="https://hexo.io/" target="_blank" rel="noopener">官网</a></li>
+</ul>
+<h3 id="看到你的-Hello-World"><a href="#看到你的-Hello-World" class="headerlink" title="看到你的 Hello World"></a>看到你的 <code>Hello World</code></h3><ul>
+<li><p>首先把 <code>username.github.io</code> 这个版本 <code>clone</code> 到本地</p>
+</li>
+<li><p>然后在 <code>cd username.github.io</code> 进入该版本库</p>
+</li>
+<li><p>创建一个名为 <code>hexo</code> 的分支 <code>git checkout -b hexo</code></p>
+</li>
+<li><p>创建 <code>Hexo</code> 项目  <code>hexo init</code></p>
+</li>
+<li><p>安装依赖 <code>npm i</code></p>
+</li>
+<li><p>修改配置信息 <code>_config.yml</code></p>
+<ul>
+<li>修改网站的 <code>title</code> 之类 , 详细参考<a href="/blog/4fce4897">Hexo 玩不转</a></li>
+<li>主要是填写 版本库的地址<figure class="highlight yml"><table><tr><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/MasterShu/mastershu.github.io.git</span>  <span class="bullet">-</span> <span class="string">这儿填写你自己的地址</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>上传 <code>GitHub</code></p>
+<ul>
+<li>安装依赖 <code>npm install hexo-deployer-git --save</code></li>
+<li>执行上传, 上传过程中可能需要输入你自己的 <code>GitHub</code> 账号密码  <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></li>
+<li>然后访问 <code>http://username.github.io</code> 就可以看到自己的博客了</li>
+</ul>
+</li>
+</ul>
+<h3 id="免费的博客"><a href="#免费的博客" class="headerlink" title="免费的博客"></a>免费的博客</h3><pre><code>进行的这一步, 其实已经完成了自己的 `GitHub Pages` 的主要操作了, 对于SEO之类的, 反正我不是很懂, 就是为了 装*, 接下来, 就是配置自己的域名访问</code></pre><ul>
+<li>首先的注册一个域名, 阿里云, 腾讯云之类的都可以, 不打广告</li>
+<li>就行域名解析,<ul>
+<li>获取要解析的域名IP <code>ping username.github.io</code> 获取你的自己的IP</li>
+<li>解析一个二级域名到该IP <code>blog</code></li>
+</ul>
+</li>
+<li>配置 <code>GItHub</code> 上的自定义 <code>Custom domain</code> ,输入自己刚才解析的 <code>blog.userdomain.name</code> , 在版本的 <code>setting</code> 下</li>
+<li>至此, 一个免费的博客就完成了, 可以通过你自己的域名访问的博客</li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>bat Windows 脚本的编写</title>
+    <url>/59564.html/</url>
+    <content><![CDATA[<h1 id="BAT-脚本编写指南"><a href="#BAT-脚本编写指南" class="headerlink" title="BAT 脚本编写指南"></a>BAT 脚本编写指南</h1><blockquote>
+<p>由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!<br>BAT 脚本编码使用 <code>GB 2312</code> 简体中文, 使用 <code>UTF-8</code>后竟然乱码报错,没细究, 使用就对了^_^</p>
+</blockquote>
+<h2 id="常用指令"><a href="#常用指令" class="headerlink" title="常用指令"></a>常用指令</h2><h3 id="显示"><a href="#显示" class="headerlink" title="显示"></a>显示</h3><p><code>echo</code> 表示显示此命令后的字符</p>
+<a id="more"></a>
+
+<p><code>echo off</code> 表示在此语句后所有运行的命令都不显示命令行本身</p>
+<p><code>@</code> 与 <code>echo off</code>相象，但它是加在每个命令行的最前面，表示运行时不显示这一行的命令行（只能影响当前行）。</p>
+<h3 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h3><p><code>call</code> 调用另一个批处理文件（如果不用call而直接调用别的批处理文件，那么执行完那个批处理文件后将无法返回当前文件并执行当前文件的后续命令）。</p>
+<h3 id="暂停"><a href="#暂停" class="headerlink" title="暂停"></a>暂停</h3><p><code>pause</code> 运行此句会暂停批处理的执行并在屏幕上显示<code>Press any key to continue...</code>的提示，等待用户按任意键后继续 </p>
+<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p><code>rem</code> 表示此命令后的字符为解释行（注释），不执行，只是给自己今后参考用的（相当于程序中的注释）。 当然,我们还可以使用 <code>::</code> 来代替 <code>rem</code></p>
+<h2 id="目录操作"><a href="#目录操作" class="headerlink" title="目录操作"></a>目录操作</h2><h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MKDIR  # 全拼</span><br><span class="line">MD # 简写</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li><p>创建单个文件夹<br> 格式：<code>MD [路径\]目录</code><br> 示例: <code>md &quot;C:\Documents and Settings\Master^ Shu&quot;</code></p>
+</li>
+<li><p>同时创建多个目录<br> 格式: <code>MD [路径\]目录1 [路径\]目录2 [路径\]目录3……</code><br> 示例: <code>md abc D:\Dcouments\123 qwe</code>   在当前目录下建立<code>abc</code>和<code>qwe</code>两个目录,同时D:\gmae下也建立一个目录<code>123</code>。</p>
+</li>
+<li><p>创建多级目录<br> 格式: <code>MD [路径\]目录1\目录2\目录3\…</code><br> 示例: <code>md d:\abc\abcd\abcde</code>  在 d 盘下 创建目录 abd ,在abc 下创建 abcd …</p>
+</li>
+</ol>
+<h3 id="删除目录"><a href="#删除目录" class="headerlink" title="删除目录"></a>删除目录</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">RMDIR [/S] [/Q] [drive:]path</span><br><span class="line">RD [/S] [/Q] [drive:]path</span><br><span class="line">    /S      除目录本身外，还将删除指定目录下的所有子目录和</span><br><span class="line">            文件。用于删除目录树。</span><br><span class="line">    /Q      安静模式，带 /S 删除目录树时不要求确认</span><br></pre></td></tr></table></figure>
+
+<p>示例: <code>rd /s /q d:\abc</code>   不用确认删除 <code>abc</code> 目录树, 即 <code>abc</code>以及<code>abc</code>中的内容,<br>示例: <code>rd /s d:\abc</code>   需要用户确认方可删除 <code>abc</code> 目录树, 即 <code>abc</code>以及<code>abc</code>中的内容,<br>示例: <code>rd d:\abc</code>   删除 <code>abc</code> 空目录, 即 <code>abc</code>中有内容不是空目录时无法删除,</p>
+<h3 id="重命名"><a href="#重命名" class="headerlink" title="重命名"></a>重命名</h3><h2 id="OSQL"><a href="#OSQL" class="headerlink" title="OSQL"></a>OSQL</h2><blockquote>
+<p>一个SQL Ssever 的命令行工具<br>注意: osql 并不支持 SQL Server 的所有功能。<br>请使用 sqlcmd。有关详细信息，请参阅 SQL Server 联机丛书。<br>用法: osql                   [-U 登录 ID]          [-P 密码]<br>  [-S 服务器]                [-H 主机名]           [-E 可信连接]<br>  [-d 使用数据库名称]        [-l 登录超时值]       [-t 查询超时值]<br>  [-h 标题]                  [-s 列分隔符]         [-w 列宽]<br>  [-a 数据包大小]            [-e 回显输入]         [-I 允许带引号的标识符]<br>  [-L 列出服务器]            [-c 命令结束]         [-D ODBC DSN 名称]<br>  [-q “命令行查询”]          [-Q “命令行查询” 并退出]<br>  [-n 删除编号方式]          [-m 错误级别]<br>  [-r 发送到 stderr 的消息]  [-V 严重级别]<br>  [-i 输入文件]              [-o 输出文件]<br>  [-p 打印统计信息]          [-b 出错时中止批处理]<br>  [-X[1] 禁用命令，[退出的同时显示警告]]<br>  [-O 使用旧 ISQL 行为禁用下列项]<br>      <EOF> 批处理<br>      自动调整控制台宽度<br>      宽消息<br>      默认错误级别为 -1 和 1<br>  [-? 显示语法摘要]</p>
+</blockquote>
+<p>常用的主要是<br>-E 可信连接<br>-S 服务器ip<br>-d 数据库名称<br>-U 连接用户名<br>-P 用户的密码<br>-i 执行的sql文件<br>-o sql语句输出的结果文件</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>frist article</title>
+    <url>/52109.html/</url>
+    <content><![CDATA[<h1 id="My-First-Article"><a href="#My-First-Article" class="headerlink" title="My First Article"></a>My First Article</h1><p>I don’t know say what, it just for test article! means hello.</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/16107.html/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+</search>
