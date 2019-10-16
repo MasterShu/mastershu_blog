@@ -18,6 +18,8 @@ url: https://blog.mastershu.club
 root: /
 permalink: :abbrlink.html/
 permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing index.html from permalink
 
 # Directory
 source_dir: source
@@ -67,6 +69,8 @@ tag_map:
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
+## Use post's date for updated date unless set in front-matter
+use_date_for_updated: fals
 
 # Pagination
 ## Set per_page to 0 to disable pagination
