@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://blog.mastershu.club/"/>
-  <updated>2019-04-30T02:38:20.000Z</updated>
+  <updated>2019-10-17T05:38:28.000Z</updated>
   <id>https://blog.mastershu.club/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记一次博客系统升级（hexo）</title>
+    <link href="https://blog.mastershu.club/46331ad8.html/"/>
+    <id>https://blog.mastershu.club/46331ad8.html/</id>
+    <published>2019-10-17T05:38:28.000Z</published>
+    <updated>2019-10-17T05:38:28.000Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;升级吧，我的博客系统&quot;&gt;&lt;a href=&quot;#升级吧，我的博客系统&quot; class=&quot;headerlink&quot; title=&quot;升级吧，我的博客系统&quot;&gt;&lt;/a&gt;升级吧，我的博客系统&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;个人是从 3.4 的版本升级到 4.0 版本的，以下内容主要适用于这种情况。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;升级 hexo 到 4.0 版本，首先修改 package.json&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;-  &quot;hexo&quot;: &quot;^3.4.0&quot;, # 这儿是你原来的 hexo 版本&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;+  &quot;hexo&quot;: &quot;^4.0.0&quot;, # 修改为新的版本&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h3 id=&quot;升级脚手架工具&quot;&gt;&lt;a href=&quot;#升级脚手架工具&quot; class=&quot;headerlink&quot; title=&quot;升级脚手架工具&quot;&gt;&lt;/a&gt;升级脚手架工具&lt;/h3&gt;&lt;p&gt;因为是从 3.4 直接升级过来的，所以用 hexo-cli 工具重新生成了一份空的项目，然后复制了文件，发现主要是主题发现了变化。增加了一个分析工具，并没有啥大的变化。&lt;/p&gt;
+&lt;p&gt;首先得安装 hexo-cli 工具。&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;npm install hexo-cli -g&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;安装完成后，使用指令查看 hexo-cli 版本，为 3.0.0 。ok。&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;hexo --version&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo: 4.0.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;hexo-cli: 3.0.0&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;...&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+    
+      <category term="建站系统" scheme="https://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="博客" scheme="https://blog.mastershu.club/categories/%E5%BB%BA%E7%AB%99%E7%B3%BB%E7%BB%9F/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>TDD（四）开始你的表演</title>
@@ -42,9 +74,9 @@
       <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
     
     
-      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
-    
       <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
     
       <category term="CleanCode" scheme="https://blog.mastershu.club/tags/CleanCode/"/>
     
@@ -76,9 +108,9 @@
       <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
     
     
-      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
-    
       <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
     
       <category term="GO" scheme="https://blog.mastershu.club/tags/GO/"/>
     
@@ -111,9 +143,9 @@
       <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
     
     
-      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
-    
       <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
     
       <category term="VIM" scheme="https://blog.mastershu.club/tags/VIM/"/>
     
@@ -146,9 +178,9 @@
       <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
     
     
-      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
-    
       <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
     
   </entry>
   
@@ -178,9 +210,9 @@
       <category term="练功房" scheme="https://blog.mastershu.club/categories/%E5%88%86%E4%BA%AB/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
     
     
-      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
-    
       <category term="练功房" scheme="https://blog.mastershu.club/tags/%E7%BB%83%E5%8A%9F%E6%88%BF/"/>
+    
+      <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
     
   </entry>
   
@@ -271,9 +303,9 @@
     
       <category term="Golang" scheme="https://blog.mastershu.club/tags/Golang/"/>
     
-      <category term="Laravel" scheme="https://blog.mastershu.club/tags/Laravel/"/>
-    
       <category term="TDD" scheme="https://blog.mastershu.club/tags/TDD/"/>
+    
+      <category term="Laravel" scheme="https://blog.mastershu.club/tags/Laravel/"/>
     
   </entry>
   
@@ -567,29 +599,6 @@
 &lt;p&gt;由于Windows 的操作并不是大小写敏感, 所以, 本文的示例有大写也有小写, 并不影响实际操作!&lt;br&gt;BAT 脚本编码使用 &lt;code&gt;GB 2312&lt;/code&gt; 简体中文, 使用 &lt;code&gt;UTF-8&lt;/code&gt;后竟然乱码报错,没细究, 使用就对了^_^&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&quot;常用指令&quot;&gt;&lt;a href=&quot;#常用指令&quot; class=&quot;headerlink&quot; title=&quot;常用指令&quot;&gt;&lt;/a&gt;常用指令&lt;/h2&gt;&lt;h3 id=&quot;显示&quot;&gt;&lt;a href=&quot;#显示&quot; class=&quot;headerlink&quot; title=&quot;显示&quot;&gt;&lt;/a&gt;显示&lt;/h3&gt;&lt;p&gt;&lt;code&gt;echo&lt;/code&gt; 表示显示此命令后的字符&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>frist article</title>
-    <link href="https://blog.mastershu.club/52109.html/"/>
-    <id>https://blog.mastershu.club/52109.html/</id>
-    <published>2017-12-01T03:37:23.000Z</published>
-    <updated>2017-12-01T03:37:23.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;My-First-Article&quot;&gt;&lt;a href=&quot;#My-First-Article&quot; class=&quot;headerlink&quot; title=&quot;My First Article&quot;&gt;&lt;/a&gt;My First Article&lt;/h1&gt;&lt;p&gt;I don’t know
-        
-      
     
     </summary>
     

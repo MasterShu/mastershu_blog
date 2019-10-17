@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>记一次博客系统升级（hexo）</title>
+    <url>/46331ad8.html/</url>
+    <content><![CDATA[<h2 id="升级吧，我的博客系统"><a href="#升级吧，我的博客系统" class="headerlink" title="升级吧，我的博客系统"></a>升级吧，我的博客系统</h2><blockquote>
+<p>个人是从 3.4 的版本升级到 4.0 版本的，以下内容主要适用于这种情况。</p>
+</blockquote>
+<p>升级 hexo 到 4.0 版本，首先修改 package.json</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">-  "hexo": "^3.4.0", # 这儿是你原来的 hexo 版本</span><br><span class="line">+  "hexo": "^4.0.0", # 修改为新的版本</span><br></pre></td></tr></table></figure>
+
+<h3 id="升级脚手架工具"><a href="#升级脚手架工具" class="headerlink" title="升级脚手架工具"></a>升级脚手架工具</h3><p>因为是从 3.4 直接升级过来的，所以用 hexo-cli 工具重新生成了一份空的项目，然后复制了文件，发现主要是主题发现了变化。增加了一个分析工具，并没有啥大的变化。</p>
+<p>首先得安装 hexo-cli 工具。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后，使用指令查看 hexo-cli 版本，为 3.0.0 。ok。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo --version</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">hexo: 4.0.0</span><br><span class="line">hexo-cli: 3.0.0</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<p>接下来，生成一个空白的项目。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init &lt;folder&gt; <span class="comment"># &lt;folder&gt; 为你要生成的项目的目录名 例如</span></span><br><span class="line">hexo init myhexo</span><br></pre></td></tr></table></figure>
+
+<p>然后复制文件到现有的项目，就可以根据版本控制来查看改动，其实没有什么。 主要是依赖的更新和主题里的文件的修改。<br>然后在 package.json 的文件中添加里 script 脚本</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">"scripts": &#123;</span><br><span class="line">  "build": "hexo generate",</span><br><span class="line">  "clean": "hexo clean",</span><br><span class="line">  "deploy": "hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy",</span><br><span class="line">  "server": "hexo server"</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+
+<p>至此，hexo 的项目就更新完毕里。</p>
+<h2 id="主题也一起升级里吧"><a href="#主题也一起升级里吧" class="headerlink" title="主题也一起升级里吧"></a>主题也一起升级里吧</h2><p>此次升级是从 5 的版本升级到 7 的版本。首先给出官网的说明吧。<a href="https://theme-next.org/docs/getting-started/update-from-v5" target="_blank" rel="noopener">传送门</a></p>
+<h3 id="升级新的主题"><a href="#升级新的主题" class="headerlink" title="升级新的主题"></a>升级新的主题</h3><p>首先我们会看到</p>
+<blockquote>
+<p>Main repositorie was rebased from iissnan’s profile to theme-next organization.<br>代码仓库发生了变化。所以再拉去的话，就得从另外一个仓库拉取了。另外还有扩展插件之类的变化，可以自己去官网看看。我也会在接下来说明，这儿先升级。</p>
+</blockquote>
+<p>另外，在这个<a href="https://theme-next.org/docs/getting-started/update-from-v5" target="_blank" rel="noopener">页面</a>官网也给出了升级指导书。<br>很好，但是我不接受你的建议。</p>
+<p>首先把配置文件备份下来，然后删除 themes 下的 next 文件夹。接下来执行指令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next <span class="comment"># 注意这儿的仓库网址就发生了变化。</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h3><p>接下来，我们修改配置就行了。<br>对照着已经备份的配置文件修改就行。主要就是要注意几个东西。</p>
+<p>gitcomment 被移除了，至于因为啥。我是不知道。反正有个代替品。就是 Gitalk，配置一下就可以直接取代，区别不大。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">gitalk:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span> <span class="comment"># 修改为 true</span></span><br><span class="line"><span class="attr">  github_id:</span> <span class="string">MasterShu</span> <span class="comment"># GitHub repo owner</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">mastershu_blog</span> <span class="comment"># Repository name to store issues</span></span><br><span class="line"><span class="attr">  client_id:</span> <span class="number">2</span><span class="string">a3xxxxxxxxxxxca02ff</span> <span class="comment"># GitHub Application Client ID</span></span><br><span class="line"><span class="attr">  client_secret:</span> <span class="number">2</span><span class="string">a2b89xxxxxxxxxxxxxxxxxxxxxxxxxxx750e43d</span> <span class="comment"># GitHub Application Client Secret</span></span><br><span class="line"><span class="attr">  admin_user:</span> <span class="string">MasterShu</span> <span class="comment"># GitHub repo owner and collaborators, only these guys can initialize gitHub issues</span></span><br></pre></td></tr></table></figure>
+
+<p>另外一个就是 hexo-symbols-count-time，这个也是有变化，需要安装组建进行配置。就是展示博客的阅读时间的。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-symbols-count-time</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">symbols_count_time:</span></span><br><span class="line"><span class="attr">  separated_meta:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  item_text_post:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  item_text_total:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">  awl:</span> <span class="number">4</span></span><br><span class="line"><span class="attr">  wpm:</span> <span class="number">275</span></span><br></pre></td></tr></table></figure>
+
+<p>至此。升级就算完成了。</p>
+<h2 id="升级过程中的一些问题"><a href="#升级过程中的一些问题" class="headerlink" title="升级过程中的一些问题"></a>升级过程中的一些问题</h2><p>升级过程中运行 <code>npm run server</code>，会报错。</p>
+<p>解决方案是添加 hexo-uitl 和 lodash。</p>
+<p><code>npm install hexo-util lodash</code></p>
+]]></content>
+      <categories>
+        <category>建站系统</category>
+        <category>博客</category>
+      </categories>
+  </entry>
+  <entry>
     <title>TDD（四）开始你的表演</title>
     <url>/c5ede4f9.html/</url>
     <content><![CDATA[<h2 id="正式开练"><a href="#正式开练" class="headerlink" title="正式开练"></a>正式开练</h2><blockquote>
@@ -36,8 +88,8 @@
         <category>练功房</category>
       </categories>
       <tags>
-        <tag>TDD</tag>
         <tag>练功房</tag>
+        <tag>TDD</tag>
         <tag>CleanCode</tag>
       </tags>
   </entry>
@@ -62,8 +114,8 @@
         <category>练功房</category>
       </categories>
       <tags>
-        <tag>TDD</tag>
         <tag>练功房</tag>
+        <tag>TDD</tag>
         <tag>GO</tag>
         <tag>重构</tag>
       </tags>
@@ -96,8 +148,8 @@
         <category>练功房</category>
       </categories>
       <tags>
-        <tag>TDD</tag>
         <tag>练功房</tag>
+        <tag>TDD</tag>
         <tag>VIM</tag>
         <tag>GO</tag>
       </tags>
@@ -127,8 +179,8 @@
         <category>练功房</category>
       </categories>
       <tags>
-        <tag>TDD</tag>
         <tag>练功房</tag>
+        <tag>TDD</tag>
       </tags>
   </entry>
   <entry>
@@ -144,8 +196,8 @@
         <category>练功房</category>
       </categories>
       <tags>
-        <tag>TDD</tag>
         <tag>练功房</tag>
+        <tag>TDD</tag>
       </tags>
   </entry>
   <entry>
@@ -259,8 +311,8 @@
         <tag>ARTS</tag>
         <tag>PHP</tag>
         <tag>Golang</tag>
-        <tag>Laravel</tag>
         <tag>TDD</tag>
+        <tag>Laravel</tag>
       </tags>
   </entry>
   <entry>
